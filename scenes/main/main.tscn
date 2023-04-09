@@ -1,0 +1,277 @@
+[gd_scene load_steps=9 format=3 uid="uid://b2hrpnoqj657m"]
+
+[ext_resource type="Texture2D" uid="uid://cioqy4vhuur6y" path="res://assets/images/back.png" id="1_y8oa5"]
+[ext_resource type="FontFile" uid="uid://d13mj32783b7j" path="res://assets/fonts/GamjaFlower-Regular.ttf" id="2_7hfsm"]
+[ext_resource type="Theme" uid="uid://baxuivd3vvul2" path="res://Button.tres" id="2_tp63c"]
+[ext_resource type="PackedScene" uid="uid://ynbjugld8xnq" path="res://shared_scenes/simple_menu/menu.tscn" id="4_vdlcm"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1b5r4"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_abnyi"]
+bg_color = Color(0.764706, 0.564706, 0, 0.478431)
+border_color = Color(0.713726, 0, 0, 1)
+corner_detail = 14
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_435v6"]
+bg_color = Color(0.94902, 0.396078, 0.356863, 0.0941176)
+border_color = Color(0.764706, 0, 0.886275, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_sajy5"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="back" type="Sprite2D" parent="."]
+scale = Vector2(0.666667, 0.666667)
+texture = ExtResource("1_y8oa5")
+centered = false
+
+[node name="GGroup" type="Node" parent="."]
+
+[node name="G1" type="Button" parent="GGroup"]
+offset_left = 153.0
+offset_top = 222.0
+offset_right = 301.0
+offset_bottom = 291.0
+theme = ExtResource("2_tp63c")
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0.152941, 0.745098, 0.827451, 0.482353)
+theme_override_colors/font_focus_color = Color(0.768627, 0.890196, 0.803922, 1)
+theme_override_fonts/font = ExtResource("2_7hfsm")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxEmpty_1b5r4")
+theme_override_styles/hover = SubResource("StyleBoxFlat_abnyi")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_435v6")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_sajy5")
+text = "가족"
+
+[node name="G2" type="Button" parent="GGroup"]
+offset_left = 358.0
+offset_top = 222.0
+offset_right = 506.0
+offset_bottom = 291.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0.152941, 0.745098, 0.827451, 0.482353)
+theme_override_colors/font_focus_color = Color(0.768627, 0.890196, 0.803922, 1)
+theme_override_fonts/font = ExtResource("2_7hfsm")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxEmpty_1b5r4")
+theme_override_styles/hover = SubResource("StyleBoxFlat_abnyi")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_435v6")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_sajy5")
+text = "국어"
+
+[node name="G3" type="Button" parent="GGroup"]
+offset_left = 566.0
+offset_top = 222.0
+offset_right = 714.0
+offset_bottom = 291.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0.152941, 0.745098, 0.827451, 0.482353)
+theme_override_colors/font_focus_color = Color(0.768627, 0.890196, 0.803922, 1)
+theme_override_fonts/font = ExtResource("2_7hfsm")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxEmpty_1b5r4")
+theme_override_styles/hover = SubResource("StyleBoxFlat_abnyi")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_435v6")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_sajy5")
+text = "사회"
+
+[node name="G4" type="Button" parent="GGroup"]
+offset_left = 773.0
+offset_top = 222.0
+offset_right = 921.0
+offset_bottom = 291.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0.152941, 0.745098, 0.827451, 0.482353)
+theme_override_colors/font_focus_color = Color(0.768627, 0.890196, 0.803922, 1)
+theme_override_fonts/font = ExtResource("2_7hfsm")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxEmpty_1b5r4")
+theme_override_styles/hover = SubResource("StyleBoxFlat_abnyi")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_435v6")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_sajy5")
+text = "영어"
+
+[node name="G5" type="Button" parent="GGroup"]
+offset_left = 978.0
+offset_top = 221.0
+offset_right = 1126.0
+offset_bottom = 290.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0.152941, 0.745098, 0.827451, 0.482353)
+theme_override_colors/font_focus_color = Color(0.768627, 0.890196, 0.803922, 1)
+theme_override_fonts/font = ExtResource("2_7hfsm")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxEmpty_1b5r4")
+theme_override_styles/hover = SubResource("StyleBoxFlat_abnyi")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_435v6")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_sajy5")
+text = "수학"
+
+[node name="LGroup" type="Node" parent="."]
+
+[node name="L1" type="Button" parent="LGroup"]
+offset_left = 140.0
+offset_top = 460.0
+offset_right = 218.0
+offset_bottom = 594.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0.152941, 0.745098, 0.827451, 0.482353)
+theme_override_colors/font_focus_color = Color(0.768627, 0.890196, 0.803922, 1)
+theme_override_fonts/font = ExtResource("2_7hfsm")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxEmpty_1b5r4")
+theme_override_styles/hover = SubResource("StyleBoxFlat_abnyi")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_435v6")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_sajy5")
+text = "1"
+
+[node name="L2" type="Button" parent="LGroup"]
+offset_left = 239.0
+offset_top = 456.0
+offset_right = 317.0
+offset_bottom = 590.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0.152941, 0.745098, 0.827451, 0.482353)
+theme_override_colors/font_focus_color = Color(0.768627, 0.890196, 0.803922, 1)
+theme_override_fonts/font = ExtResource("2_7hfsm")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxEmpty_1b5r4")
+theme_override_styles/hover = SubResource("StyleBoxFlat_abnyi")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_435v6")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_sajy5")
+text = "2"
+
+[node name="L3" type="Button" parent="LGroup"]
+offset_left = 343.0
+offset_top = 457.0
+offset_right = 421.0
+offset_bottom = 591.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0.152941, 0.745098, 0.827451, 0.482353)
+theme_override_colors/font_focus_color = Color(0.768627, 0.890196, 0.803922, 1)
+theme_override_fonts/font = ExtResource("2_7hfsm")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxEmpty_1b5r4")
+theme_override_styles/hover = SubResource("StyleBoxFlat_abnyi")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_435v6")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_sajy5")
+text = "3"
+
+[node name="L4" type="Button" parent="LGroup"]
+offset_left = 447.0
+offset_top = 459.0
+offset_right = 525.0
+offset_bottom = 593.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0.152941, 0.745098, 0.827451, 0.482353)
+theme_override_colors/font_focus_color = Color(0.768627, 0.890196, 0.803922, 1)
+theme_override_fonts/font = ExtResource("2_7hfsm")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxEmpty_1b5r4")
+theme_override_styles/hover = SubResource("StyleBoxFlat_abnyi")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_435v6")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_sajy5")
+text = "4"
+
+[node name="L5" type="Button" parent="LGroup"]
+offset_left = 546.0
+offset_top = 455.0
+offset_right = 624.0
+offset_bottom = 589.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0.152941, 0.745098, 0.827451, 0.482353)
+theme_override_colors/font_focus_color = Color(0.768627, 0.890196, 0.803922, 1)
+theme_override_fonts/font = ExtResource("2_7hfsm")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxEmpty_1b5r4")
+theme_override_styles/hover = SubResource("StyleBoxFlat_abnyi")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_435v6")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_sajy5")
+text = "5"
+
+[node name="L6" type="Button" parent="LGroup"]
+offset_left = 650.0
+offset_top = 456.0
+offset_right = 728.0
+offset_bottom = 590.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0.152941, 0.745098, 0.827451, 0.482353)
+theme_override_colors/font_focus_color = Color(0.768627, 0.890196, 0.803922, 1)
+theme_override_fonts/font = ExtResource("2_7hfsm")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxEmpty_1b5r4")
+theme_override_styles/hover = SubResource("StyleBoxFlat_abnyi")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_435v6")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_sajy5")
+text = "6"
+
+[node name="L7" type="Button" parent="LGroup"]
+offset_left = 757.0
+offset_top = 459.0
+offset_right = 835.0
+offset_bottom = 593.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0.152941, 0.745098, 0.827451, 0.482353)
+theme_override_colors/font_focus_color = Color(0.768627, 0.890196, 0.803922, 1)
+theme_override_fonts/font = ExtResource("2_7hfsm")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxEmpty_1b5r4")
+theme_override_styles/hover = SubResource("StyleBoxFlat_abnyi")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_435v6")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_sajy5")
+text = "7"
+
+[node name="L8" type="Button" parent="LGroup"]
+offset_left = 856.0
+offset_top = 455.0
+offset_right = 934.0
+offset_bottom = 589.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0.152941, 0.745098, 0.827451, 0.482353)
+theme_override_colors/font_focus_color = Color(0.768627, 0.890196, 0.803922, 1)
+theme_override_fonts/font = ExtResource("2_7hfsm")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxEmpty_1b5r4")
+theme_override_styles/hover = SubResource("StyleBoxFlat_abnyi")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_435v6")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_sajy5")
+text = "8"
+
+[node name="L9" type="Button" parent="LGroup"]
+offset_left = 960.0
+offset_top = 456.0
+offset_right = 1038.0
+offset_bottom = 590.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0.152941, 0.745098, 0.827451, 0.482353)
+theme_override_colors/font_focus_color = Color(0.768627, 0.890196, 0.803922, 1)
+theme_override_fonts/font = ExtResource("2_7hfsm")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxEmpty_1b5r4")
+theme_override_styles/hover = SubResource("StyleBoxFlat_abnyi")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_435v6")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_sajy5")
+text = "9"
+
+[node name="L10" type="Button" parent="LGroup"]
+offset_left = 1068.0
+offset_top = 457.0
+offset_right = 1146.0
+offset_bottom = 591.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0.152941, 0.745098, 0.827451, 0.482353)
+theme_override_colors/font_focus_color = Color(0.768627, 0.890196, 0.803922, 1)
+theme_override_fonts/font = ExtResource("2_7hfsm")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxEmpty_1b5r4")
+theme_override_styles/hover = SubResource("StyleBoxFlat_abnyi")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_435v6")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_sajy5")
+text = "10"
+
+[node name="Menu" parent="." instance=ExtResource("4_vdlcm")]
+offset_left = 830.0
+offset_top = 10.0
+offset_right = 830.0
+offset_bottom = 10.0

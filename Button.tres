@@ -1,0 +1,7 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://baxuivd3vvul2"]
+
+[ext_resource type="FontFile" uid="uid://d13mj32783b7j" path="res://assets/fonts/GamjaFlower-Regular.ttf" id="1_lfl1h"]
+
+[resource]
+default_font = ExtResource("1_lfl1h")
+default_font_size = 30
