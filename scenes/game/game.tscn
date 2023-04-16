@@ -1,0 +1,105 @@
+[gd_scene load_steps=12 format=3 uid="uid://cvp3tsvgbemm6"]
+
+[ext_resource type="Texture2D" uid="uid://c16s0rce15uep" path="res://assets/images/back_1280.png" id="1_0h5f0"]
+[ext_resource type="Script" path="res://scenes/game/game.gd" id="1_lx0ql"]
+[ext_resource type="Texture2D" uid="uid://d4a80ght3gmx2" path="res://assets/images/game_board.png" id="2_bcbbl"]
+[ext_resource type="Texture2D" uid="uid://d4nblo0hidi78" path="res://assets/images/bar_box.png" id="4_k0f04"]
+[ext_resource type="Texture2D" uid="uid://crqpu01krftg" path="res://assets/images/bar_progress.png" id="5_qh56d"]
+[ext_resource type="Texture2D" uid="uid://dqulpvrt6h8qa" path="res://assets/images/heart.png" id="5_udgcs"]
+[ext_resource type="PackedScene" uid="uid://ynbjugld8xnq" path="res://shared_scenes/simple_menu/menu.tscn" id="6_0n0ps"]
+[ext_resource type="Texture2D" uid="uid://dqd6ofbjkrj8p" path="res://assets/images/time_bar_head.png" id="6_81gxb"]
+[ext_resource type="Texture2D" uid="uid://dpcqf0dy2wpdt" path="res://assets/images/bar_info.png" id="7_cgki7"]
+[ext_resource type="Theme" uid="uid://baxuivd3vvul2" path="res://Button.tres" id="8_ivhk7"]
+[ext_resource type="Texture2D" uid="uid://tllt8ai7vun" path="res://assets/images/point_bar_head.png" id="8_yegtj"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_lx0ql")
+
+[node name="back" type="Sprite2D" parent="."]
+texture = ExtResource("1_0h5f0")
+centered = false
+
+[node name="Menu" parent="." instance=ExtResource("6_0n0ps")]
+offset_left = 830.0
+offset_right = 830.0
+
+[node name="game_board" type="Node2D" parent="."]
+
+[node name="board" type="Sprite2D" parent="game_board"]
+position = Vector2(141, 87)
+texture = ExtResource("2_bcbbl")
+centered = false
+
+[node name="time_bar" type="Node2D" parent="."]
+
+[node name="bar_box" type="Sprite2D" parent="time_bar"]
+position = Vector2(315, 657)
+texture = ExtResource("4_k0f04")
+
+[node name="bar_progress" type="Sprite2D" parent="time_bar"]
+position = Vector2(298, 653)
+texture = ExtResource("5_qh56d")
+
+[node name="bar_head" type="Sprite2D" parent="time_bar"]
+position = Vector2(116, 640)
+texture = ExtResource("6_81gxb")
+
+[node name="bar_info" type="Sprite2D" parent="time_bar"]
+position = Vector2(515, 654)
+texture = ExtResource("7_cgki7")
+
+[node name="time_label" type="Label" parent="time_bar"]
+offset_left = 465.0
+offset_top = 619.0
+offset_right = 561.0
+offset_bottom = 673.0
+theme = ExtResource("8_ivhk7")
+theme_override_font_sizes/font_size = 50
+text = "14"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label" type="Label" parent="time_bar"]
+offset_left = 537.0
+offset_top = 632.0
+offset_right = 577.0
+offset_bottom = 686.0
+theme = ExtResource("8_ivhk7")
+theme_override_font_sizes/font_size = 40
+text = "초"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="point_bar" type="Node2D" parent="."]
+
+[node name="point_bar_box" type="Sprite2D" parent="point_bar"]
+position = Vector2(997, 656)
+texture = ExtResource("4_k0f04")
+
+[node name="bar_progress" type="Sprite2D" parent="point_bar"]
+position = Vector2(976, 653)
+texture = ExtResource("5_qh56d")
+
+[node name="bar_head" type="Sprite2D" parent="point_bar"]
+position = Vector2(794, 651)
+texture = ExtResource("8_yegtj")
+
+[node name="heart" type="Sprite2D" parent="point_bar"]
+position = Vector2(769, 623)
+texture = ExtResource("5_udgcs")
+centered = false
+
+[node name="bar_info" type="Sprite2D" parent="point_bar"]
+position = Vector2(1185, 656)
+texture = ExtResource("7_cgki7")
+
+[node name="point_label" type="Label" parent="point_bar"]
+offset_left = 1151.0
+offset_top = 621.0
+offset_right = 1227.0
+offset_bottom = 680.0
+theme = ExtResource("8_ivhk7")
+theme_override_font_sizes/font_size = 55
+text = "1/10"
+horizontal_alignment = 1
+vertical_alignment = 1

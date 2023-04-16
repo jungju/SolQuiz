@@ -1,0 +1,27 @@
+[gd_scene load_steps=6 format=3 uid="uid://ffdw3bxvenew"]
+
+[ext_resource type="Texture2D" uid="uid://c3lb5ghqs78c2" path="res://assets/images/main_group_button_back.png" id="1_svseq"]
+[ext_resource type="Texture2D" uid="uid://csr3md7d41e6p" path="res://assets/images/main_group_button_back_green.png" id="2_agmk8"]
+[ext_resource type="Theme" uid="uid://baxuivd3vvul2" path="res://Button.tres" id="2_drust"]
+[ext_resource type="Script" path="res://scenes/main/group_button.gd" id="2_xrbaw"]
+[ext_resource type="Texture2D" uid="uid://dov46x277qy36" path="res://assets/images/main_group_button_back_yellow.png" id="3_ioa0x"]
+
+[node name="GroupButton" type="TextureButton"]
+offset_right = 160.0
+offset_bottom = 91.0
+texture_normal = ExtResource("1_svseq")
+texture_pressed = ExtResource("2_agmk8")
+texture_hover = ExtResource("3_ioa0x")
+script = ExtResource("2_xrbaw")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 6.0
+offset_top = -38.0
+offset_right = 174.0
+offset_bottom = 125.0
+theme = ExtResource("2_drust")
+theme_override_font_sizes/font_size = 51
+text = "가족"
+horizontal_alignment = 1
+vertical_alignment = 1

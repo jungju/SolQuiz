@@ -1,4 +1,9 @@
 extends Control
+
+const MAIN_SCENE_PATH = "res://scenes/main/mina_page.tscn"
+
+signal goto_main_scene()
+
 var is_menu_actived = false
 var is_muted = false
 var textureAudioOff = load("res://shared_scenes/simple_menu/images/audioOff.png")
@@ -6,22 +11,21 @@ var textureAudioOn = load("res://shared_scenes/simple_menu/images/audioOn.png")
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	$MenuButton.button_down.connect(_on_MenuButton_pressed)
-	$Menus.focus_exited.connect(_on_MenuButton_focus_exited)
+	$MenuButton.pressed.connect(_on_MenuButton_pressed)
+	$Menus.focus_exited.connect(_on_Menus_focus_exited)
+	$Menus/GoMain.pressed.connect(_on_GoMain_pressed)
 	$Menus/ExitButton.pressed.connect(_on_Exit_pressed)
 	$Menus/MuteButton.pressed.connect(_on_MuteButton_pressed)
-	
 	$Menus/MuteButton/TextureRect.texture = self.textureAudioOn
 	
+	$Menus/GoMain.disabled = Global.current_page == "main"
+	
 	action_set_menus(false)
-	pass # Replace with function body.
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
-
-func _on_MenuButton_focus_exited():
+func _on_GoMain_pressed():
+	emit_signal("goto_main_scene")
+	
+func _on_Menus_focus_exited():
 	action_set_menus(false)
 		
 func _on_MenuButton_pressed():

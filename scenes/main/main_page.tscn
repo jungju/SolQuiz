@@ -1,0 +1,53 @@
+[gd_scene load_steps=6 format=3 uid="uid://b381sw7hmyo0g"]
+
+[ext_resource type="Script" path="res://scenes/main/main_page.gd" id="1_7yu12"]
+[ext_resource type="Texture2D" uid="uid://c16s0rce15uep" path="res://assets/images/back_1280.png" id="2_k731b"]
+[ext_resource type="Theme" uid="uid://baxuivd3vvul2" path="res://Button.tres" id="3_7cjn5"]
+[ext_resource type="Texture2D" uid="uid://dgbl4nkurtjxf" path="res://assets/images/main_level_board.png" id="5_eth45"]
+[ext_resource type="PackedScene" uid="uid://ynbjugld8xnq" path="res://shared_scenes/simple_menu/menu.tscn" id="5_smpqy"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_7yu12")
+
+[node name="back" type="Sprite2D" parent="."]
+texture = ExtResource("2_k731b")
+centered = false
+
+[node name="Menu" parent="." instance=ExtResource("5_smpqy")]
+offset_left = 830.0
+offset_top = 10.0
+offset_right = 830.0
+offset_bottom = 10.0
+
+[node name="GameMenu" type="Node2D" parent="."]
+
+[node name="GroupBox" type="HBoxContainer" parent="GameMenu"]
+offset_left = 140.0
+offset_top = 211.0
+offset_right = 1140.0
+offset_bottom = 302.0
+theme_override_constants/separation = 40
+alignment = 1
+
+[node name="LevelBoard" type="Sprite2D" parent="GameMenu"]
+position = Vector2(649.915, 511.608)
+texture = ExtResource("5_eth45")
+
+[node name="LevelLabel" type="Label" parent="GameMenu/LevelBoard"]
+offset_left = -39.0
+offset_top = -150.0
+offset_right = 25.0
+offset_bottom = -106.0
+theme = ExtResource("3_7cjn5")
+theme_override_font_sizes/font_size = 40
+text = "레벨"
+
+[node name="LevelBox" type="HBoxContainer" parent="GameMenu/LevelBoard"]
+offset_left = -542.0
+offset_top = -56.0
+offset_right = 535.0
+offset_bottom = 116.0
+
+[node name="LGroup" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0

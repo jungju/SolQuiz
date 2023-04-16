@@ -1,0 +1,32 @@
+[gd_scene load_steps=8 format=3 uid="uid://d3onfwnjh4723"]
+
+[ext_resource type="Texture2D" uid="uid://crtrddvhlcj82" path="res://assets/images/main_level_button_back.png" id="1_ulhxc"]
+[ext_resource type="Texture2D" uid="uid://8nd0yv5ndg4f" path="res://assets/images/main_level_button_back_green.png" id="2_emp5d"]
+[ext_resource type="FontFile" uid="uid://d13mj32783b7j" path="res://assets/fonts/GamjaFlower-Regular.ttf" id="2_iuh2w"]
+[ext_resource type="Texture2D" uid="uid://boed5hc5d7xvl" path="res://assets/images/main_level_button_back_yellow.png" id="2_t414m"]
+[ext_resource type="Script" path="res://scenes/main/level_button.gd" id="4_c6ivn"]
+[ext_resource type="Texture2D" uid="uid://cttbixp34tqxv" path="res://assets/images/main_level_button_back_black.png" id="4_umvvt"]
+[ext_resource type="Texture2D" uid="uid://604ijv253jed" path="res://assets/images/lock.png" id="7_eqoyh"]
+
+[node name="LevelButton" type="TextureButton"]
+texture_normal = ExtResource("1_ulhxc")
+texture_pressed = ExtResource("2_emp5d")
+texture_hover = ExtResource("2_t414m")
+texture_disabled = ExtResource("4_umvvt")
+script = ExtResource("4_c6ivn")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 6.0
+offset_right = 98.0
+offset_bottom = 135.0
+theme_override_fonts/font = ExtResource("2_iuh2w")
+theme_override_font_sizes/font_size = 60
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(52, 74)
+texture = ExtResource("7_eqoyh")

@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://dw1nqwsc1qs7k"]
+
+[ext_resource type="Script" path="res://shared_scenes/lodding1/lodding1.gd" id="1_cnvnm"]
+[ext_resource type="Texture2D" uid="uid://c16s0rce15uep" path="res://assets/images/back_1280.png" id="2_ed4ev"]
+
+[node name="lodding1" type="Node2D"]
+script = ExtResource("1_cnvnm")
+
+[node name="back" type="Sprite2D" parent="."]
+texture = ExtResource("2_ed4ev")
+centered = false
