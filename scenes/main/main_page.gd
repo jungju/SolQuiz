@@ -8,18 +8,18 @@ const PAGE_NAME = "main"
 # Called when the node enters the scene tree for the first time.
 func _ready():	
 	var group_array = ["가족", "여행", "수학", "국어", "사회"]
-	for groupName in group_array:
+	for group_name in group_array:
 		var new_group_button = group_button.instantiate()
-		new_group_button.set_group_name(groupName)
+		new_group_button.set_group_name(group_name)
 		$GameMenu/GroupBox.add_child(new_group_button)
 	
 	for i in range(10):
 		var new_level_button = level_button.instantiate()
 		new_level_button.get_node("Label").text = str(i+1)
-		new_level_button.pressed.connect(_on_pressed_level_button)
 		$GameMenu/LevelBoard/LevelBox.add_child(new_level_button)
 	
 	Global.change_group.connect(action_select_group)
+	Global.select_level.connect(action_select_level)
 	
 func action_select_group():
 	for child in $GameMenu/GroupBox.get_children():
@@ -31,11 +31,11 @@ func action_select_group():
 	
 	print(Global.current_group)
 	
-	var tween = create_tween()
-	tween.set_trans(Tween.TRANS_LINEAR)
-	tween.set_ease(Tween.EASE_IN_OUT)
-	tween.tween_property($LevelBoard, "scale",  Vector2(1.01, 1.01), 0.05)
-	tween.tween_property($LevelBoard, "scale",  Vector2(1, 1), 0.1)
+	# var tween = create_tween()
+	# tween.set_trans(Tween.TRANS_LINEAR)
+	# tween.set_ease(Tween.EASE_IN_OUT)
+	# tween.tween_property($LevelBoard, "scale",  Vector2(1.01, 1.01), 0.05)
+	# tween.tween_property($LevelBoard, "scale",  Vector2(1, 1), 0.1)
 
 	var level = 1
 	var index = 1
@@ -44,7 +44,7 @@ func action_select_group():
 			child.set_lock()
 		index = index+1
 
-func _on_pressed_level_button():
+func action_select_level():
 	var tween = create_tween()
 	tween.set_trans(Tween.TRANS_LINEAR)
 	tween.set_ease(Tween.EASE_IN_OUT)

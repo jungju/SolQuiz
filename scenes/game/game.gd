@@ -8,7 +8,3 @@ func _ready():
 
 func _on_goto_main_scene():
 	get_tree().change_scene_to_file(Global.MAIN_SCENE_PATH)
-	
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass

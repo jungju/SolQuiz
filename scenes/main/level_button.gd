@@ -2,14 +2,13 @@ extends TextureButton
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	pressed.connect(_on_select_level)
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
 
 func set_lock():
 	disabled = true
 	$Label.hide()
 	$Sprite2D.show()
+
+func _on_select_level():
+	Global.emit_select_level()

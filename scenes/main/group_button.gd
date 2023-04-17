@@ -7,8 +7,8 @@ var default_texture = load("res://assets/images/main_group_button_back.png")
 func _ready():
 	pressed.connect(_on_select_group)
 
-func set_group_name(name):
-	$Label.text = name
+func set_group_name(group_name):
+	$Label.text = group_name
 
 func get_group_name():
 	return $Label.text
