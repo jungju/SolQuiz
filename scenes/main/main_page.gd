@@ -18,15 +18,14 @@ func _ready():
 		new_level_button.get_node("Label").text = str(i+1)
 		$GameMenu/LevelBoard/LevelBox.add_child(new_level_button)
 	
-	Global.change_group.connect(action_select_group)
-	Global.select_level.connect(action_select_level)
+	Global.change_group.connect(_on_action_select_group)
+	Global.select_level.connect(_on_action_select_level)
 	
-func action_select_group():
+func _on_action_select_group():
 	for child in $GameMenu/GroupBox.get_children():
 		if Global.current_group != child.get_group_name():
 			child.reset()
-	
-	#Global.current_group = groupName
+
 	$GameMenu/LevelBoard/LevelLabel.text = Global.current_group
 	
 	print(Global.current_group)
@@ -44,10 +43,9 @@ func action_select_group():
 			child.set_lock()
 		index = index+1
 
-func action_select_level():
+func _on_action_select_level():
 	var tween = create_tween()
 	tween.set_trans(Tween.TRANS_LINEAR)
 	tween.set_ease(Tween.EASE_IN_OUT)
 	tween.tween_property($GameMenu, "modulate", Color(1, 1, 1, 0), 0.5)
-	get_tree().change_scene_to_file(Global.GAME_SCENE_PATH)
-	queue_free()
+	SceneTransition.change_scene(Global.GAME_SCENE_PATH)

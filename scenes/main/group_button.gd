@@ -14,9 +14,9 @@ func get_group_name():
 	return $Label.text
 
 func _on_select_group():
+	Global.emit_change_group($Label.text)
+	
 	texture_normal = selected_texture
-	Global.current_group = $Label.text
-	Global.emit_change_group()
 
 func reset():
 	texture_normal = default_texture
