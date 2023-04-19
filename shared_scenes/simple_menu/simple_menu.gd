@@ -10,6 +10,8 @@ func _ready():
 	$MenuButton.pressed.connect(_on_MenuButton_pressed)
 	$Menus.focus_exited.connect(_on_Menus_focus_exited)
 	focus_exited.connect(_on_Menus_focus_exited)
+	$Menus.mouse_exited.connect(_on_Menus_focus_exited)
+	mouse_exited.connect(_on_Menus_focus_exited)
 
 	$Menus/GoMain.pressed.connect(_on_GoMain_pressed)
 	$Menus/ExitButton.pressed.connect(_on_Exit_pressed)
@@ -19,11 +21,10 @@ func _ready():
 	# main Scene이면 메인가기 버튼 비활성
 	$Menus/GoMain.disabled = get_tree().get_current_scene().PAGE_NAME == "main"
 
-	action_set_menus(false)
+	$Menus.modulate =  Color(1, 1, 1, 0)
 	
 func _on_GoMain_pressed():
 	SceneTransition.change_scene(Global.MAIN_SCENE_PATH)
-	#get_tree().get_current_scene().get_tree().change_scene_to_file(Global.MAIN_SCENE_PATH)
 	
 func _on_Menus_focus_exited():
 	action_set_menus(false)
@@ -63,4 +64,4 @@ func action_set_menus(menu_visible):
 	var tween = create_tween()
 	tween.set_trans(Tween.TRANS_SINE)
 	tween.set_ease(Tween.EASE_OUT)
-	tween.tween_property($Menus, "modulate", Color(1, 1, 1, alpha), 1)
+	tween.tween_property($Menus, "modulate", Color(1, 1, 1, alpha), 0.5)
