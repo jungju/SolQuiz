@@ -10,11 +10,21 @@ func _ready():
 	$AnimationPlayer.play("timer_ticking")
 	$AnimationPlayer.animation_finished.connect(_on_time_ticking_animation_finished)
 
+
+
 	# 하트 번쩍번쩍 커졌다 작아졌다 하기
 
 	# 문제 뷰
 
 	#
+	
+	$answer1.pressed.connect(_on_answer1_pressed)
+	$answer2.pressed.connect(_on_answer2_pressed)
+
+func _on_answer1_pressed():
+	pass
+
+func _on_answer2_pressed():
 	pass
 
 func _on_time_ticking_animation_finished(animation_name):
