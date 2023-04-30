@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://scripts/main_page.gd" id="1_8bnpv"]
 [ext_resource type="Texture2D" uid="uid://c16s0rce15uep" path="res://assets/images/back_1280.png" id="2_8satt"]
 [ext_resource type="FontFile" uid="uid://bvg6a5hh8skkq" path="res://assets/fonts/BMJUA_ttf.ttf" id="3_x3o1n"]
-[ext_resource type="Texture2D" uid="uid://bliejja07brpn" path="res://assets/images/leaf_big.png" id="4_gmfdp"]
+[ext_resource type="Texture2D" uid="uid://c0oah6lr506lw" path="res://assets/images/leaf_big.png" id="4_gmfdp"]
 [ext_resource type="Texture2D" uid="uid://tuya3kkdw5ou" path="res://assets/images/start_button.png" id="5_wuvik"]
 [ext_resource type="Texture2D" uid="uid://ds1oqyx83adwn" path="res://assets/images/star_board.png" id="6_opfel"]
 [ext_resource type="Theme" uid="uid://w2l72my6ex8s" path="res://button_font.tres" id="6_u50eo"]
@@ -15,7 +15,7 @@
 [ext_resource type="Texture2D" uid="uid://wg20uwfglm0e" path="res://assets/images/exit_icon.png" id="13_dwq2h"]
 [ext_resource type="Texture2D" uid="uid://bnkpf3ukfniff" path="res://assets/images/aqua_big_button.png" id="14_bqc7t"]
 
-[node name="Node2D" type="Node2D"]
+[node name="main_page" type="Node2D"]
 script = ExtResource("1_8bnpv")
 
 [node name="backgound" type="TextureRect" parent="."]

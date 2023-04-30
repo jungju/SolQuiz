@@ -9,7 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://ccphtbwssyqof" path="res://assets/images/normal_wide_button.png" id="7_nvrbx"]
 [ext_resource type="Texture2D" uid="uid://dptqr0x2v23ew" path="res://assets/images/aqua_button.png" id="8_ic6sc"]
 
-[node name="option" type="Node2D"]
+[node name="option_page" type="Node2D"]
 script = ExtResource("1_8ri7e")
 
 [node name="backgound" type="TextureRect" parent="."]

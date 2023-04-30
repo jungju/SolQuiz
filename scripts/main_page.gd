@@ -1,11 +1,8 @@
 extends Node2D
 
-const PAGE_NAME = "main"
-
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass
-
 
 func _on_start_button_pressed():
 	SceneTransition.change_scene(Global.GAME_SCENE_PATH)

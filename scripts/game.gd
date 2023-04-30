@@ -1,27 +1,14 @@
 extends Node2D
 
-const PAGE_NAME = "game"
-
+var time_count = 0
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	# 타이머 가동
-	$Timer.start(1.0)
-	$Timer.timeout.connect(_on_timer_tick)
-	
-	#Global.next_quetion.connect(_on_next_quetion)
+	$AnimationPlayer.play("show_leaf")
 
-	$AnimationPlayer.play("timer_ticking")
-	$AnimationPlayer.animation_finished.connect(_on_time_ticking_animation_finished)
-
-	# 하트 번쩍번쩍 커졌다 작아졌다 하기
-
-	# 문제 뷰
-
-	$answer1.pressed.connect(_on_answer1_pressed)
-	$answer2.pressed.connect(_on_answer2_pressed)
+	$game_board/answer1.pressed.connect(_on_answer1_pressed)
+	$game_board/answer2.pressed.connect(_on_answer2_pressed)
 
 	Global.init_game()
-	next_question()
 	
 
 func _on_answer1_pressed():
@@ -42,9 +29,18 @@ func _on_time_ticking_animation_finished(_animation_name):
 	game_time_over()
 
 func _on_timer_tick():
-	var current_time = $AnimationPlayer.current_animation_position
-	var time_text = "%d" % (30 - int(round(current_time)))
-	$time_bar/time_label.text = time_text
+	time_count = time_count + 1
+	#var current_time = $AnimationPlayer.current_animation_position
+	#var target_index = int(round(current_time))
+	#print(target_index)
+	$time_board/leaf_box.get_child(time_count-1).visible = false
+	#for leaf in $time_board/leaf_box:
+
+	#int(round(current_time))
+
+	# var time_text = "%d" % (30 - int(round(current_time)))
+	# $time_bar/time_label.text = time_text
+	#pass
 
 func correct_answer():
 	# 정답 처리
@@ -63,13 +59,10 @@ func next_question():
 		game_done()
 		return
 
-	$question_box/question_text.text = current_quiz["question"]
-	$answer1/Label.text = current_quiz["options"][0]
-	$answer2/Label.text = current_quiz["options"][1]
-	print(current_quiz)	
+	$game_board/question_box/question_text.text = current_quiz["question"]
+	$game_board/answer1/Label.text = current_quiz["options"][0]
+	$game_board/answer2/Label.text = current_quiz["options"][1]
 	# TODO: 문제 화면 적용
-
-
 	pass
 
 func game_time_over():
@@ -78,3 +71,15 @@ func game_time_over():
 
 func game_done():
 	pass
+
+
+func _on_animation_player_animation_finished(anim_name):
+	if anim_name == "show_leaf":
+		$game_board/question_box.visible = true
+		$game_board/answer1.visible = true
+		$game_board/answer2.visible = true
+		# 타이머 가동
+		$Timer.start(3.0)
+		$Timer.timeout.connect(_on_timer_tick)
+		next_question()
+

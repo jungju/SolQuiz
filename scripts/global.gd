@@ -14,6 +14,9 @@ var current_quiz_index: int # 현재 문제 Index
 var quizs_size: int # 전체 퀴즈 수
 var quizs: Dictionary # 퀴즈 데이터
 
+# Option
+var mute_audio: bool
+
 # signal next_quetion 필요 없을 수도
 signal check_quetion(is_correct: bool) #정답 결과 시그널. 
 
@@ -29,6 +32,7 @@ func choice_answer(answer_number: int):
 	return true
 
 func get_next_quiz():
+	print(current_quiz_index)
 	current_quiz_index = current_quiz_index + 1
 	if current_quiz_index > quizs_size:
 		return null
@@ -54,5 +58,6 @@ func exit_game():
 	get_tree().quit()
 
 func set_mute_audio(is_muted: bool):
+	mute_audio = is_muted
 	for i in range(AudioServer.get_bus_count()):
-		AudioServer.set_bus_mute(i, is_muted)
+		AudioServer.set_bus_mute(i, mute_audio)
