@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://dwbla4tirrdjl"]
+[gd_scene load_steps=15 format=3 uid="uid://dwbla4tirrdjl"]
 
 [ext_resource type="Script" path="res://scripts/main_page.gd" id="1_8bnpv"]
 [ext_resource type="Texture2D" uid="uid://c16s0rce15uep" path="res://assets/images/back_1280.png" id="2_8satt"]
@@ -9,9 +9,11 @@
 [ext_resource type="Theme" uid="uid://w2l72my6ex8s" path="res://button_font.tres" id="6_u50eo"]
 [ext_resource type="Texture2D" uid="uid://cqi6lo6xdetop" path="res://assets/images/star_layout.png" id="7_3pior"]
 [ext_resource type="Texture2D" uid="uid://v5jsvsq6phs5" path="res://assets/images/star.png" id="8_1kqdl"]
+[ext_resource type="Texture2D" uid="uid://dptqr0x2v23ew" path="res://assets/images/aqua_button.png" id="10_hhvyg"]
 [ext_resource type="Texture2D" uid="uid://cymq0ctdyee8h" path="res://assets/images/nomal_button.png" id="11_tkdaf"]
 [ext_resource type="Texture2D" uid="uid://dbxk7vo2tyjhs" path="res://assets/images/config_icon.png" id="12_a4dla"]
 [ext_resource type="Texture2D" uid="uid://wg20uwfglm0e" path="res://assets/images/exit_icon.png" id="13_dwq2h"]
+[ext_resource type="Texture2D" uid="uid://bnkpf3ukfniff" path="res://assets/images/aqua_big_button.png" id="14_bqc7t"]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_8bnpv")
@@ -231,6 +233,7 @@ offset_top = 620.0
 offset_right = 1048.0
 offset_bottom = 694.0
 texture_normal = ExtResource("11_tkdaf")
+texture_pressed = ExtResource("10_hhvyg")
 
 [node name="Label" type="Label" parent="BottomMenu/OptionButton"]
 layout_mode = 0
@@ -256,6 +259,7 @@ offset_top = 620.0
 offset_right = 1239.0
 offset_bottom = 694.0
 texture_normal = ExtResource("11_tkdaf")
+texture_pressed = ExtResource("10_hhvyg")
 
 [node name="Label" type="Label" parent="BottomMenu/ExitButton"]
 layout_mode = 0
@@ -281,6 +285,7 @@ offset_top = 148.0
 offset_right = 791.0
 offset_bottom = 322.0
 texture_normal = ExtResource("5_wuvik")
+texture_pressed = ExtResource("14_bqc7t")
 
 [node name="Label" type="Label" parent="StartButton"]
 layout_mode = 0

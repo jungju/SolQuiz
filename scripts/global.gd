@@ -2,6 +2,7 @@ extends Node
 
 const MAIN_SCENE_PATH = "res://scenes/main_page.tscn"
 const GAME_SCENE_PATH = "res://scenes/game.tscn"
+const OPTION_SCENE_PATH = "res://scenes/option.tscn"
 
 var answer_board_incorrect_answer = load("res://assets/images/game_answer_board4.png")
 var answer_board_correct_answer = load("res://assets/images/game_answer_board5.png")

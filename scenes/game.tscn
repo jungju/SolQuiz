@@ -1,8 +1,7 @@
-[gd_scene load_steps=19 format=3 uid="uid://dcay8q3dh721c"]
+[gd_scene load_steps=18 format=3 uid="uid://dcay8q3dh721c"]
 
 [ext_resource type="Script" path="res://scripts/game.gd" id="1_vykq1"]
 [ext_resource type="Texture2D" uid="uid://c16s0rce15uep" path="res://assets/images/back_1280.png" id="2_65r2c"]
-[ext_resource type="PackedScene" uid="uid://dwpyhug512xda" path="res://scenes/menu.tscn" id="3_cp1oj"]
 [ext_resource type="Texture2D" uid="uid://d4a80ght3gmx2" path="res://assets/images/game_board.png" id="4_dmbia"]
 [ext_resource type="Texture2D" uid="uid://d4nblo0hidi78" path="res://assets/images/bar_box.png" id="5_3lyi4"]
 [ext_resource type="Texture2D" uid="uid://crqpu01krftg" path="res://assets/images/bar_progress.png" id="6_w47l7"]
@@ -58,10 +57,6 @@ script = ExtResource("1_vykq1")
 
 [node name="back" type="TextureRect" parent="."]
 texture = ExtResource("2_65r2c")
-
-[node name="Menu" parent="." instance=ExtResource("3_cp1oj")]
-offset_left = 830.0
-offset_right = 830.0
 
 [node name="game_board" type="Node2D" parent="."]
 

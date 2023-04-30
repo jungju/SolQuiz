@@ -8,12 +8,10 @@ func _ready():
 
 
 func _on_start_button_pressed():
-	pass # Replace with function body.
-
+	SceneTransition.change_scene(Global.GAME_SCENE_PATH)
 
 func _on_exit_button_pressed():
 	Global.exit_game()
 
-
 func _on_option_button_pressed():
-	pass # Replace with function body.
+	SceneTransition.change_scene(Global.OPTION_SCENE_PATH)
