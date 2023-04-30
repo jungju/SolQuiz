@@ -1,0 +1,3110 @@
+{
+    "id": "",
+    "version": "0.1",
+    "created_at": "",
+    "updated_at": "",
+    "datas": [
+        {
+            "id": 1,
+            "question": "빨강과 파랑 중 어떤 색이 더 밝아요?",
+            "options": [
+                "빨강",
+                "파랑"
+            ],
+            "answer": "빨강",
+            "age_range": "1-3",
+            "category": "색상"
+        },
+        {
+            "id": 2,
+            "question": "강아지는 무엇을 먹을까요?",
+            "options": [
+                "사탕",
+                "개 사료"
+            ],
+            "answer": "개 사료",
+            "age_range": "1-3",
+            "category": "동물"
+        },
+        {
+            "id": 3,
+            "question": "물고기는 어디서 살아요?",
+            "options": [
+                "바다",
+                "나무 위"
+            ],
+            "answer": "바다",
+            "age_range": "3-5",
+            "category": "동물"
+        },
+        {
+            "id": 4,
+            "question": "바나나는 어떤 모양인가요?",
+            "options": [
+                "길쭉한",
+                "둥글게"
+            ],
+            "answer": "길쭉한",
+            "age_range": "3-5",
+            "category": "과일"
+        },
+        {
+            "id": 5,
+            "question": "기차는 어디서 탈 수 있을까요?",
+            "options": [
+                "기차역",
+                "공항"
+            ],
+            "answer": "기차역",
+            "age_range": "5-7",
+            "category": "교통수단"
+        },
+        {
+            "id": 6,
+            "question": "식물이 성장하는 데에 필요한 것은 무엇인가요?",
+            "options": [
+                "물, 양분, 빛",
+                "우유, 아이스크림, 초콜릿"
+            ],
+            "answer": "물, 양분, 빛",
+            "age_range": "5-7",
+            "category": "자연"
+        },
+        {
+            "id": 7,
+            "question": "무지개의 첫 번째 색깔은 무엇인가요?",
+            "options": [
+                "빨강",
+                "파랑"
+            ],
+            "answer": "빨강",
+            "age_range": "3-5",
+            "category": "색상"
+        },
+        {
+            "id": 8,
+            "question": "다음 중 새의 이름은 무엇인가요?",
+            "options": [
+                "고양이",
+                "참새"
+            ],
+            "answer": "참새",
+            "age_range": "3-5",
+            "category": "동물"
+        },
+        {
+            "id": 9,
+            "question": "토끼는 어떤 소리를 내나요?",
+            "options": [
+                "멍멍",
+                "깡총깡총"
+            ],
+            "answer": "깡총깡총",
+            "age_range": "3-5",
+            "category": "동물"
+        },
+        {
+            "id": 10,
+            "question": "아래 중 과일이 아닌 것은?",
+            "options": [
+                "사과",
+                "케첩"
+            ],
+            "answer": "케첩",
+            "age_range": "5-7",
+            "category": "과일"
+        },
+        {
+            "id": 11,
+            "question": "바나나는 어떤 색인가요?",
+            "options": [
+                "노랑",
+                "보라"
+            ],
+            "answer": "노랑",
+            "age_range": "3-5",
+            "category": "색상"
+        },
+        {
+            "id": 12,
+            "question": "얼음은 차가운 것이다.",
+            "options": [
+                "참",
+                "거짓"
+            ],
+            "answer": "참",
+            "age_range": "3-5",
+            "category": "자연"
+        },
+        {
+            "id": 13,
+            "question": "우리 몸에서 피가 나오는 부분은 어디인가요?",
+            "options": [
+                "심장",
+                "손목"
+            ],
+            "answer": "심장",
+            "age_range": "5-7",
+            "category": "신체"
+        },
+        {
+            "id": 14,
+            "question": "아래 중 달이 아닌 것은?",
+            "options": [
+                "슈퍼맨",
+                "초승달"
+            ],
+            "answer": "슈퍼맨",
+            "age_range": "5-7",
+            "category": "자연"
+        },
+        {
+            "id": 15,
+            "question": "비올때 쓰는 것은 무엇인가요?",
+            "options": [
+                "우산",
+                "선글라스"
+            ],
+            "answer": "우산",
+            "age_range": "3-5",
+            "category": "생활"
+        },
+        {
+            "id": 6,
+            "question": "식물이 성장하는 데에 필요한 것은 무엇인가요?",
+            "options": [
+                "물, 양분, 빛",
+                "우유, 아이스크림, 초콜릿"
+            ],
+            "answer": "물, 양분, 빛",
+            "age_range": "5-7",
+            "category": "자연"
+        },
+        {
+            "id": 7,
+            "question": "엄마, 아빠, 할머니 중 가장 나이가 많은 사람은?",
+            "options": [
+                "엄마",
+                "할머니"
+            ],
+            "answer": "할머니",
+            "age_range": "3-5",
+            "category": "가족"
+        },
+        {
+            "id": 8,
+            "question": "다음 중 낮에 뜨는 천체는?",
+            "options": [
+                "달",
+                "해"
+            ],
+            "answer": "해",
+            "age_range": "3-5",
+            "category": "자연"
+        },
+        {
+            "id": 9,
+            "question": "얼음이 녹으면 어떤 상태가 되나요?",
+            "options": [
+                "고체",
+                "액체"
+            ],
+            "answer": "액체",
+            "age_range": "5-7",
+            "category": "과학"
+        },
+        {
+            "id": 10,
+            "question": "달력에서 월요일 다음 날은 무슨 요일인가요?",
+            "options": [
+                "화요일",
+                "수요일"
+            ],
+            "answer": "화요일",
+            "age_range": "5-7",
+            "category": "생활"
+        },
+        {
+            "id": 11,
+            "question": "무거운 물건을 들 때 사용하는 도구는?",
+            "options": [
+                "레버",
+                "스푼"
+            ],
+            "answer": "레버",
+            "age_range": "5-7",
+            "category": "과학"
+        },
+        {
+            "id": 12,
+            "question": "사과와 오렌지 중 어떤 과일에 더 많은 비타민 C가 있나요?",
+            "options": [
+                "사과",
+                "오렌지"
+            ],
+            "answer": "오렌지",
+            "age_range": "3-5",
+            "category": "과일"
+        },
+        {
+            "id": 13,
+            "question": "산책하다가 비올때 사용하는 것은?",
+            "options": [
+                "우산",
+                "빗자루"
+            ],
+            "answer": "우산",
+            "age_range": "3-5",
+            "category": "생활"
+        },
+        {
+            "id": 14,
+            "question": "우리 몸의 가장 큰 기관은?",
+            "options": [
+                "피부",
+                "심장"
+            ],
+            "answer": "피부",
+            "age_range": "5-7",
+            "category": "과학"
+        },
+        {
+            "id": 15,
+            "question": "교통수단 중 하늘을 날아다니는 것은?",
+            "options": [
+                "자동차",
+                "비행기"
+            ],
+            "answer": "비행기",
+            "age_range": "3-5",
+            "category": "교통수단"
+        },
+        {
+            "id": 4,
+            "question": "아빠의 아빠를 무엇이라고 부르나요?",
+            "options": [
+                "할아버지",
+                "할머니"
+            ],
+            "answer": "할아버지",
+            "age_range": "3-5",
+            "category": "가족"
+        },
+        {
+            "id": 5,
+            "question": "엄마의 엄마를 무엇이라고 부르나요?",
+            "options": [
+                "할아버지",
+                "할머니"
+            ],
+            "answer": "할머니",
+            "age_range": "3-5",
+            "category": "가족"
+        },
+        {
+            "id": 1,
+            "question": "엄마의 남동생을 무엇이라고 부르나요?",
+            "options": [
+                "삼촌",
+                "고모부"
+            ],
+            "answer": "삼촌",
+            "age_range": "5-7",
+            "category": "가족"
+        },
+        {
+            "id": 2,
+            "question": "아빠의 여동생을 무엇이라고 부르나요?",
+            "options": [
+                "고모",
+                "이모"
+            ],
+            "answer": "고모",
+            "age_range": "5-7",
+            "category": "가족"
+        },
+        {
+            "id": 3,
+            "question": "엄마의 여동생을 무엇이라고 부르나요?",
+            "options": [
+                "이모",
+                "고모"
+            ],
+            "answer": "이모",
+            "age_range": "5-7",
+            "category": "가족"
+        },
+        {
+            "id": 4,
+            "question": "할머니와 할아버지의 자식은 누구인가요?",
+            "options": [
+                "아빠 또는 엄마",
+                "동생 또는 형제"
+            ],
+            "answer": "아빠 또는 엄마",
+            "age_range": "5-7",
+            "category": "가족"
+        },
+        {
+            "id": 5,
+            "question": "남자 아이가 태어나면 부모에게 무슨 관계가 되나요?",
+            "options": [
+                "아들",
+                "딸"
+            ],
+            "answer": "아들",
+            "age_range": "3-5",
+            "category": "가족"
+        },
+        {
+            "id": 6,
+            "question": "여자 아이가 태어나면 부모에게 무슨 관계가 되나요?",
+            "options": [
+                "아들",
+                "딸"
+            ],
+            "answer": "딸",
+            "age_range": "3-5",
+            "category": "가족"
+        },
+        {
+            "id": 7,
+            "question": "아빠의 아빠와 엄마의 아빠를 무엇이라 부르나요?",
+            "options": [
+                "할아버지",
+                "할머니"
+            ],
+            "answer": "할아버지",
+            "age_range": "5-7",
+            "category": "가족"
+        },
+        {
+            "id": 8,
+            "question": "아빠의 엄마와 엄마의 엄마를 무엇이라 부르나요?",
+            "options": [
+                "할아버지",
+                "할머니"
+            ],
+            "answer": "할머니",
+            "age_range": "5-7",
+            "category": "가족"
+        },
+        {
+            "id": 9,
+            "question": "동생과 형제의 차이점은 무엇인가요?",
+            "options": [
+                "동생은 형제와 나이가 차이가 나고, 형제는 나이가 같다",
+                "동생은 나이가 어리고, 형제는 나이가 많다"
+            ],
+            "answer": "동생은 나이가 어리고, 형제는 나이가 많다",
+            "age_range": "5-7",
+            "category": "가족"
+        },
+        {
+            "id": 10,
+            "question": "아빠의 남동생의 아들은 누구에게 어떤 관계인가요?",
+            "options": [
+                "나에게 사촌",
+                "나에게 외조카"
+            ],
+            "answer": "나에게 사촌",
+            "age_range": "5-7",
+            "category": "가족"
+        },
+        {
+            "id": 11,
+            "question": "엄마의 여동생의 딸은 누구에게 어떤 관계인가요?",
+            "options": [
+                "나에게 사촌",
+                "나에게 외조카"
+            ],
+            "answer": "나에게 사촌",
+            "age_range": "5-7",
+            "category": "가족"
+        },
+        {
+            "id": 12,
+            "question": "가족이 함께 모여 밥을 먹는 시간을 무엇이라고 부르나요?",
+            "options": [
+                "가족 시간",
+                "가족 식사"
+            ],
+            "answer": "가족 식사",
+            "age_range": "3-5",
+            "category": "가족"
+        },
+        {
+            "id": 1,
+            "question": "하늘이 구름이 없을 때, 가장 흔히 볼 수 있는 색깔은 무엇인가요?",
+            "options": [
+              "파란색",
+              "녹색"
+            ],
+            "answer": "파란색",
+            "age_range": "3-5",
+            "category": "색깔"
+          },
+          {
+            "id": 2,
+            "question": "딸기의 색깔은 주로 무엇인가요?",
+            "options": [
+              "빨간색",
+              "주황색"
+            ],
+            "answer": "빨간색",
+            "age_range": "3-5",
+            "category": "색깔"
+          },
+          {
+            "id": 3,
+            "question": "흔히 풀밭에서 볼 수 있는 색깔은 무엇인가요?",
+            "options": [
+              "녹색",
+              "갈색"
+            ],
+            "answer": "녹색",
+            "age_range": "3-5",
+            "category": "색깔"
+          },
+          {
+            "id": 4,
+            "question": "바나나가 익을 때 색깔은 무엇인가요?",
+            "options": [
+              "노란색",
+              "초록색"
+            ],
+            "answer": "노란색",
+            "age_range": "3-5",
+            "category": "색깔"
+          },
+          {
+            "id": 5,
+            "question": "눈이 오는 날, 땅에 내린 눈의 색깔은 무엇인가요?",
+            "options": [
+              "흰색",
+              "회색"
+            ],
+            "answer": "흰색",
+            "age_range": "3-5",
+            "category": "색깔"
+          },
+          {
+            "id": 6,
+            "question": "태양이 떠 있는 날, 태양의 색깔은 주로 무엇인가요?",
+            "options": [
+              "노란색",
+              "빨간색"
+            ],
+            "answer": "노란색",
+            "age_range": "3-5",
+            "category": "색깔"
+          },
+          {
+            "id": 1,
+            "question": "흔히 교통신호에서 빨간색 불빛이 나타내는 의미는 무엇인가요?",
+            "options": [
+              "정지",
+              "진행"
+            ],
+            "answer": "정지",
+            "age_range": "3-5",
+            "category": "색깔"
+          },
+          {
+            "id": 2,
+            "question": "교통신호에서 초록색 불빛이 나타내는 의미는 무엇인가요?",
+            "options": [
+              "정지",
+              "진행"
+            ],
+            "answer": "진행",
+            "age_range": "3-5",
+            "category": "색깔"
+          },
+          {
+            "id": 3,
+            "question": "보라색은 어떤 두 색이 섞여서 만들어지는 색인가요?",
+            "options": [
+              "파란색과 빨간색",
+              "노란색과 빨간색"
+            ],
+            "answer": "파란색과 빨간색",
+            "age_range": "5-7",
+            "category": "색깔"
+          },
+          {
+            "id": 4,
+            "question": "주황색은 어떤 두 색이 섞여서 만들어지는 색인가요?",
+            "options": [
+              "노란색과 빨간색",
+              "노란색과 초록색"
+            ],
+            "answer": "노란색과 빨간색",
+            "age_range": "5-7",
+            "category": "색깔"
+          },
+          {
+            "id": 5,
+            "question": "갈색은 어떤 두 색이 섞여서 만들어지는 색인가요?",
+            "options": [
+              "빨간색과 초록색",
+              "파란색과 초록색"
+            ],
+            "answer": "빨간색과 초록색",
+            "age_range": "5-7",
+            "category": "색깔"
+          },
+          {
+            "id": 6,
+            "question": "다양한 색의 무지개에서 가장 위에 있는 색깔은 무엇인가요?",
+            "options": [
+              "빨간색",
+              "보라색"
+            ],
+            "answer": "빨간색",
+            "age_range": "3-5",
+            "category": "색깔"
+          },
+          {
+            "id": 7,
+            "question": "무지개에서 가장 아래에 있는 색깔은 무엇인가요?",
+            "options": [
+              "빨간색",
+              "보라색"
+            ],
+            "answer": "보라색",
+            "age_range": "3-5",
+            "category": "색깔"
+        },
+        {
+            "id": 8,
+            "question": "파란색과 노란색을 섞으면 어떤 색이 나오나요?",
+            "options": [
+              "녹색",
+              "주황색"
+            ],
+            "answer": "녹색",
+            "age_range": "5-7",
+            "category": "색깔"
+          },
+          {
+            "id": 9,
+            "question": "토마토의 색깔은 무엇인가요?",
+            "options": [
+              "빨간색",
+              "녹색"
+            ],
+            "answer": "빨간색",
+            "age_range": "3-5",
+            "category": "색깔"
+          },
+          {
+            "id": 10,
+            "question": "대부분의 달걀 껍질의 색깔은 무엇인가요?",
+            "options": [
+              "흰색",
+              "갈색"
+            ],
+            "answer": "흰색",
+            "age_range": "3-5",
+            "category": "색깔"
+          },
+          {
+            "id": 11,
+            "question": "파란색과 빨간색을 섞으면 어떤 색이 나오나요?",
+            "options": [
+              "보라색",
+              "주황색"
+            ],
+            "answer": "보라색",
+            "age_range": "5-7",
+            "category": "색깔"
+          },
+          {
+            "id": 12,
+            "question": "초록색과 노란색을 섞으면 어떤 색이 나오나요?",
+            "options": [
+              "연두색",
+              "갈색"
+            ],
+            "answer": "연두색",
+            "age_range": "5-7",
+            "category": "색깔"
+          },
+          {
+            "id": 1,
+            "question": "애완 동물로 흔히 키우는 고양이와 개 중, 물고기를 좋아하는 동물은 무엇인가요?",
+            "options": [
+              "고양이",
+              "개"
+            ],
+            "answer": "고양이",
+            "age_range": "3-5",
+            "category": "동물"
+          },
+          {
+            "id": 2,
+            "question": "날개가 있어서 날 수 있는 동물은 무엇인가요?",
+            "options": [
+              "새",
+              "원숭이"
+            ],
+            "answer": "새",
+            "age_range": "3-5",
+            "category": "동물"
+          },
+          {
+            "id": 3,
+            "question": "기린의 목은 길고, 얼룩말의 몸에는 얼룩이 있습니다. 얼룩말과 기린 중 어느 동물의 목이 길까요?",
+            "options": [
+              "기린",
+              "얼룩말"
+            ],
+            "answer": "기린",
+            "age_range": "3-5",
+            "category": "동물"
+          },
+          {
+            "id": 4,
+            "question": "흔히 애완 동물로 키우는 동물 중, 주로 물 속에서 살며 아름다운 비늘이 있는 것은 무엇인가요?",
+            "options": [
+              "물고기",
+              "햄스터"
+            ],
+            "answer": "물고기",
+            "age_range": "3-5",
+            "category": "동물"
+          },
+          {
+            "id": 5,
+            "question": "대표적인 애완 동물로 짖는 소리를 내며 꼬리를 흔들 때 기쁨을 표현하는 동물은 무엇인가요?",
+            "options": [
+              "개",
+              "고양이"
+            ],
+            "answer": "개",
+            "age_range": "3-5",
+            "category": "동물"
+          },
+          {
+            "id": 6,
+            "question": "가장 큰 종류의 동물로, 바다에서 살며 물 분출구를 통해 물을 뿜어내는 것은 무엇인가요?",
+            "options": [
+              "고래",
+              "상어"
+            ],
+            "answer": "고래",
+            "age_range": "5-7",
+            "category": "동물"
+          },
+          {
+            "id": 7,
+            "question": "강아지는 개의 아기입니다. 고양이의 아기를 무엇이라고 부르나요?",
+            "options": [
+              "강얼",
+              "새끼 고양이"
+            ],
+            "answer": "새끼 고양이",
+            "age_range": "3-5",
+            "category": "동물"
+          },
+          {
+            "id": 8,
+            "question": "얼음 위에서 살고, 흰색 털이 있는 북극의 동물은 무엇인가요?",
+            "options": [
+              "북극곰",
+              "펭귄"
+            ],
+            "answer": "북극곰",
+            "age_range": "5-7",
+            "category": "동물"
+          },
+          {
+            "id": 9,
+            "question": "긴 목과 긴 다리를 가지고 있으며, 사바나에서 살고 있는 초식성 동물은 무엇인가요?",
+            "options": [
+              "코끼리",
+              "기린"
+            ],
+            "answer": "기린",
+            "age_range": "5-7",
+            "category": "동물"
+          },
+          {
+            "id": 10,
+            "question": "큰 이빨과 강한 털을 가지고 있으며, 숲에서 살고 있는 육식 동물은 무엇인가요?",
+            "options": [
+              "호랑이",
+              "토끼"
+            ],
+            "answer": "호랑이",
+            "age_range": "5-7",
+            "category": "동물"
+          },
+          {
+            "id": 11,
+            "question": "오리는 물 위에서도 살고 땅에서도 생활합니다. 오리는 어떤 다리를 가지고 있나요?",
+            "options": [
+              "털다리",
+              "갈래다리"
+            ],
+            "answer": "갈래다리",
+            "age_range": "3-5",
+            "category": "동물"
+          },
+          {
+            "id": 12,
+            "question": "새가 아닌데 날 수 있는 동물은 무엇인가요?",
+            "options": [
+              "박쥐",
+              "돼지"
+            ],
+            "answer": "박쥐",
+            "age_range": "5-7",
+            "category": "동물"
+          },
+          {
+            "id": 2,
+            "question": "바나나의 색깔은 무엇인가요?",
+            "options": [
+              "노란색",
+              "파란색"
+            ],
+            "answer": "노란색",
+            "age_range": "3-5",
+            "category": "과일"
+          },
+          {
+            "id": 3,
+            "question": "오렌지와 같은 색깔을 가진 과일은 무엇인가요?",
+            "options": [
+              "키위",
+              "오렌지"
+            ],
+            "answer": "오렌지",
+            "age_range": "3-5",
+            "category": "과일"
+          },
+          {
+            "id": 4,
+            "question": "작고 둥글며 노란색이고, 속에 씨가 있는 과일은 무엇인가요?",
+            "options": [
+              "레몬",
+              "체리"
+            ],
+            "answer": "레몬",
+            "age_range": "3-5",
+            "category": "과일"
+          },
+          {
+            "id": 5,
+            "question": "작고 둥글며 붉은 색이고, 한 입 크기인 과일은 무엇인가요?",
+            "options": [
+              "포도",
+              "체리"
+            ],
+            "answer": "체리",
+            "age_range": "3-5",
+            "category": "과일"
+          },
+          {
+            "id": 6,
+            "question": "표면이 갈색이고 안쪽이 흰색인 열대 과일은 무엇인가요?",
+            "options": [
+              "코코넛",
+              "망고"
+            ],
+            "answer": "코코넛",
+            "age_range": "5-7",
+            "category": "과일"
+          },
+          {
+            "id": 7,
+            "question": "많은 사람들이 겨울에 먹는, 속이 붉은 색인 과일은 무엇인가요?",
+            "options": [
+              "토마토",
+              "감"
+            ],
+            "answer": "감",
+            "age_range": "5-7",
+            "category": "과일"
+          },
+          {
+            "id": 8,
+            "question": "피부가 두꺼운 녹색이고, 속에는 맛있는 열대 과일이 들어 있는 과일은 무엇인가요?",
+            "options": [
+              "아보카도",
+              "파인애플"
+            ],
+            "answer": "아보카도",
+            "age_range": "5-7",
+            "category": "과일"
+          },
+          {
+            "id": 9,
+            "question": "꼭대기에 뾰족한 모양이 있고, 속에는 달콤한 주황색 과육이 있는 과일은 무엇인가요?",
+            "options": [
+              "복숭아",
+              "파인애플"
+            ],
+            "answer": "파인애플",
+            "age_range": "5-7",
+            "category": "과일"
+          },
+          {
+            "id": 10,
+            "question": "평행한 줄무늬가 있고, 속에 씨가 많은 과일은 무엇인가요?",
+            "options": [
+              "키위",
+              "멜론"
+            ],
+            "answer": "멜론",
+            "age_range": "5-7",
+            "category": "과일"
+          },
+          {
+            "id": 11,
+            "question": "작고 둥글며, 겉은 초록색이고 안쪽은 흰색인 과일은 무엇인가요?",
+            "options": [
+              "키위",
+              "블루베리"
+            ],
+            "answer": "키위",
+            "age_range": "3-5",
+            "category": "과일"
+          },
+          {
+            "id": 12,
+            "question": "비타민 C가 많이 들어 있는, 작고 둥글며 주황색인 과일은 무엇인가요?",
+            "options": [
+              "귤",
+              "바나나"
+            ],
+            "answer": "귤",
+            "age_range": "3-5",
+            "category": "과일"
+          },
+          {
+            "id": 1,
+            "question": "가장 큰 육상 동물은 무엇인가요?",
+            "options": [
+              "코끼리",
+              "사자"
+            ],
+            "answer": "코끼리",
+            "age_range": "5-7",
+            "category": "동물"
+          },
+          {
+            "id": 2,
+            "question": "포유류 중에서 가장 빠르게 달릴 수 있는 동물은 무엇인가요?",
+            "options": [
+              "치타",
+              "호랑이"
+            ],
+            "answer": "치타",
+            "age_range": "5-7",
+            "category": "동물"
+          },
+          {
+            "id": 3,
+            "question": "물고기가 숨을 쉬기 위해 사용하는 것은 무엇인가요?",
+            "options": [
+              "코",
+              "아가미"
+            ],
+            "answer": "아가미",
+            "age_range": "5-7",
+            "category": "동물"
+          },
+          {
+            "id": 4,
+            "question": "날개가 없지만 날 수 있는 동물은 무엇인가요?",
+            "options": [
+              "독수리",
+              "박쥐"
+            ],
+            "answer": "박쥐",
+            "age_range": "5-7",
+            "category": "동물"
+          },
+          {
+            "id": 5,
+            "question": "오스트레일리아에 사는 독특한 동물로, 주머니에 아기를 안고 이동하는 동물은 무엇인가요?",
+            "options": [
+              "캥거루",
+              "팬더"
+            ],
+            "answer": "캥거루",
+            "age_range": "5-7",
+            "category": "동물"
+          },
+          {
+            "id": 6,
+            "question": "물 속에서 살면서 온몸이 강력한 딱딱한 껍질로 둘러싸인 동물은 무엇인가요?",
+            "options": [
+              "거북이",
+              "물개"
+            ],
+            "answer": "거북이",
+            "age_range": "3-5",
+            "category": "동물"
+          },
+          {
+            "id": 7,
+            "question": "털이 길고 귀여운 동물로, 사람들이 집에서 키우는 반려동물 중 하나는 무엇인가요?",
+            "options": [
+              "강아지",
+              "독수리"
+            ],
+            "answer": "강아지",
+            "age_range": "3-5",
+            "category": "동물"
+          },
+          {
+            "id": 8,
+            "question": "나무 위에서 살면서, 꼬리가 길고 구부러진 동물은 무엇인가요?",
+            "options": [
+              "원숭이",
+              "고래"
+            ],
+            "answer": "원숭이",
+            "age_range": "3-5",
+            "category": "동물"
+          },
+          {
+            "id": 9,
+            "question": "집에서 키우기 쉬운 조용한 반려동물로, 깃털이 매끈하고 부드러운 동물은 무엇인가요?",
+            "options": [
+              "앵무새",
+              "고양이"
+            ],
+            "answer": "고양이",
+            "age_range": "3-5",
+            "category": "동물"
+          },
+          {
+            "id": 10,
+            "question": "겉모습이 비슷해 헷갈리기 쉬운 물고기로, 금붕어와 비슷한 모습인 동물은 무엇인가요?",
+            "options": [
+              "잉어",
+              "상어"
+            ],
+            "answer": "잉어",
+            "age_range": "5-7",
+            "category": "동물"
+          },
+          {
+            "id": 11,
+            "question": "물 속에서 살면서, 온몸이 미끈미끈한 피부로 덮인 동물은 무엇인가요?",
+            "options": [
+              "개구리",
+              "펭귄"
+            ],
+            "answer": "개구리",
+            "age_range": "3-5",
+            "category": "동물"
+          },
+          {
+            "id": 12,
+            "question": "크게 허파를 퍼덕이며 날아다니는 동물로, 꿀벌을 잡아먹는 것으로 유명한 동물은 무엇인가요?",
+            "options": [
+              "박쥐",
+              "참새"
+            ],
+            "answer": "참새",
+            "age_range": "5-7",
+            "category": "동물"
+          },
+          {
+            "id": 1,
+            "question": "태양이 가장 뜨거운 때는 언제인가요?",
+            "options": [
+              "오전",
+              "정오"
+            ],
+            "answer": "정오",
+            "age_range": "5-7",
+            "category": "자연"
+          },
+          {
+            "id": 2,
+            "question": "눈이 내리는 날씨를 겪을 수 있는 계절은 무엇인가요?",
+            "options": [
+              "여름",
+              "겨울"
+            ],
+            "answer": "겨울",
+            "age_range": "5-7",
+            "category": "자연"
+          },
+          {
+            "id": 3,
+            "question": "물이 차오르는 현상을 무엇이라고 하나요?",
+            "options": [
+              "썰물",
+              "조수"
+            ],
+            "answer": "조수",
+            "age_range": "5-7",
+            "category": "자연"
+          },
+          {
+            "id": 4,
+            "question": "태풍이 발생하는 것은 주로 어떤 계절인가요?",
+            "options": [
+              "봄",
+              "가을"
+            ],
+            "answer": "가을",
+            "age_range": "5-7",
+            "category": "자연"
+          },
+          {
+            "id": 5,
+            "question": "사막에서 자라는, 수분을 많이 저장하는 식물은 무엇인가요?",
+            "options": [
+              "선인장",
+              "대나무"
+            ],
+            "answer": "선인장",
+            "age_range": "5-7",
+            "category": "자연"
+          },
+          {
+            "id": 6,
+            "question": "지구를 둘러싸고 있는 보이지 않는 보호막의 이름은 무엇인가요?",
+            "options": [
+              "대기",
+              "오존층"
+            ],
+            "answer": "오존층",
+            "age_range": "5-7",
+            "category": "자연"
+          },
+          {
+            "id": 7,
+            "question": "비가 내리는 날에 나타나는 아름다운 빛의 곡선은 무엇인가요?",
+            "options": [
+              "무지개",
+              "오로라"
+            ],
+            "answer": "무지개",
+            "age_range": "3-5",
+            "category": "자연"
+          },
+          {
+            "id": 8,
+            "question": "사방을 둘러싼 큰 물체가 떠있는 거대한 물의 덩어리를 무엇이라고 하나요?",
+            "options": [
+              "강",
+              "바다"
+            ],
+            "answer": "바다",
+            "age_range": "3-5",
+            "category": "자연"
+          },
+          {
+            "id": 9,
+            "question": "화산이 폭발할 때 흘러나오는 뜨거운 암석 물질은 무엇인가요?",
+            "options": [
+              "용암",
+              "퇴적물"
+            ],
+            "answer": "용암",
+            "age_range": "5-7",
+            "category": "자연"
+          },
+          {
+            "id": 10,
+            "question": "지구에서 가장 긴 강은 무엇인가요?",
+            "options": [
+              "아마존 강",
+              "나일 강"
+            ],
+            "answer": "나일 강",
+            "age_range": "5-7",
+            "category": "자연"
+          },
+          {
+            "id": 11,
+            "question": "한 지역에 오랫동안 비가 내리지 않아 물이 부족한 상태를 무엇이라고 하나요?",
+            "options": [
+              "가뭄",
+              "홍수"
+            ],
+            "answer": "가뭄",
+            "age_range": "5-7",
+            "category": "자연"
+          },
+          {
+            "id": 12,
+            "question": "지구에서 가장 큰 바다는 무엇인가요?",
+            "options": [
+              "태평양",
+              "대서양"
+            ],
+            "answer": "태평양",
+            "age_range": "5-7",
+            "category": "자연"
+          },
+          {
+            "id": 1,
+            "question": "물을 가열하면 어떤 기체로 변화되나요?",
+            "options": [
+              "증기",
+              "연기"
+            ],
+            "answer": "증기",
+            "age_range": "5-7",
+            "category": "과학"
+          },
+          {
+            "id": 2,
+            "question": "지구를 중심으로 공전하는 천체는 무엇인가요?",
+            "options": [
+              "달",
+              "해"
+            ],
+            "answer": "달",
+            "age_range": "5-7",
+            "category": "과학"
+          },
+          {
+            "id": 3,
+            "question": "식물이 태양 빛을 흡수해 에너지를 만드는 과정을 무엇이라고 하나요?",
+            "options": [
+              "광합성",
+              "유기합성"
+            ],
+            "answer": "광합성",
+            "age_range": "5-7",
+            "category": "과학"
+          },
+          {
+            "id": 4,
+            "question": "과일 속에 있는 작은 씨앗을 통해 새로운 식물이 자라는 과정을 무엇이라고 하나요?",
+            "options": [
+              "번식",
+              "씨앗 발아"
+            ],
+            "answer": "씨앗 발아",
+            "age_range": "5-7",
+            "category": "과학"
+          },
+          {
+            "id": 5,
+            "question": "전기를 사용하여 빛을 발하는 물체는 무엇인가요?",
+            "options": [
+              "전구",
+              "망원경"
+            ],
+            "answer": "전구",
+            "age_range": "5-7",
+            "category": "과학"
+          },
+          {
+            "id": 6,
+            "question": "과학자들이 세균이나 미생물을 관찰하기 위해 사용하는 도구는 무엇인가요?",
+            "options": [
+              "현미경",
+              "망원경"
+            ],
+            "answer": "현미경",
+            "age_range": "5-7",
+            "category": "과학"
+          },
+          {
+            "id": 7,
+            "question": "자석이 끌리는 금속 중 하나는 무엇인가요?",
+            "options": [
+              "철",
+              "알루미늄"
+            ],
+            "answer": "철",
+            "age_range": "5-7",
+            "category": "과학"
+          },
+          {
+            "id": 8,
+            "question": "우리 몸의 가장 작은 구성 요소는 무엇인가요?",
+            "options": [
+              "세포",
+              "장기"
+            ],
+            "answer": "세포",
+            "age_range": "5-7",
+            "category": "과학"
+          },
+          {
+            "id": 9,
+            "question": "온도를 재기 위해 사용하는 도구는 무엇인가요?",
+            "options": [
+              "자성계",
+              "온도계"
+            ],
+            "answer": "온도계",
+            "age_range": "5-7",
+            "category": "과학"
+          },
+          {
+            "id": 10,
+            "question": "우주선이 지구의 중력을 벗어나기 위해 사용하는 에너지 원천력은 무엇인가요?",
+            "options": [
+              "로켓 연료",
+              "태양 에너지"
+            ],
+            "answer": "로켓 연료",
+            "age_range": "5-7",
+            "category": "과학"
+          },
+          {
+            "id": 11,
+            "question": "생명체의 유전 정보를 가지고 있는 화학 물질은 무엇인가요?",
+            "options": [
+              "DNA",
+              "RNA"
+            ],
+            "answer": "DNA",
+            "age_range": "5-7",
+            "category": "과학"
+          },
+          {
+            "id": 12,
+            "question": "빛이 물체에 부딪쳐 다른 방향으로 튕겨져 나가는 현상을 무엇이라고 하나요?",
+            "options": [
+              "투과",
+              "반사"
+            ],
+            "answer": "반사",
+            "age_range": "5-7",
+            "category": "과학"
+          },
+          {
+            "id": 1,
+            "question": "하늘을 날아다니는 교통수단은 무엇인가요?",
+            "options": [
+              "비행기",
+              "자동차"
+            ],
+            "answer": "비행기",
+            "age_range": "3-5",
+            "category": "교통수단"
+          },
+          {
+            "id": 2,
+            "question": "물 위에서 움직이는 교통수단은 무엇인가요?",
+            "options": [
+              "기차",
+              "배"
+            ],
+            "answer": "배",
+            "age_range": "3-5",
+            "category": "교통수단"
+          },
+          {
+            "id": 3,
+            "question": "두 바퀴로 움직이는 교통수단은 무엇인가요?",
+            "options": [
+              "자전거",
+              "버스"
+            ],
+            "answer": "자전거",
+            "age_range": "3-5",
+            "category": "교통수단"
+          },
+          {
+            "id": 4,
+            "question": "레일 위를 달리는 교통수단은 무엇인가요?",
+            "options": [
+              "기차",
+              "오토바이"
+            ],
+            "answer": "기차",
+            "age_range": "3-5",
+            "category": "교통수단"
+          },
+          {
+            "id": 5,
+            "question": "도로 위에서 여러 사람을 태울 수 있는 큰 교통수단은 무엇인가요?",
+            "options": [
+              "버스",
+              "자전거"
+            ],
+            "answer": "버스",
+            "age_range": "3-5",
+            "category": "교통수단"
+          },
+          {
+            "id": 6,
+            "question": "전기를 사용하여 움직이는 친환경 교통수단은 무엇인가요?",
+            "options": [
+              "전기자동차",
+              "디젤 자동차"
+            ],
+            "answer": "전기자동차",
+            "age_range": "5-7",
+            "category": "교통수단"
+          },
+          {
+            "id": 7,
+            "question": "사람들이 걸어 다닐 수 있는 교통수단은 무엇인가요?",
+            "options": [
+              "승용차",
+              "보행자 천국"
+            ],
+            "answer": "보행자 천국",
+            "age_range": "5-7",
+            "category": "교통수단"
+          },
+          {
+            "id": 8,
+            "question": "대중교통 중 지하를 달리는 교통수단은 무엇인가요?",
+            "options": [
+              "버스",
+              "지하철"
+            ],
+            "answer": "지하철",
+            "age_range": "5-7",
+            "category": "교통수단"
+          },
+          {
+            "id": 9,
+            "question": "경사로를 오르내리기 위해 사용하는 교통수단은 무엇인가요?",
+            "options": [
+              "에스컬레이터",
+              "택시"
+            ],
+            "answer": "에스컬레이터",
+            "age_range": "5-7",
+            "category": "교통수단"
+          },
+          {
+            "id": 10,
+            "question": "눈이 많이 쌓인 지역에서 주로 사용하는 견인식 교통수단은 무엇인가요?",
+            "options": [
+              "스노모빌",
+              "자전거"
+            ],
+            "answer": "스노모빌",
+            "age_range": "5-7",
+            "category": "교통수단"
+          },
+          {
+            "id": 11,
+            "question": "수상 택시로 알려진 이탈리아 베네치아의 교통수단은 무엇인가요?",
+            "options": [
+              "곤돌라",
+              "카누"
+            ],
+            "answer": "곤돌라",
+            "age_range": "5-7",
+            "category": "교통수단"
+          },
+          {
+            "id": 12,
+            "question": "긴 거리 여행을 할 때 이용하는 대중교통 수단은 무엇인가요?",
+            "options": [
+              "고속버스",
+              "자전거"
+            ],
+            "answer": "고속버스",
+            "age_range": "5-7",
+            "category": "교통수단"
+          },
+          {
+            "id": 1,
+            "question": "아침에 이빨을 닦을 때 사용하는 도구는 무엇인가요?",
+            "options": [
+              "칫솔",
+              "빗"
+            ],
+            "answer": "칫솔",
+            "age_range": "3-5",
+            "category": "생활"
+          },
+          {
+            "id": 2,
+            "question": "머리카락을 빗을 때 사용하는 도구는 무엇인가요?",
+            "options": [
+              "빗",
+              "식탁"
+            ],
+            "answer": "빗",
+            "age_range": "3-5",
+            "category": "생활"
+          },
+          {
+            "id": 3,
+            "question": "밥을 먹을 때 사용하는 도구로, 한쪽이 뾰족한 모양인 것은 무엇인가요?",
+            "options": [
+              "젓가락",
+              "포크"
+            ],
+            "answer": "젓가락",
+            "age_range": "3-5",
+            "category": "생활"
+          },
+          {
+            "id": 4,
+            "question": "물을 끓이기 위해 사용하는 주방 도구는 무엇인가요?",
+            "options": [
+              "냄비",
+              "컵"
+            ],
+            "answer": "냄비",
+            "age_range": "3-5",
+            "category": "생활"
+          },
+          {
+            "id": 5,
+            "question": "집 안에서 신는 가벼운 신발을 무엇이라고 하나요?",
+            "options": [
+              "슬리퍼",
+              "운동화"
+            ],
+            "answer": "슬리퍼",
+            "age_range": "3-5",
+            "category": "생활"
+          },
+          {
+            "id": 6,
+            "question": "손을 씻을 때 사용하는 거품을 내는 비누와 물 섞인 것은 무엇인가요?",
+            "options": [
+              "세면대",
+              "비누"
+            ],
+            "answer": "비누",
+            "age_range": "5-7",
+            "category": "생활"
+          },
+          {
+            "id": 7,
+            "question": "옷을 입을 때 몸에 맞게 입는 것은 무엇인가요?",
+            "options": [
+              "옷걸이",
+              "옷"
+            ],
+            "answer": "옷",
+            "age_range": "5-7",
+            "category": "생활"
+          },
+          {
+            "id": 8,
+            "question": "감기를 예방하기 위해 입는 목에 착용하는 옷은 무엇인가요?",
+            "options": [
+              "목도리",
+              "양말"
+            ],
+            "answer": "목도리",
+            "age_range": "5-7",
+            "category": "생활"
+          },
+          {
+            "id": 9,
+            "question": "비올때 머리에 쓰는 것으로 물을 피하기 위한 용도로 사용되는 것은 무엇인가요?",
+            "options": [
+              "우산",
+              "수건"
+            ],
+            "answer": "우산",
+            "age_range": "5-7",
+            "category": "생활"
+          },
+          {
+            "id": 10,
+            "question": "맛있는 요리를 만들 때 사용하는 조미료 중 하나로, 물에 녹여 사용하는 것은 무엇인가요?",
+            "options": [
+              "소금",
+              "향신료"
+            ],
+            "answer": "소금",
+            "age_range": "5-7",
+            "category": "생활"
+          },
+          {
+            "id": 11,
+            "question": "잠을 자고 일어난 후에, 이불을 정리하고 침대를 깔끔하게 만드는 것은 무엇인가요?",
+            "options": [
+              "침대 정리하기",
+              "침대 사기"
+            ],
+            "answer": "침대 정리하기",
+            "age_range": "5-7",
+            "category": "생활"
+          },
+          {
+            "id": 12,
+            "question": "음식을 먹다가 입안에 남은 음식물을 없애기 위해 사용하는 물건은 무엇인가요?",
+            "options": [
+              "치실",
+              "칫솔"
+            ],
+            "answer": "치실",
+            "age_range": "5-7",
+            "category": "생활"
+          },
+          {
+            "id": 1,
+            "question": "영어에서 '사과'를 뜻하는 단어는 무엇인가요?",
+            "options": [
+              "Apple",
+              "Banana"
+            ],
+            "answer": "Apple",
+            "age_range": "5-7",
+            "category": "영어"
+          },
+          {
+            "id": 2,
+            "question": "영어에서 '고양이'를 뜻하는 단어는 무엇인가요?",
+            "options": [
+              "Cat",
+              "Dog"
+            ],
+            "answer": "Cat",
+            "age_range": "5-7",
+            "category": "영어"
+          },
+          {
+            "id": 3,
+            "question": "영어에서 '책'을 뜻하는 단어는 무엇인가요?",
+            "options": [
+              "Table",
+              "Book"
+            ],
+            "answer": "Book",
+            "age_range": "5-7",
+            "category": "영어"
+          },
+          {
+            "id": 4,
+            "question": "영어에서 '나무'를 뜻하는 단어는 무엇인가요?",
+            "options": [
+              "Tree",
+              "Flower"
+            ],
+            "answer": "Tree",
+            "age_range": "5-7",
+            "category": "영어"
+          },
+          {
+            "id": 5,
+            "question": "영어에서 '바나나'를 뜻하는 단어는 무엇인가요?",
+            "options": [
+              "Banana",
+              "Grape"
+            ],
+            "answer": "Banana",
+            "age_range": "5-7",
+            "category": "영어"
+          },
+          {
+            "id": 6,
+            "question": "영어에서 '자동차'를 뜻하는 단어는 무엇인가요?",
+            "options": [
+              "Bicycle",
+              "Car"
+            ],
+            "answer": "Car",
+            "age_range": "5-7",
+            "category": "영어"
+          },
+          {
+            "id": 7,
+            "question": "영어에서 '토끼'를 뜻하는 단어는 무엇인가요?",
+            "options": [
+              "Rabbit",
+              "Bear"
+            ],
+            "answer": "Rabbit",
+            "age_range": "5-7",
+            "category": "영어"
+          },
+          {
+            "id": 8,
+            "question": "영어에서 '하늘'을 뜻하는 단어는 무엇인가요?",
+            "options": [
+              "Sky",
+              "Sea"
+            ],
+            "answer": "Sky",
+            "age_range": "5-7",
+            "category": "영어"
+          },
+          {
+            "id": 9,
+            "question": "영어에서 '산'을 뜻하는 단어는 무엇인가요?",
+            "options": [
+              "River",
+              "Mountain"
+            ],
+            "answer": "Mountain",
+            "age_range": "5-7",
+            "category": "영어"
+          },
+          {
+            "id": 10,
+            "question": "영어에서 '학교'를 뜻하는 단어는 무엇인가요?",
+            "options": [
+              "School",
+              "Office"
+            ],
+            "answer": "School",
+            "age_range": "5-7",
+            "category": "영어"
+          },
+          {
+            "id": 11,
+            "question": "영어에서 '별'을 뜻하는 단어는 무엇인가요?",
+            "options": [
+              "Moon",
+              "Star"
+            ],
+            "answer": "Star",
+            "age_range": "5-7",
+            "category": "영어"
+          },
+          {
+            "id": 12,
+            "question": "영어에서 '꽃'을 뜻하는 단어는 무엇인가요?",
+            "options": [
+              "Flower",
+              "Leaf"
+            ],
+            "answer": "Flower",
+            "age_range": "5-7",
+            "category": "영어"
+          },
+          {
+            "id": 3,
+            "question": "다음 중 '물'과 관련된 것은 무엇인가요?",
+            "options": [
+              "호수",
+              "초원"
+            ],
+            "answer": "호수",
+            "age_range": "5-7",
+            "category": "국어"
+          },
+          {
+            "id": 7,
+            "question": "한글에서 'ㅋ' 다음에 오는 자음은 무엇인가요?",
+            "options": [
+              "ㅌ",
+              "ㅍ"
+            ],
+            "answer": "ㅌ",
+            "age_range": "5-7",
+            "category": "한글"
+          },
+          {
+            "id": 8,
+            "question": "한글에서 'ㅐ' 다음에 오는 모음은 무엇인가요?",
+            "options": [
+              "ㅔ",
+              "ㅖ"
+            ],
+            "answer": "ㅔ",
+            "age_range": "5-7",
+            "category": "한글"
+          },
+          {
+            "id": 9,
+            "question": "한글의 첫 번째 자음은 무엇인가요?",
+            "options": [
+              "ㄱ",
+              "ㅎ"
+            ],
+            "answer": "ㄱ",
+            "age_range": "5-7",
+            "category": "한글"
+          },
+          {
+            "id": 10,
+            "question": "한글의 첫 번째 모음은 무엇인가요?",
+            "options": [
+              "ㅏ",
+              "ㅣ"
+            ],
+            "answer": "ㅏ",
+            "age_range": "5-7",
+            "category": "한글"
+          },
+          {
+            "id": 11,
+            "question": "다음 중 한글 자음과 모음이 모두 들어있는 것은 무엇인가요?",
+            "options": [
+              "ㄴㅡ",
+              "ㅓㅇ"
+            ],
+            "answer": "ㄴㅡ",
+            "age_range": "5-7",
+            "category": "한글"
+          },
+          {
+            "id": 12,
+            "question": "한글에서 'ㅅ' 다음에 오는 자음은 무엇인가요?",
+            "options": [
+              "ㅇ",
+              "ㅈ"
+            ],
+            "answer": "ㅇ",
+            "age_range": "5-7",
+            "category": "한글"
+          },
+          {
+            "id": 1,
+            "question": "세종대왕이 창제한 것은 무엇인가요?",
+            "options": [
+              "한글",
+              "천리안"
+            ],
+            "answer": "한글",
+            "age_range": "5-7",
+            "category": "역사"
+          },
+          {
+            "id": 2,
+            "question": "한국의 독립을 되찾은 날을 기리는 기념일은 무엇인가요?",
+            "options": [
+              "광복절",
+              "삼일절"
+            ],
+            "answer": "광복절",
+            "age_range": "5-7",
+            "category": "역사"
+          },
+          {
+            "id": 3,
+            "question": "고구려, 백제, 신라의 세 나라를 통틀어 무엇이라 부르나요?",
+            "options": [
+              "삼국시대",
+              "북방세력"
+            ],
+            "answer": "삼국시대",
+            "age_range": "5-7",
+            "category": "역사"
+          },
+          {
+            "id": 4,
+            "question": "조선시대의 최고 교육 기관은 무엇인가요?",
+            "options": [
+              "향교",
+              "성균관"
+            ],
+            "answer": "성균관",
+            "age_range": "5-7",
+            "category": "역사"
+          },
+          {
+            "id": 5,
+            "question": "일제강점기 동안 한국인들이 독립을 되찾기 위해 만든 정부는 무엇인가요?",
+            "options": [
+              "대한민국 임시정부",
+              "대한제국"
+            ],
+            "answer": "대한민국 임시정부",
+            "age_range": "5-7",
+            "category": "역사"
+          },
+          {
+            "id": 6,
+            "question": "한국 전통 음악을 연주하는 악기 중 건반 악기는 무엇인가요?",
+            "options": [
+              "단소",
+              "거문고"
+            ],
+            "answer": "거문고",
+            "age_range": "5-7",
+            "category": "역사"
+          },
+          {
+            "id": 1,
+            "question": "피아노는 몇 개의 건반이 있나요?",
+            "options": [
+              "88개",
+              "76개"
+            ],
+            "answer": "88개",
+            "age_range": "5-7",
+            "category": "음악"
+          },
+          {
+            "id": 2,
+            "question": "다음 중 국악 악기가 아닌 것은 무엇인가요?",
+            "options": [
+              "가야금",
+              "바이올린"
+            ],
+            "answer": "바이올린",
+            "age_range": "5-7",
+            "category": "음악"
+          },
+          {
+            "id": 3,
+            "question": "음악에서 '솔' 다음 음은 무엇인가요?",
+            "options": [
+              "라",
+              "시"
+            ],
+            "answer": "라",
+            "age_range": "5-7",
+            "category": "음악"
+          },
+          {
+            "id": 4,
+            "question": "작은 드럼을 치는 데 사용되는 나무 막대를 무엇이라 부르나요?",
+            "options": [
+              "드럼스틱",
+              "드럼패드"
+            ],
+            "answer": "드럼스틱",
+            "age_range": "5-7",
+            "category": "음악"
+          },
+          {
+            "id": 5,
+            "question": "음악에서 높은 음과 낮은 음을 나타내는 기호는 무엇인가요?",
+            "options": [
+              "음표",
+              "음계"
+            ],
+            "answer": "음계",
+            "age_range": "5-7",
+            "category": "음악"
+          },
+          {
+            "id": 6,
+            "question": "기타와 비슷한 형태의 한국 전통 악기는 무엇인가요?",
+            "options": [
+              "아쟁",
+              "기타"
+            ],
+            "answer": "아쟁",
+            "age_range": "5-7",
+            "category": "음악"
+          },
+          {
+            "id": 1,
+            "question": "사람이 먹는 것을 씹는 잇몸에 있는 것은 무엇인가요?",
+            "options": [
+              "이빨",
+              "손톱"
+            ],
+            "answer": "이빨",
+            "age_range": "5-7",
+            "category": "신체"
+          },
+          {
+            "id": 2,
+            "question": "우리가 음식을 삼키는 기관은 무엇인가요?",
+            "options": [
+              "목",
+              "코"
+            ],
+            "answer": "목",
+            "age_range": "5-7",
+            "category": "신체"
+          },
+          {
+            "id": 3,
+            "question": "사람이 소리를 낼 때 사용하는 것은 무엇인가요?",
+            "options": [
+              "목소리",
+              "귀"
+            ],
+            "answer": "목소리",
+            "age_range": "5-7",
+            "category": "신체"
+          },
+          {
+            "id": 4,
+            "question": "우리가 무언가를 만질 때 사용하는 부분은 무엇인가요?",
+            "options": [
+              "손",
+              "발"
+            ],
+            "answer": "손",
+            "age_range": "5-7",
+            "category": "신체"
+          },
+          {
+            "id": 5,
+            "question": "사람의 신체에서 숨을 쉬는 기관은 무엇인가요?",
+            "options": [
+              "폐",
+              "심장"
+            ],
+            "answer": "폐",
+            "age_range": "5-7",
+            "category": "신체"
+          },
+          {
+            "id": 6,
+            "question": "사람이 걸어다닐 때 사용하는 신체 부위는 무엇인가요?",
+            "options": [
+              "손목",
+              "다리"
+            ],
+            "answer": "다리",
+            "age_range": "5-7",
+            "category": "신체"
+          },
+          {
+            "id": 7,
+            "question": "사람이 냄새를 맡을 때 사용하는 부위는 무엇인가요?",
+            "options": [
+              "코",
+              "입"
+            ],
+            "answer": "코",
+            "age_range": "5-7",
+            "category": "신체"
+          },
+          {
+            "id": 8,
+            "question": "사람의 머리카락이 자라는 부분은 어디인가요?",
+            "options": [
+              "머리",
+              "팔"
+            ],
+            "answer": "머리",
+            "age_range": "5-7",
+            "category": "신체"
+          },
+          {
+            "id": 9,
+            "question": "우리가 볼 때 사용하는 신체 부위는 무엇인가요?",
+            "options": [
+              "귀",
+              "눈"
+            ],
+            "answer": "눈",
+            "age_range": "5-7",
+            "category": "신체"
+          },
+          {
+            "id": 10,
+            "question": "다음 중 신체의 한 부분으로, 팔꿈치가 위치한 곳은 어디인가요?",
+            "options": [
+              "팔",
+              "발"
+            ],
+            "answer": "팔",
+            "age_range": "5-7",
+            "category": "신체"
+          },
+          {
+            "id": 12,
+            "question": "다음 중 신체의 한 부분으로, 손목이 위치한 곳은 어디인가요?",
+            "options": [
+              "손",
+              "목"
+            ],
+            "answer": "손",
+            "age_range": "5-7",
+            "category": "신체"
+          },
+          {
+            "id": 1,
+            "question": "다음 중 과일이 아닌 것은 무엇인가요?",
+            "options": [
+              "사과",
+              "당근"
+            ],
+            "answer": "당근",
+            "age_range": "5-7",
+            "category": "음식"
+          },
+          {
+            "id": 2,
+            "question": "우유가 어떤 동물로부터 나오나요?",
+            "options": [
+              "소",
+              "돼지"
+            ],
+            "answer": "소",
+            "age_range": "5-7",
+            "category": "음식"
+          },
+          {
+            "id": 3,
+            "question": "피자를 만들 때 주로 얹는 치즈의 이름은 무엇인가요?",
+            "options": [
+              "모짜렐라",
+              "블루치즈"
+            ],
+            "answer": "모짜렐라",
+            "age_range": "5-7",
+            "category": "음식"
+          },
+          {
+            "id": 4,
+            "question": "초콜릿은 주로 어떤 나무의 열매로 만들어지나요?",
+            "options": [
+              "감나무",
+              "코코아나무"
+            ],
+            "answer": "코코아나무",
+            "age_range": "5-7",
+            "category": "음식"
+          },
+          {
+            "id": 5,
+            "question": "빵을 구울 때 주로 사용하는 재료는 무엇인가요?",
+            "options": [
+              "밀가루",
+              "옥수수가루"
+            ],
+            "answer": "밀가루",
+            "age_range": "5-7",
+            "category": "음식"
+          },
+          {
+            "id": 6,
+            "question": "김밥을 만들 때 사용하는 주요 재료는 무엇인가요?",
+            "options": [
+              "밥",
+              "소시지"
+            ],
+            "answer": "밥",
+            "age_range": "5-7",
+            "category": "음식"
+          },
+          {
+            "id": 7,
+            "question": "다음 중 채소가 아닌 것은 무엇인가요?",
+            "options": [
+              "포도",
+              "양배추"
+            ],
+            "answer": "포도",
+            "age_range": "5-7",
+            "category": "음식"
+          },
+          {
+            "id": 8,
+            "question": "한국 전통 음식 중 고추장과 된장을 섞어 만든 음식은 무엇인가요?",
+            "options": [
+              "비빔밥",
+              "콩나물국"
+            ],
+            "answer": "비빔밥",
+            "age_range": "5-7",
+            "category": "음식"
+          },
+          {
+            "id": 9,
+            "question": "아이스크림을 만들 때 주로 사용하는 원료는 무엇인가요?",
+            "options": [
+              "우유",
+              "오렌지주스"
+            ],
+            "answer": "우유",
+            "age_range": "5-7",
+            "category": "음식"
+          },
+          {
+            "id": 11,
+            "question": "일본에서 가장 유명한 생선 초밥의 주요 재료는 무엇인가요?",
+            "options": [
+              "참치",
+              "오징어"
+            ],
+            "answer": "참치",
+            "age_range": "5-7",
+            "category": "음식"
+          },
+          {
+            "id": 12,
+            "question": "스파게티를 만들 때 주로 사용하는 재료는 무엇인가요?",
+            "options": [
+              "쌀",
+              "밀가루"
+            ],
+            "answer": "밀가루",
+            "age_range": "5-7",
+            "category": "음식"
+          },
+          {
+            "id": 1,
+            "question": "다음 중 일본 애니메이션 캐릭터가 아닌 것은 무엇인가요?",
+            "options": [
+              "짱구",
+              "스폰지밥"
+            ],
+            "answer": "스폰지밥",
+            "age_range": "5-7",
+            "category": "일본 애니메이션"
+          },
+          {
+            "id": 2,
+            "question": "포켓몬스터 애니메이션에서 아쉬와 다니엘의 첫 포켓몬은 무엇인가요?",
+            "options": [
+              "피카츄",
+              "이상해씨"
+            ],
+            "answer": "피카츄",
+            "age_range": "5-7",
+            "category": "일본 애니메이션"
+          },
+          {
+            "id": 1,
+            "question": "토토로는 어떤 동물을 닮았나요?",
+            "options": [
+              "고양이",
+              "토끼"
+            ],
+            "answer": "고양이",
+            "age_range": "5-7",
+            "category": "토토로"
+          },
+          {
+            "id": 2,
+            "question": "토토로의 작은 친구들은 무엇인가요?",
+            "options": [
+              "소토토로",
+              "미니토끼"
+            ],
+            "answer": "소토토로",
+            "age_range": "5-7",
+            "category": "토토로"
+          },
+          {
+            "id": 3,
+            "question": "영화에서 주인공 두 자매의 이름은 무엇인가요?",
+            "options": [
+              "사츠키와 메이",
+              "하나와 요코"
+            ],
+            "answer": "사츠키와 메이",
+            "age_range": "5-7",
+            "category": "토토로"
+          },
+          {
+            "id": 4,
+            "question": "토토로는 어떤 기능을 가진 우산을 선물 받았나요?",
+            "options": [
+              "비가 오면 색이 변하는 우산",
+              "날아다니는 우산"
+            ],
+            "answer": "날아다니는 우산",
+            "age_range": "5-7",
+            "category": "토토로"
+          },
+          {
+            "id": 5,
+            "question": "영화 '토토로'의 감독은 누구인가요?",
+            "options": [
+              "미야자키 하야오",
+              "코니시 유키코"
+            ],
+            "answer": "미야자키 하야오",
+            "age_range": "5-7",
+            "category": "토토로"
+          },
+          {
+            "id": 1,
+            "question": "겨울왕국의 눈사람 친구 이름은 무엇인가요?",
+            "options": [
+              "올라프",
+              "스누피"
+            ],
+            "answer": "올라프",
+            "age_range": "5-7",
+            "category": "겨울왕국"
+          },
+          {
+            "id": 2,
+            "question": "영화에서 엘사는 어떤 능력을 가지고 있나요?",
+            "options": [
+              "불을 다루는 능력",
+              "얼음을 다루는 능력"
+            ],
+            "answer": "얼음을 다루는 능력",
+            "age_range": "5-7",
+            "category": "겨울왕국"
+          },
+          {
+            "id": 4,
+            "question": "영화에서 안나의 남자 친구 이름은 무엇인가요?",
+            "options": [
+              "한스",
+              "크리스토프"
+            ],
+            "answer": "크리스토프",
+            "age_range": "5-7",
+            "category": "겨울왕국"
+          },
+          {
+            "id": 5,
+            "question": "영화 '겨울왕국'에서 엘사와 안나가 사는 왕국의 이름은 무엇인가요?",
+            "options": [
+              "아렌델 왕국",
+              "두발로 왕국"
+            ],
+            "answer": "아렌델 왕국",
+            "age_range": "5-7",
+            "category": "겨울왕국"
+          },
+          {
+            "id": 1,
+            "question": "시계의 바늘 중 가장 긴 것은 무엇인가요?",
+            "options": [
+              "시침",
+              "분침"
+            ],
+            "answer": "분침",
+            "age_range": "5-7",
+            "category": "시계"
+          },
+          {
+            "id": 2,
+            "question": "시계의 바늘이 모두 12를 가리키는 시간은 언제인가요?",
+            "options": [
+              "정오",
+              "자정"
+            ],
+            "answer": "자정",
+            "age_range": "5-7",
+            "category": "시계"
+          },
+          {
+            "id": 3,
+            "question": "아날로그 시계에는 몇 개의 바늘이 있나요?",
+            "options": [
+              "2개",
+              "3개"
+            ],
+            "answer": "3개",
+            "age_range": "5-7",
+            "category": "시계"
+          },
+          {
+            "id": 4,
+            "question": "디지털 시계에서 오전을 나타내는 약어는 무엇인가요?",
+            "options": [
+              "AM",
+              "PM"
+            ],
+            "answer": "AM",
+            "age_range": "5-7",
+            "category": "시계"
+          },
+          {
+            "id": 5,
+            "question": "하루에 몇 시간이 있나요?",
+            "options": [
+              "12시간",
+              "24시간"
+            ],
+            "answer": "24시간",
+            "age_range": "5-7",
+            "category": "시계"
+          },
+          {
+            "id": 6,
+            "question": "분침이 6을 가리킬 때, 몇 분인가요?",
+            "options": [
+              "30분",
+              "15분"
+            ],
+            "answer": "30분",
+            "age_range": "5-7",
+            "category": "시계"
+          },
+          {
+            "id": 7,
+            "question": "60초는 몇 분인가요?",
+            "options": [
+              "1분",
+              "2분"
+            ],
+            "answer": "1분",
+            "age_range": "5-7",
+            "category": "시계"
+          },
+          {
+            "id": 8,
+            "question": "시침이 3을 가리킬 때, 몇 시인가요?",
+            "options": [
+              "3시",
+              "9시"
+            ],
+            "answer": "3시",
+            "age_range": "5-7",
+            "category": "시계"
+          },
+          {
+            "id": 9,
+            "question": "1시간은 몇 분인가요?",
+            "options": [
+              "30분",
+              "60분"
+            ],
+            "answer": "60분",
+            "age_range": "5-7",
+            "category": "시계"
+          },
+          {
+            "id": 10,
+            "question": "시계에서 '분'은 어떤 바늘로 알 수 있나요?",
+            "options": [
+              "긴 바늘",
+              "짧은 바늘"
+            ],
+            "answer": "긴 바늘",
+            "age_range": "5-7",
+            "category": "시계"
+          },
+          {
+            "id": 1,
+            "question": "손을 씻을 때 사용하는 것은 무엇인가요?",
+            "options": [
+              "비누",
+              "치약"
+            ],
+            "answer": "비누",
+            "age_range": "3-5",
+            "category": "화장실"
+          },
+          {
+            "id": 2,
+            "question": "화장실에서 소변을 볼 때 사용하는 것은 무엇인가요?",
+            "options": [
+              "변기",
+              "욕조"
+            ],
+            "answer": "변기",
+            "age_range": "3-5",
+            "category": "화장실"
+          },
+          {
+            "id": 3,
+            "question": "물을 흘리지 않고 입을 헹구려면 어떤 도구를 사용해야 하나요?",
+            "options": [
+              "컵",
+              "수건"
+            ],
+            "answer": "컵",
+            "age_range": "4-6",
+            "category": "화장실"
+          },
+          {
+            "id": 4,
+            "question": "화장실에서 양치질을 할 때 사용하는 것은 무엇인가요?",
+            "options": [
+              "칫솔",
+              "솔"
+            ],
+            "answer": "칫솔",
+            "age_range": "4-6",
+            "category": "화장실"
+          },
+          {
+            "id": 5,
+            "question": "몸을 씻을 때 사용하는 것은 무엇인가요?",
+            "options": [
+              "샴푸",
+              "비누"
+            ],
+            "answer": "비누",
+            "age_range": "5-7",
+            "category": "화장실"
+          },
+          {
+            "id": 6,
+            "question": "손을 잘 씻은 후 사용하는 것은 무엇인가요?",
+            "options": [
+              "수건",
+              "치약"
+            ],
+            "answer": "수건",
+            "age_range": "3-5",
+            "category": "화장실"
+          },
+          {
+            "id": 7,
+            "question": "머리를 감을 때 사용하는 것은 무엇인가요?",
+            "options": [
+              "샴푸",
+              "비누"
+            ],
+            "answer": "샴푸",
+            "age_range": "4-6",
+            "category": "화장실"
+          },
+          {
+            "id": 8,
+            "question": "화장실에서 물을 틀 때 사용하는 것은 무엇인가요?",
+            "options": [
+              "수도꼭지",
+              "전등"
+            ],
+            "answer": "수도꼭지",
+            "age_range": "4-6",
+            "category": "화장실"
+          },
+          {
+            "id": 9,
+            "question": "어른들이 화장실에서 사용하는 물건 중 어린이가 사용하지 않는 것은 무엇인가요?",
+            "options": [
+              "면도기",
+              "칫솔"
+            ],
+            "answer": "면도기",
+            "age_range": "5-7",
+            "category": "화장실"
+          },
+          {
+            "id": 10,
+            "question": "화장실에서 샤워를 할 때 사용하는 물을 내리는 도구는 무엇인가요?",
+            "options": [
+              "샤워기",
+              "드라이어"
+            ],
+            "answer": "샤워기",
+            "age_range": "5-7",
+            "category": "화장실"
+          },
+          {
+            "id": 1,
+            "question": "하루에 몇 번 양치질을 해야 하나요?",
+            "options": [
+              "1번",
+              "2번 이상"
+            ],
+            "answer": "2번 이상",
+            "age_range": "3-5",
+            "category": "건강"
+          },
+          {
+            "id": 2,
+            "question": "건강한 음식 중 하나는 무엇인가요?",
+            "options": [
+              "과자",
+              "과일"
+            ],
+            "answer": "과일",
+            "age_range": "3-5",
+            "category": "건강"
+          },
+          {
+            "id": 3,
+            "question": "운동을 꾸준히 하는 것이 건강에 좋은 이유는 무엇인가요?",
+            "options": [
+              "체력 향상",
+              "컴퓨터 게임 능력 향상"
+            ],
+            "answer": "체력 향상",
+            "age_range": "4-6",
+            "category": "건강"
+          },
+          {
+            "id": 4,
+            "question": "매일 밤 충분한 잠을 자는 것이 건강에 좋은 이유는 무엇인가요?",
+            "options": [
+              "몸의 휴식과 회복",
+              "영화를 볼 수 있음"
+            ],
+            "answer": "몸의 휴식과 회복",
+            "age_range": "4-6",
+            "category": "건강"
+          },
+          {
+            "id": 5,
+            "question": "손을 자주 씻어야 하는 이유는 무엇인가요?",
+            "options": [
+              "세균으로부터 보호",
+              "손이 예뻐지기 때문"
+            ],
+            "answer": "세균으로부터 보호",
+            "age_range": "5-7",
+            "category": "건강"
+          },
+          {
+            "id": 6,
+            "question": "아침식사를 건너뛰면 어떤 문제가 발생할 수 있나요?",
+            "options": [
+              "에너지 부족",
+              "머리가 커짐"
+            ],
+            "answer": "에너지 부족",
+            "age_range": "3-5",
+            "category": "건강"
+          },
+          {
+            "id": 7,
+            "question": "물을 충분히 마시는 것이 중요한 이유는 무엇인가요?",
+            "options": [
+              "몸의 수분을 채워줌",
+              "물고기가 행복해짐"
+            ],
+            "answer": "몸의 수분을 채워줌",
+            "age_range": "4-6",
+            "category": "건강"
+          },
+          {
+            "id": 8,
+            "question": "아이들이 하루에 몇 시간의 잠을 추천하는가?",
+            "options": [
+              "8시간",
+              "10-13시간"
+            ],
+            "answer": "10-13시간",
+            "age_range": "4-6",
+            "category": "건강"
+          },
+          {
+            "id": 9,
+            "question": "다양한 색깔의 채소와 과일을 먹는 것이 좋은 이유는 무엇인가요?",
+            "options": [
+              "예쁘기 때문",
+              "다양한 영양소 섭취"
+            ],
+            "answer": "다양한 영양소 섭취",
+            "age_range": "5-7",
+            "category": "건강"
+          },
+          {
+            "id": 10,
+            "question": "건강한 심장을 위해 아이들이 하는 것 중 하나는 무엇인가요?",
+            "options": [
+              "운동하기",
+              "컴퓨터 게임하기"
+            ],
+            "answer": "운동하기",
+            "age_range": "5-7",
+            "category": "건강"
+          },
+          {
+            "id": 1,
+            "question": "한 주에는 몇 일이 있나요?",
+            "options": [
+              "5일",
+              "7일"
+            ],
+            "answer": "7일",
+            "age_range": "3-5",
+            "category": "달력"
+          },
+          {
+            "id": 2,
+            "question": "1년에 몇 개월이 있나요?",
+            "options": [
+              "10개월",
+              "12개월"
+            ],
+            "answer": "12개월",
+            "age_range": "3-5",
+            "category": "달력"
+          },
+          {
+            "id": 3,
+            "question": "주말에 해당하는 요일은 무엇인가요?",
+            "options": [
+              "수요일과 목요일",
+              "토요일과 일요일"
+            ],
+            "answer": "토요일과 일요일",
+            "age_range": "4-6",
+            "category": "달력"
+          },
+          {
+            "id": 4,
+            "question": "한 달의 첫 날은 몇 일인가요?",
+            "options": [
+              "1일",
+              "31일"
+            ],
+            "answer": "1일",
+            "age_range": "4-6",
+            "category": "달력"
+          },
+          {
+            "id": 5,
+            "question": "2월에는 보통 몇 일까지 있나요?",
+            "options": [
+              "28일 또는 29일",
+              "30일"
+            ],
+            "answer": "28일 또는 29일",
+            "age_range": "5-7",
+            "category": "달력"
+          },
+          {
+            "id": 6,
+            "question": "1년 중 가장 더운 계절은 무엇인가요?",
+            "options": [
+              "겨울",
+              "여름"
+            ],
+            "answer": "여름",
+            "age_range": "3-5",
+            "category": "달력"
+          },
+          {
+            "id": 7,
+            "question": "크리스마스는 몇 월 몇 일에 있나요?",
+            "options": [
+              "12월 25일",
+              "11월 25일"
+            ],
+            "answer": "12월 25일",
+            "age_range": "4-6",
+            "category": "달력"
+          },
+          {
+            "id": 8,
+            "question": "한 해의 시작은 언제인가요?",
+            "options": [
+              "1월 1일",
+              "12월 31일"
+            ],
+            "answer": "1월 1일",
+            "age_range": "4-6",
+            "category": "달력"
+          },
+          {
+            "id": 9,
+            "question": "한 해 중 가장 추운 계절은 무엇인가요?",
+            "options": [
+              "겨울",
+              "여름"
+            ],
+            "answer": "겨울",
+            "age_range": "5-7",
+            "category": "달력"
+          },
+          {
+            "id": 10,
+            "question": "어린이날은 몇 월 몇 일에 있나요?",
+            "options": [
+              "5월 5일",
+              "6월 5일"
+            ],
+            "answer": "5월 5일",
+            "age_range": "5-7",
+            "category": "달력"
+          },
+          {
+            "id": 1,
+            "question": "아침에 일어나면 무엇을 해야 하나요?",
+            "options": [
+              "양치질",
+              "컴퓨터 게임하기"
+            ],
+            "answer": "양치질",
+            "age_range": "3-5",
+            "category": "생활"
+          },
+          {
+            "id": 2,
+            "question": "손이 더러울 때 무엇을 해야 하나요?",
+            "options": [
+              "물과 비누로 손 씻기",
+              "손에 물만 뿌리기"
+            ],
+            "answer": "물과 비누로 손 씻기",
+            "age_range": "3-5",
+            "category": "생활"
+          },
+          {
+            "id": 3,
+            "question": "걷거나 뛸 때 어떤 신발을 신어야 하나요?",
+            "options": [
+              "운동화",
+              "하이힐"
+            ],
+            "answer": "운동화",
+            "age_range": "4-6",
+            "category": "생활"
+          },
+          {
+            "id": 4,
+            "question": "무거운 물건을 들어 올릴 때 사용하는 것은 무엇인가요?",
+            "options": [
+              "손",
+              "올려놓는 곳"
+            ],
+            "answer": "손",
+            "age_range": "4-6",
+            "category": "생활"
+          },
+          {
+            "id": 5,
+            "question": "밤에 잠을 자려면 무엇을 끄는 것이 좋나요?",
+            "options": [
+              "불",
+              "냉장고"
+            ],
+            "answer": "불",
+            "age_range": "5-7",
+            "category": "생활"
+          },
+          {
+            "id": 6,
+            "question": "비올 때 머리를 적시지 않게 해주는 것은 무엇인가요?",
+            "options": [
+              "우산",
+              "모자"
+            ],
+            "answer": "우산",
+            "age_range": "3-5",
+            "category": "생활"
+          },
+          {
+            "id": 7,
+            "question": "식사 후 어디에 사용한 식기를 정리하나요?",
+            "options": [
+              "식탁 위",
+              "싱크대"
+            ],
+            "answer": "싱크대",
+            "age_range": "4-6",
+            "category": "생활"
+          },
+          {
+            "id": 8,
+            "question": "눈이 오는 날 밖에 나가려면 어떤 옷을 입어야 하나요?",
+            "options": [
+              "반팔 티셔츠",
+              "겨울 옷"
+            ],
+            "answer": "겨울 옷",
+            "age_range": "4-6",
+            "category": "생활"
+          },
+          {
+            "id": 9,
+            "question": "바닥에 물이 쏟아졌을 때 어떤 도구로 닦아야 하나요?",
+            "options": [
+              "손",
+              "걸레"
+            ],
+            "answer": "걸레",
+            "age_range": "5-7",
+            "category": "생활"
+          },
+          {
+            "id": 10,
+            "question": "옷을 건조하기 위해 사용하는 것은 무엇인가요?",
+            "options": [
+              "선풍기",
+              "건조대"
+            ],
+            "answer": "건조대",
+            "age_range": "5-7",
+            "category": "생활"
+          },
+          {
+            "id": 1,
+            "question": "누군가가 문을 열어주면 어떤 말을 해야 하나요?",
+            "options": [
+              "감사합니다",
+              "뭐하니"
+            ],
+            "answer": "감사합니다",
+            "age_range": "3-5",
+            "category": "예절"
+          },
+          {
+            "id": 2,
+            "question": "식사할 때 입에 넣지 않은 손을 어디에 두어야 하나요?",
+            "options": [
+              "무릎 위",
+              "테이블 위"
+            ],
+            "answer": "무릎 위",
+            "age_range": "3-5",
+            "category": "예절"
+          },
+          {
+            "id": 3,
+            "question": "다른 사람과 이야기할 때 어디를 보아야 하나요?",
+            "options": [
+              "바닥",
+              "상대방 눈"
+            ],
+            "answer": "상대방 눈",
+            "age_range": "4-6",
+            "category": "예절"
+          },
+          {
+            "id": 4,
+            "question": "다른 사람이 말할 때 어떻게 해야 하나요?",
+            "options": [
+              "기다리고 듣기",
+              "말을 끊고 말하기"
+            ],
+            "answer": "기다리고 듣기",
+            "age_range": "4-6",
+            "category": "예절"
+          },
+          {
+            "id": 5,
+            "question": "다른 사람이 줄을 섰을 때 어떻게 해야 하나요?",
+            "options": [
+              "앞으로 가서 서기",
+              "줄 뒤에 서기"
+            ],
+            "answer": "줄 뒤에 서기",
+            "age_range": "5-7",
+            "category": "예절"
+          },
+          {
+            "id": 1,
+            "question": "길을 건널 때는 어디를 먼저 봐야 하나요?",
+            "options": [
+              "좌측",
+              "우측"
+            ],
+            "answer": "좌측",
+            "age_range": "3-5",
+            "category": "교통"
+          },
+          {
+            "id": 2,
+            "question": "버스가 왔을 때 어떻게 해야 하나요?",
+            "options": [
+              "뛰어서 타기",
+              "버스가 완전히 멈춘 후에 타기"
+            ],
+            "answer": "버스가 완전히 멈춘 후에 타기",
+            "age_range": "3-5",
+            "category": "교통"
+          },
+          {
+            "id": 3,
+            "question": "자전거를 탈 때 어떤 것을 착용해야 안전한가요?",
+            "options": [
+              "헬멧",
+              "모자"
+            ],
+            "answer": "헬멧",
+            "age_range": "4-6",
+            "category": "교통"
+          },
+          {
+            "id": 4,
+            "question": "보행자는 어느 길을 걷어야 하나요?",
+            "options": [
+              "차도",
+              "인도"
+            ],
+            "answer": "인도",
+            "age_range": "4-6",
+            "category": "교통"
+          },
+          {
+            "id": 5,
+            "question": "빨간 불일 때 도로를 건너도 되나요?",
+            "options": [
+              "예",
+              "아니요"
+            ],
+            "answer": "아니요",
+            "age_range": "5-7",
+            "category": "교통"
+          },
+          {
+            "id": 7,
+            "question": "물 위에서 사람들을 태우는 교통수단은 무엇인가요?",
+            "options": [
+              "비행기",
+              "배"
+            ],
+            "answer": "배",
+            "age_range": "4-6",
+            "category": "교통"
+          },
+          {
+            "id": 8,
+            "question": "철로를 따라 움직이는 교통수단은 무엇인가요?",
+            "options": [
+              "기차",
+              "자동차"
+            ],
+            "answer": "기차",
+            "age_range": "4-6",
+            "category": "교통"
+          },
+          {
+            "id": 10,
+            "question": "어린이 보호구역에서는 어떤 행동이 금지되어 있나요?",
+            "options": [
+              "빠르게 달리기",
+              "천천히 걷기"
+            ],
+            "answer": "빠르게 달리기",
+            "age_range": "5-7",
+            "category": "교통"
+          },
+          {
+            "id": 1,
+            "question": "집에서 나갈 때 어떤 것을 꼭 확인해야 하나요?",
+            "options": [
+              "불을 끄고 문을 잠그기",
+              "방문 선물 가져가기"
+            ],
+            "answer": "불을 끄고 문을 잠그기",
+            "age_range": "3-5",
+            "category": "안전"
+          },
+          {
+            "id": 2,
+            "question": "화재 발생 시 사용하는 소화기구는 무엇인가요?",
+            "options": [
+              "소화기",
+              "망치"
+            ],
+            "answer": "소화기",
+            "age_range": "4-6",
+            "category": "안전"
+          },
+          {
+            "id": 3,
+            "question": "햇볕이 강한 날에 외출할 때 필요한 것은 무엇인가요?",
+            "options": [
+              "모자와 선글라스",
+              "목도리"
+            ],
+            "answer": "모자와 선글라스",
+            "age_range": "4-6",
+            "category": "안전"
+          },
+          {
+            "id": 4,
+            "question": "모르는 사람이 물건을 줄 때 어떻게 해야 하나요?",
+            "options": [
+              "받기",
+              "거절하기"
+            ],
+            "answer": "거절하기",
+            "age_range": "5-7",
+            "category": "안전"
+          },
+          {
+            "id": 5,
+            "question": "지진이 발생했을 때 가장 안전한 곳은 어디인가요?",
+            "options": [
+              "창가",
+              "탁자 아래"
+            ],
+            "answer": "탁자 아래",
+            "age_range": "5-7",
+            "category": "안전"
+          },
+          {
+            "id": 6,
+            "question": "차를 탈 때 반드시 착용해야 하는 것은 무엇인가요?",
+            "options": [
+              "안전벨트",
+              "넥타이"
+            ],
+            "answer": "안전벨트",
+            "age_range": "3-5",
+            "category": "안전"
+          },
+          {
+            "id": 7,
+            "question": "물속에서 놀 때 입는 보호구는 무엇인가요?",
+            "options": [
+              "구명조끼",
+              "헬멧"
+            ],
+            "answer": "구명조끼",
+            "age_range": "4-6",
+            "category": "안전"
+          },
+          {
+            "id": 8,
+            "question": "자전거를 탈 때 착용해야 하는 안전장비는 무엇인가요?",
+            "options": [
+              "헬멧",
+              "장갑"
+            ],
+            "answer": "헬멧",
+            "age_range": "4-6",
+            "category": "안전"
+          },
+          {
+            "id": 9,
+            "question": "집안에서 뛰어다니면 위험한 가전제품 중 하나는 무엇인가요?",
+            "options": [
+              "선풍기",
+              "냉장고"
+            ],
+            "answer": "선풍기",
+            "age_range": "5-7",
+            "category": "안전"
+          },
+          {
+            "id": 10,
+            "question": "밤에 길을 건널 때 무엇을 입으면 보이기 쉽고 안전한가요?",
+            "options": [
+              "눈에 띄는 색상의 옷",
+              "검은색 옷"
+            ],
+            "answer": "눈에 띄는 색상의 옷",
+            "age_range": "5-7",
+            "category": "안전"
+          },
+          {
+            "id": 1,
+            "question": "자동차가 달리는 길을 무엇이라고 부르나요?",
+            "options": [
+              "도로",
+              "골목"
+            ],
+            "answer": "도로",
+            "age_range": "3-5",
+            "category": "자동차"
+          },
+          {
+            "id": 2,
+            "question": "자동차를 멈추게 하는 장치는 무엇인가요?",
+            "options": [
+              "브레이크",
+              "액셀러레이터"
+            ],
+            "answer": "브레이크",
+            "age_range": "4-6",
+            "category": "자동차"
+          },
+          {
+            "id": 3,
+            "question": "자동차의 앞쪽에 달린 빛을 켜는 것은 무엇인가요?",
+            "options": [
+              "헤드라이트",
+              "후미등"
+            ],
+            "answer": "헤드라이트",
+            "age_range": "4-6",
+            "category": "자동차"
+          },
+          {
+            "id": 4,
+            "question": "자동차의 뒤쪽에 달린 빛을 켜는 것은 무엇인가요?",
+            "options": [
+              "후미등",
+              "헤드라이트"
+            ],
+            "answer": "후미등",
+            "age_range": "5-7",
+            "category": "자동차"
+          },
+          {
+            "id": 5,
+            "question": "자동차가 길을 건너기 전에 어디를 먼저 봐야 하나요?",
+            "options": [
+              "양쪽",
+              "오른쪽만"
+            ],
+            "answer": "양쪽",
+            "age_range": "5-7",
+            "category": "자동차"
+          }
+    ]
+}

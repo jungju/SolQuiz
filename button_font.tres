@@ -1,0 +1,15 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://w2l72my6ex8s"]
+
+[ext_resource type="FontFile" uid="uid://bvg6a5hh8skkq" path="res://assets/fonts/BMJUA_ttf.ttf" id="1_ifknj"]
+
+[resource]
+default_font = ExtResource("1_ifknj")
+Label/colors/font_color = Color(0.992157, 0.960784, 0.909804, 1)
+Label/colors/font_outline_color = Color(0.713726, 0.376471, 0.0901961, 1)
+Label/colors/font_shadow_color = Color(0.713726, 0.505882, 0.258824, 0.894118)
+Label/constants/outline_size = 7
+Label/constants/shadow_offset_x = 3
+Label/constants/shadow_offset_y = 3
+Label/constants/shadow_outline_size = 2
+Label/font_sizes/font_size = 40
+Label/fonts/font = ExtResource("1_ifknj")
