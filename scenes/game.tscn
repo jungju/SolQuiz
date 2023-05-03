@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://dcay8q3dh721c"]
+[gd_scene load_steps=22 format=3 uid="uid://dcay8q3dh721c"]
 
 [ext_resource type="Script" path="res://scripts/game.gd" id="1_vykq1"]
 [ext_resource type="Texture2D" uid="uid://c16s0rce15uep" path="res://assets/images/back_1280.png" id="2_65r2c"]
@@ -13,7 +13,10 @@
 [ext_resource type="Texture2D" uid="uid://bytucn47g24e0" path="res://assets/images/game_answer_board.png" id="13_v1abm"]
 [ext_resource type="Texture2D" uid="uid://rbgx5hr52or4" path="res://assets/images/game_answer_board3.png" id="14_ee1b5"]
 [ext_resource type="Texture2D" uid="uid://uqjwjbd5h7s8" path="res://assets/images/pause.png" id="14_lyrtc"]
+[ext_resource type="Texture2D" uid="uid://dphknv2045kd2" path="res://assets/images/game_menu.png" id="15_a50bh"]
 [ext_resource type="Texture2D" uid="uid://d384g7dlkmqen" path="res://assets/images/game_answer_board2.png" id="15_usbvq"]
+[ext_resource type="Texture2D" uid="uid://7vncd2ru8wtb" path="res://assets/images/normal_middle_button.png" id="16_coh21"]
+[ext_resource type="PackedScene" uid="uid://cqnp84c26bx00" path="res://scenes/toggle_button.tscn" id="17_bvewl"]
 
 [sub_resource type="Animation" id="Animation_xbbdd"]
 length = 0.001
@@ -66,10 +69,6 @@ tracks/3/keys = {
 "values": [Color(0.956863, 0.964706, 0.976471, 1)]
 }
 
-[sub_resource type="Animation" id="Animation_0sghl"]
-resource_name = "timer_ticking"
-length = 30.0
-
 [sub_resource type="Animation" id="Animation_21r7x"]
 resource_name = "show_leaf"
 length = 5.0
@@ -121,6 +120,10 @@ tracks/3/keys = {
 "update": 0,
 "values": [Color(0.956863, 0.964706, 0.976471, 1), Color(0.866667, 0.886275, 0, 1), Color(0.956863, 0.964706, 0.976471, 1), Color(0.866667, 0.886275, 0, 1), Color(0.956863, 0.964706, 0.976471, 1)]
 }
+
+[sub_resource type="Animation" id="Animation_0sghl"]
+resource_name = "timer_ticking"
+length = 30.0
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_d55ua"]
 _data = {
@@ -329,4 +332,75 @@ offset_right = 64.0
 offset_bottom = 59.0
 texture = ExtResource("14_lyrtc")
 
+[node name="game_menu" type="Node2D" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="game_menu"]
+offset_right = 1280.0
+offset_bottom = 720.0
+color = Color(0.25098, 0.25098, 0.25098, 0.639216)
+
+[node name="TextureRect" type="TextureRect" parent="game_menu"]
+offset_left = 441.0
+offset_top = 154.0
+offset_right = 867.0
+offset_bottom = 588.0
+texture = ExtResource("15_a50bh")
+
+[node name="game_resume_button" type="TextureButton" parent="game_menu"]
+offset_left = 514.0
+offset_top = 254.0
+offset_right = 800.0
+offset_bottom = 337.0
+texture_normal = ExtResource("16_coh21")
+
+[node name="Label" type="Label" parent="game_menu/game_resume_button"]
+layout_mode = 0
+offset_top = 1.0
+offset_right = 276.0
+offset_bottom = 69.0
+theme = ExtResource("11_5553x")
+theme_override_font_sizes/font_size = 50
+text = "계속하기"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="game_gomain_button" type="TextureButton" parent="game_menu"]
+offset_left = 514.0
+offset_top = 474.0
+offset_right = 800.0
+offset_bottom = 557.0
+texture_normal = ExtResource("16_coh21")
+
+[node name="Label" type="Label" parent="game_menu/game_gomain_button"]
+layout_mode = 0
+offset_top = 4.0
+offset_right = 280.0
+offset_bottom = 69.0
+theme = ExtResource("11_5553x")
+theme_override_font_sizes/font_size = 50
+text = "메인으로"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="toggle_button" parent="game_menu" instance=ExtResource("17_bvewl")]
+offset_left = 514.0
+offset_top = 374.0
+offset_right = 653.0
+offset_bottom = 448.0
+state = true
+
+[node name="Label" type="Label" parent="game_menu"]
+offset_left = 507.0
+offset_top = 159.0
+offset_right = 787.0
+offset_bottom = 214.0
+theme = ExtResource("11_5553x")
+theme_override_font_sizes/font_size = 40
+text = "잠깐 정지"
+horizontal_alignment = 1
+vertical_alignment = 1
+
 [connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]
+[connection signal="pressed" from="pause_button" to="." method="_on_pause_button_pressed"]
+[connection signal="pressed" from="game_menu/game_resume_button" to="." method="_on_game_resume_button_pressed"]
+[connection signal="pressed" from="game_menu/game_gomain_button" to="." method="_on_game_gomain_button_pressed"]

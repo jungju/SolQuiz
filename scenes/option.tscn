@@ -1,13 +1,11 @@
-[gd_scene load_steps=9 format=3 uid="uid://hygatb24e2ta"]
+[gd_scene load_steps=7 format=3 uid="uid://hygatb24e2ta"]
 
 [ext_resource type="Script" path="res://scripts/option.gd" id="1_8ri7e"]
 [ext_resource type="Texture2D" uid="uid://c16s0rce15uep" path="res://assets/images/back_1280.png" id="1_f8idl"]
 [ext_resource type="Texture2D" uid="uid://co0mdsmm7d4hx" path="res://assets/images/option_board.png" id="2_26nve"]
 [ext_resource type="Theme" uid="uid://w2l72my6ex8s" path="res://button_font.tres" id="3_o4ci0"]
-[ext_resource type="Texture2D" uid="uid://bgqqtlayy4wfw" path="res://assets/images/normal_button.png" id="5_4wvno"]
 [ext_resource type="PackedScene" uid="uid://cqnp84c26bx00" path="res://scenes/toggle_button.tscn" id="6_e2ngv"]
-[ext_resource type="Texture2D" uid="uid://ccphtbwssyqof" path="res://assets/images/normal_wide_button.png" id="7_nvrbx"]
-[ext_resource type="Texture2D" uid="uid://dptqr0x2v23ew" path="res://assets/images/aqua_button.png" id="8_ic6sc"]
+[ext_resource type="PackedScene" uid="uid://hmi7nnp641na" path="res://scenes/button.tscn" id="8_ey0x8"]
 
 [node name="option_page" type="Node2D"]
 script = ExtResource("1_8ri7e")
@@ -56,75 +54,30 @@ offset_top = 286.0
 offset_right = 1179.0
 offset_bottom = 384.0
 
-[node name="TextureButton1" type="TextureButton" parent="quiztype_buttons"]
+[node name="button1" parent="quiztype_buttons" instance=ExtResource("8_ey0x8")]
 layout_mode = 2
-texture_normal = ExtResource("5_4wvno")
-
-[node name="Label" type="Label" parent="quiztype_buttons/TextureButton1"]
-layout_mode = 0
-offset_right = 152.0
-offset_bottom = 67.0
-theme = ExtResource("3_o4ci0")
+toggle_mode = true
 text = "랜덤"
-horizontal_alignment = 1
-vertical_alignment = 1
-clip_text = true
 
-[node name="TextureButton2" type="TextureButton" parent="quiztype_buttons"]
+[node name="button2" parent="quiztype_buttons" instance=ExtResource("8_ey0x8")]
 layout_mode = 2
-texture_normal = ExtResource("5_4wvno")
-
-[node name="Label" type="Label" parent="quiztype_buttons/TextureButton2"]
-layout_mode = 0
-offset_right = 152.0
-offset_bottom = 67.0
-theme = ExtResource("3_o4ci0")
+toggle_mode = true
 text = "숫자"
-horizontal_alignment = 1
-vertical_alignment = 1
-clip_text = true
 
-[node name="TextureButton3" type="TextureButton" parent="quiztype_buttons"]
+[node name="button3" parent="quiztype_buttons" instance=ExtResource("8_ey0x8")]
 layout_mode = 2
-texture_normal = ExtResource("5_4wvno")
-
-[node name="Label" type="Label" parent="quiztype_buttons/TextureButton3"]
-layout_mode = 0
-offset_right = 152.0
-offset_bottom = 67.0
-theme = ExtResource("3_o4ci0")
+toggle_mode = true
 text = "동물"
-horizontal_alignment = 1
-vertical_alignment = 1
-clip_text = true
 
-[node name="TextureButton4" type="TextureButton" parent="quiztype_buttons"]
+[node name="button4" parent="quiztype_buttons" instance=ExtResource("8_ey0x8")]
 layout_mode = 2
-texture_normal = ExtResource("5_4wvno")
-
-[node name="Label" type="Label" parent="quiztype_buttons/TextureButton4"]
-layout_mode = 0
-offset_right = 152.0
-offset_bottom = 67.0
-theme = ExtResource("3_o4ci0")
+toggle_mode = true
 text = "과학"
-horizontal_alignment = 1
-vertical_alignment = 1
-clip_text = true
 
-[node name="TextureButton5" type="TextureButton" parent="quiztype_buttons"]
+[node name="button5" parent="quiztype_buttons" instance=ExtResource("8_ey0x8")]
 layout_mode = 2
-texture_normal = ExtResource("5_4wvno")
-
-[node name="Label" type="Label" parent="quiztype_buttons/TextureButton5"]
-layout_mode = 0
-offset_right = 152.0
-offset_bottom = 67.0
-theme = ExtResource("3_o4ci0")
+toggle_mode = true
 text = "색깔"
-horizontal_alignment = 1
-vertical_alignment = 1
-clip_text = true
 
 [node name="age_buttons" type="HBoxContainer" parent="."]
 offset_left = 104.0
@@ -132,75 +85,30 @@ offset_top = 398.0
 offset_right = 1055.0
 offset_bottom = 514.0
 
-[node name="TextureButton" type="TextureButton" parent="age_buttons"]
+[node name="button1" parent="age_buttons" instance=ExtResource("8_ey0x8")]
 layout_mode = 2
-texture_normal = ExtResource("7_nvrbx")
+toggle_mode = true
+text = "1~3세"
 
-[node name="Label" type="Label" parent="age_buttons/TextureButton"]
-layout_mode = 0
-offset_right = 187.0
-offset_bottom = 67.0
-theme = ExtResource("3_o4ci0")
-text = "1세~3세"
-horizontal_alignment = 1
-vertical_alignment = 1
-clip_text = true
-
-[node name="TextureButton2" type="TextureButton" parent="age_buttons"]
+[node name="button2" parent="age_buttons" instance=ExtResource("8_ey0x8")]
 layout_mode = 2
-texture_normal = ExtResource("7_nvrbx")
+toggle_mode = true
+text = "3~5세"
 
-[node name="Label" type="Label" parent="age_buttons/TextureButton2"]
-layout_mode = 0
-offset_right = 187.0
-offset_bottom = 67.0
-theme = ExtResource("3_o4ci0")
-text = "3세~5세"
-horizontal_alignment = 1
-vertical_alignment = 1
-clip_text = true
-
-[node name="TextureButton3" type="TextureButton" parent="age_buttons"]
+[node name="button3" parent="age_buttons" instance=ExtResource("8_ey0x8")]
 layout_mode = 2
-texture_normal = ExtResource("7_nvrbx")
+toggle_mode = true
+text = "5~7세"
 
-[node name="Label" type="Label" parent="age_buttons/TextureButton3"]
-layout_mode = 0
-offset_right = 187.0
-offset_bottom = 67.0
-theme = ExtResource("3_o4ci0")
-text = "5세~7세"
-horizontal_alignment = 1
-vertical_alignment = 1
-clip_text = true
-
-[node name="TextureButton4" type="TextureButton" parent="age_buttons"]
+[node name="button4" parent="age_buttons" instance=ExtResource("8_ey0x8")]
 layout_mode = 2
-texture_normal = ExtResource("7_nvrbx")
+toggle_mode = true
+text = "7~10세"
 
-[node name="Label" type="Label" parent="age_buttons/TextureButton4"]
-layout_mode = 0
-offset_right = 187.0
-offset_bottom = 67.0
-theme = ExtResource("3_o4ci0")
-text = "7세~10세"
-horizontal_alignment = 1
-vertical_alignment = 1
-clip_text = true
-
-[node name="TextureButton5" type="TextureButton" parent="age_buttons"]
+[node name="button5" parent="age_buttons" instance=ExtResource("8_ey0x8")]
 layout_mode = 2
-texture_normal = ExtResource("7_nvrbx")
-
-[node name="Label" type="Label" parent="age_buttons/TextureButton5"]
-layout_mode = 0
-offset_right = 187.0
-offset_bottom = 67.0
-theme = ExtResource("3_o4ci0")
-text = "10세~13세"
-horizontal_alignment = 1
-vertical_alignment = 1
-clip_text = true
+toggle_mode = true
+text = "10~13세"
 
 [node name="toggle_button" parent="." instance=ExtResource("6_e2ngv")]
 offset_left = 76.0
@@ -208,22 +116,12 @@ offset_top = 489.0
 offset_right = 215.0
 offset_bottom = 563.0
 
-[node name="CloseButton" type="TextureButton" parent="."]
-offset_left = 1086.0
+[node name="close_button" parent="." instance=ExtResource("8_ey0x8")]
+offset_left = 1078.0
 offset_top = 624.0
-offset_right = 1240.0
+offset_right = 1232.0
 offset_bottom = 699.0
-texture_normal = ExtResource("5_4wvno")
-texture_pressed = ExtResource("8_ic6sc")
+text = "닫 기"
 
-[node name="Label" type="Label" parent="CloseButton"]
-layout_mode = 0
-offset_right = 152.0
-offset_bottom = 67.0
-theme = ExtResource("3_o4ci0")
-text = "닫기"
-horizontal_alignment = 1
-vertical_alignment = 1
-clip_text = true
-
-[connection signal="pressed" from="CloseButton" to="." method="_on_close_button_pressed"]
+[connection signal="toggled" from="age_buttons/button1" to="." method="_on_button_1_toggled"]
+[connection signal="pressed" from="close_button" to="." method="_on_close_button_pressed"]

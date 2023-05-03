@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://dwbla4tirrdjl"]
+[gd_scene load_steps=12 format=3 uid="uid://dwbla4tirrdjl"]
 
 [ext_resource type="Script" path="res://scripts/main_page.gd" id="1_8bnpv"]
 [ext_resource type="Texture2D" uid="uid://c16s0rce15uep" path="res://assets/images/back_1280.png" id="2_8satt"]
@@ -9,10 +9,7 @@
 [ext_resource type="Theme" uid="uid://w2l72my6ex8s" path="res://button_font.tres" id="6_u50eo"]
 [ext_resource type="Texture2D" uid="uid://cqi6lo6xdetop" path="res://assets/images/star_layout.png" id="7_3pior"]
 [ext_resource type="Texture2D" uid="uid://v5jsvsq6phs5" path="res://assets/images/star.png" id="8_1kqdl"]
-[ext_resource type="Texture2D" uid="uid://dptqr0x2v23ew" path="res://assets/images/aqua_button.png" id="10_hhvyg"]
-[ext_resource type="Texture2D" uid="uid://cymq0ctdyee8h" path="res://assets/images/nomal_button.png" id="11_tkdaf"]
-[ext_resource type="Texture2D" uid="uid://dbxk7vo2tyjhs" path="res://assets/images/config_icon.png" id="12_a4dla"]
-[ext_resource type="Texture2D" uid="uid://wg20uwfglm0e" path="res://assets/images/exit_icon.png" id="13_dwq2h"]
+[ext_resource type="PackedScene" uid="uid://hmi7nnp641na" path="res://scenes/button.tscn" id="13_xdpxl"]
 [ext_resource type="Texture2D" uid="uid://bnkpf3ukfniff" path="res://assets/images/aqua_big_button.png" id="14_bqc7t"]
 
 [node name="main_page" type="Node2D"]
@@ -52,156 +49,6 @@ offset_right = 1250.0
 offset_bottom = 575.0
 texture = ExtResource("6_opfel")
 
-[node name="StarLayout1" type="TextureRect" parent="WinnerBox"]
-offset_left = 108.0
-offset_top = 422.0
-offset_right = 204.0
-offset_bottom = 519.0
-texture = ExtResource("7_3pior")
-
-[node name="TextureRect" type="TextureRect" parent="WinnerBox/StarLayout1"]
-layout_mode = 0
-offset_left = 3.0
-offset_top = 4.0
-offset_right = 92.0
-offset_bottom = 93.0
-texture = ExtResource("8_1kqdl")
-
-[node name="StarLayout2" type="TextureRect" parent="WinnerBox"]
-offset_left = 216.0
-offset_top = 422.0
-offset_right = 312.0
-offset_bottom = 519.0
-texture = ExtResource("7_3pior")
-
-[node name="TextureRect" type="TextureRect" parent="WinnerBox/StarLayout2"]
-layout_mode = 0
-offset_left = 3.0
-offset_top = 4.0
-offset_right = 92.0
-offset_bottom = 93.0
-texture = ExtResource("8_1kqdl")
-
-[node name="StarLayout3" type="TextureRect" parent="WinnerBox"]
-offset_left = 328.0
-offset_top = 422.0
-offset_right = 424.0
-offset_bottom = 519.0
-texture = ExtResource("7_3pior")
-
-[node name="TextureRect" type="TextureRect" parent="WinnerBox/StarLayout3"]
-layout_mode = 0
-offset_left = 3.0
-offset_top = 4.0
-offset_right = 92.0
-offset_bottom = 93.0
-texture = ExtResource("8_1kqdl")
-
-[node name="StarLayout4" type="TextureRect" parent="WinnerBox"]
-offset_left = 437.0
-offset_top = 422.0
-offset_right = 533.0
-offset_bottom = 519.0
-texture = ExtResource("7_3pior")
-
-[node name="TextureRect" type="TextureRect" parent="WinnerBox/StarLayout4"]
-layout_mode = 0
-offset_left = 3.0
-offset_top = 4.0
-offset_right = 92.0
-offset_bottom = 93.0
-texture = ExtResource("8_1kqdl")
-
-[node name="StarLayout5" type="TextureRect" parent="WinnerBox"]
-offset_left = 546.0
-offset_top = 422.0
-offset_right = 642.0
-offset_bottom = 519.0
-texture = ExtResource("7_3pior")
-
-[node name="TextureRect" type="TextureRect" parent="WinnerBox/StarLayout5"]
-layout_mode = 0
-offset_left = 3.0
-offset_top = 4.0
-offset_right = 92.0
-offset_bottom = 93.0
-texture = ExtResource("8_1kqdl")
-
-[node name="StarLayout6" type="TextureRect" parent="WinnerBox"]
-offset_left = 657.0
-offset_top = 422.0
-offset_right = 753.0
-offset_bottom = 519.0
-texture = ExtResource("7_3pior")
-
-[node name="TextureRect" type="TextureRect" parent="WinnerBox/StarLayout6"]
-layout_mode = 0
-offset_left = 3.0
-offset_top = 4.0
-offset_right = 92.0
-offset_bottom = 93.0
-texture = ExtResource("8_1kqdl")
-
-[node name="StarLayout7" type="TextureRect" parent="WinnerBox"]
-offset_left = 768.0
-offset_top = 422.0
-offset_right = 864.0
-offset_bottom = 519.0
-texture = ExtResource("7_3pior")
-
-[node name="TextureRect" type="TextureRect" parent="WinnerBox/StarLayout7"]
-layout_mode = 0
-offset_left = 3.0
-offset_top = 4.0
-offset_right = 92.0
-offset_bottom = 93.0
-texture = ExtResource("8_1kqdl")
-
-[node name="StarLayout8" type="TextureRect" parent="WinnerBox"]
-offset_left = 880.0
-offset_top = 422.0
-offset_right = 976.0
-offset_bottom = 519.0
-texture = ExtResource("7_3pior")
-
-[node name="TextureRect" type="TextureRect" parent="WinnerBox/StarLayout8"]
-layout_mode = 0
-offset_left = 3.0
-offset_top = 4.0
-offset_right = 92.0
-offset_bottom = 93.0
-texture = ExtResource("8_1kqdl")
-
-[node name="StarLayout9" type="TextureRect" parent="WinnerBox"]
-offset_left = 990.0
-offset_top = 422.0
-offset_right = 1086.0
-offset_bottom = 519.0
-texture = ExtResource("7_3pior")
-
-[node name="TextureRect" type="TextureRect" parent="WinnerBox/StarLayout9"]
-layout_mode = 0
-offset_left = 3.0
-offset_top = 4.0
-offset_right = 92.0
-offset_bottom = 93.0
-texture = ExtResource("8_1kqdl")
-
-[node name="StarLayout10" type="TextureRect" parent="WinnerBox"]
-offset_left = 1101.0
-offset_top = 422.0
-offset_right = 1197.0
-offset_bottom = 519.0
-texture = ExtResource("7_3pior")
-
-[node name="TextureRect" type="TextureRect" parent="WinnerBox/StarLayout10"]
-layout_mode = 0
-offset_left = 3.0
-offset_top = 4.0
-offset_right = 92.0
-offset_bottom = 93.0
-texture = ExtResource("8_1kqdl")
-
 [node name="Label" type="Label" parent="WinnerBox"]
 offset_left = 575.0
 offset_top = 359.0
@@ -211,6 +58,133 @@ theme = ExtResource("6_u50eo")
 theme_override_font_sizes/font_size = 35
 text = "칭찬 스티커
 "
+
+[node name="starts_box" type="HBoxContainer" parent="WinnerBox"]
+offset_left = 155.0
+offset_top = 428.0
+offset_right = 1151.0
+offset_bottom = 525.0
+
+[node name="StarLayout1" type="TextureRect" parent="WinnerBox/starts_box"]
+layout_mode = 2
+texture = ExtResource("7_3pior")
+
+[node name="TextureRect" type="TextureRect" parent="WinnerBox/starts_box/StarLayout1"]
+visible = false
+layout_mode = 0
+offset_left = 3.0
+offset_top = 4.0
+offset_right = 92.0
+offset_bottom = 93.0
+texture = ExtResource("8_1kqdl")
+
+[node name="StarLayout2" type="TextureRect" parent="WinnerBox/starts_box"]
+layout_mode = 2
+texture = ExtResource("7_3pior")
+
+[node name="TextureRect" type="TextureRect" parent="WinnerBox/starts_box/StarLayout2"]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 4.0
+offset_right = 92.0
+offset_bottom = 93.0
+texture = ExtResource("8_1kqdl")
+
+[node name="StarLayout3" type="TextureRect" parent="WinnerBox/starts_box"]
+layout_mode = 2
+texture = ExtResource("7_3pior")
+
+[node name="TextureRect" type="TextureRect" parent="WinnerBox/starts_box/StarLayout3"]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 4.0
+offset_right = 92.0
+offset_bottom = 93.0
+texture = ExtResource("8_1kqdl")
+
+[node name="StarLayout4" type="TextureRect" parent="WinnerBox/starts_box"]
+layout_mode = 2
+texture = ExtResource("7_3pior")
+
+[node name="TextureRect" type="TextureRect" parent="WinnerBox/starts_box/StarLayout4"]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 4.0
+offset_right = 92.0
+offset_bottom = 93.0
+texture = ExtResource("8_1kqdl")
+
+[node name="StarLayout5" type="TextureRect" parent="WinnerBox/starts_box"]
+layout_mode = 2
+texture = ExtResource("7_3pior")
+
+[node name="TextureRect" type="TextureRect" parent="WinnerBox/starts_box/StarLayout5"]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 4.0
+offset_right = 92.0
+offset_bottom = 93.0
+texture = ExtResource("8_1kqdl")
+
+[node name="StarLayout6" type="TextureRect" parent="WinnerBox/starts_box"]
+layout_mode = 2
+texture = ExtResource("7_3pior")
+
+[node name="TextureRect" type="TextureRect" parent="WinnerBox/starts_box/StarLayout6"]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 4.0
+offset_right = 92.0
+offset_bottom = 93.0
+texture = ExtResource("8_1kqdl")
+
+[node name="StarLayout7" type="TextureRect" parent="WinnerBox/starts_box"]
+layout_mode = 2
+texture = ExtResource("7_3pior")
+
+[node name="TextureRect" type="TextureRect" parent="WinnerBox/starts_box/StarLayout7"]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 4.0
+offset_right = 92.0
+offset_bottom = 93.0
+texture = ExtResource("8_1kqdl")
+
+[node name="StarLayout8" type="TextureRect" parent="WinnerBox/starts_box"]
+layout_mode = 2
+texture = ExtResource("7_3pior")
+
+[node name="TextureRect" type="TextureRect" parent="WinnerBox/starts_box/StarLayout8"]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 4.0
+offset_right = 92.0
+offset_bottom = 93.0
+texture = ExtResource("8_1kqdl")
+
+[node name="StarLayout9" type="TextureRect" parent="WinnerBox/starts_box"]
+layout_mode = 2
+texture = ExtResource("7_3pior")
+
+[node name="TextureRect" type="TextureRect" parent="WinnerBox/starts_box/StarLayout9"]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 4.0
+offset_right = 92.0
+offset_bottom = 93.0
+texture = ExtResource("8_1kqdl")
+
+[node name="StarLayout10" type="TextureRect" parent="WinnerBox/starts_box"]
+layout_mode = 2
+texture = ExtResource("7_3pior")
+
+[node name="TextureRect" type="TextureRect" parent="WinnerBox/starts_box/StarLayout10"]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 4.0
+offset_right = 92.0
+offset_bottom = 93.0
+texture = ExtResource("8_1kqdl")
 
 [node name="Label" type="Label" parent="."]
 offset_left = 78.0
@@ -227,57 +201,19 @@ text = "20개의 퀴즈에서 15개 이상 맞추면 칭찬 스티커를 드립�
 
 [node name="BottomMenu" type="Node2D" parent="."]
 
-[node name="OptionButton" type="TextureButton" parent="BottomMenu"]
-offset_left = 896.0
+[node name="option_button" parent="BottomMenu" instance=ExtResource("13_xdpxl")]
+offset_left = 915.0
 offset_top = 620.0
-offset_right = 1048.0
-offset_bottom = 694.0
-texture_normal = ExtResource("11_tkdaf")
-texture_pressed = ExtResource("10_hhvyg")
-
-[node name="Label" type="Label" parent="BottomMenu/OptionButton"]
-layout_mode = 0
-offset_left = 59.0
-offset_top = 11.0
-offset_right = 131.0
-offset_bottom = 54.0
-theme = ExtResource("6_u50eo")
-theme_override_font_sizes/font_size = 40
+offset_right = 1069.0
+offset_bottom = 695.0
 text = "설 정"
 
-[node name="TextureRect" type="TextureRect" parent="BottomMenu/OptionButton"]
-layout_mode = 0
-offset_left = 5.0
-offset_top = 7.0
-offset_right = 45.0
-offset_bottom = 59.0
-texture = ExtResource("12_a4dla")
-
-[node name="ExitButton" type="TextureButton" parent="BottomMenu"]
-offset_left = 1087.0
-offset_top = 620.0
-offset_right = 1239.0
+[node name="exit_button" parent="BottomMenu" instance=ExtResource("13_xdpxl")]
+offset_left = 1091.0
+offset_top = 619.0
+offset_right = 1245.0
 offset_bottom = 694.0
-texture_normal = ExtResource("11_tkdaf")
-texture_pressed = ExtResource("10_hhvyg")
-
-[node name="Label" type="Label" parent="BottomMenu/ExitButton"]
-layout_mode = 0
-offset_left = 45.0
-offset_top = 10.0
-offset_right = 144.0
-offset_bottom = 53.0
-theme = ExtResource("6_u50eo")
-theme_override_font_sizes/font_size = 40
 text = "끝내기"
-
-[node name="TextureRect" type="TextureRect" parent="BottomMenu/ExitButton"]
-layout_mode = 0
-offset_left = 4.0
-offset_top = 7.0
-offset_right = 44.0
-offset_bottom = 59.0
-texture = ExtResource("13_dwq2h")
 
 [node name="StartButton" type="TextureButton" parent="."]
 offset_left = 485.0
@@ -306,6 +242,6 @@ text = "시 작"
 
 [node name="OptionBox" type="Node2D" parent="."]
 
-[connection signal="pressed" from="BottomMenu/OptionButton" to="." method="_on_option_button_pressed"]
-[connection signal="pressed" from="BottomMenu/ExitButton" to="." method="_on_exit_button_pressed"]
+[connection signal="pressed" from="BottomMenu/option_button" to="." method="_on_option_button_pressed"]
+[connection signal="pressed" from="BottomMenu/exit_button" to="." method="_on_exit_button_pressed"]
 [connection signal="pressed" from="StartButton" to="." method="_on_start_button_pressed"]
