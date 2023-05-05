@@ -10,11 +10,9 @@ var binded_config: bool # Config 값 설정시에는 change_option이 안되도�
 
 func _ready():
 	for b in $quiztype_buttons.get_children():
-		#b.keep_pressed_outside = true
 		b.connect("pressed", quiztype_callable.bindv([b.text]))
 
 	for b in $age_buttons.get_children():
-		#b.keep_pressed_outside = true
 		b.connect("pressed", age_callable.bindv([b.text]))
 	
 	_on_quiztype_button_pressed(Global.config.get_value("game", "quiztype", "랜덤"))

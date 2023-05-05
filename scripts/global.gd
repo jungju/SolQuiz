@@ -18,7 +18,6 @@ var current_quiz_index: int # 현재 문제 Index
 var quizs_data: Array # 퀴즈 데이터
 var start_time: int
 var end_time: int
-var award_count: int
 
 # Option
 var config = ConfigFile.new()
@@ -82,8 +81,6 @@ func init_game():
 
 func load_config():
 	var err = config.load(CONFIG_FILE_PATH)
-	
-	# If the file didn't load, ignore it.
 	if err != OK:
 		return
 	
@@ -93,8 +90,10 @@ func save_config(change_quiztype: String, change_age: String):
 	config.save(CONFIG_FILE_PATH)
 
 # TODO
-func save_award_config(change_award_count: String):
-	config.set_value("game", "age", change_award_count)
+func save_up_award_count_config():
+	var award_count = Global.config.get_value("game", "award", 0)
+	print(award_count)
+	config.set_value("game", "award", award_count+1)
 	config.save(CONFIG_FILE_PATH)
 
 func exit_game():

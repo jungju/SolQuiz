@@ -215,7 +215,7 @@ offset_right = 1245.0
 offset_bottom = 694.0
 text = "끝내기"
 
-[node name="StartButton" type="TextureButton" parent="."]
+[node name="start_button" type="TextureButton" parent="."]
 offset_left = 485.0
 offset_top = 148.0
 offset_right = 791.0
@@ -223,7 +223,7 @@ offset_bottom = 322.0
 texture_normal = ExtResource("5_wuvik")
 texture_pressed = ExtResource("14_bqc7t")
 
-[node name="Label" type="Label" parent="StartButton"]
+[node name="Label" type="Label" parent="start_button"]
 layout_mode = 0
 offset_left = 67.0
 offset_top = 22.0
@@ -240,8 +240,8 @@ theme_override_fonts/font = ExtResource("3_x3o1n")
 theme_override_font_sizes/font_size = 100
 text = "시 작"
 
-[node name="OptionBox" type="Node2D" parent="."]
+[node name="option_box" type="Node2D" parent="."]
 
 [connection signal="pressed" from="BottomMenu/option_button" to="." method="_on_option_button_pressed"]
 [connection signal="pressed" from="BottomMenu/exit_button" to="." method="_on_exit_button_pressed"]
-[connection signal="pressed" from="StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="start_button" to="." method="_on_start_button_pressed"]

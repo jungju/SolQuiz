@@ -387,7 +387,6 @@ offset_left = 514.0
 offset_top = 374.0
 offset_right = 653.0
 offset_bottom = 448.0
-state = true
 
 [node name="Label" type="Label" parent="game_menu"]
 offset_left = 507.0

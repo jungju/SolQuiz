@@ -1,6 +1,8 @@
 extends Node2D
 
 func _ready():
+	$gomain_button.disabled = false
+
 	$result_board/bar1/Label.text = str(Global.game_count_correct) + "개 맞음"
 	var runing_time = int(round((Global.end_time - Global.start_time)/1000.0))
 	if runing_time > 0:
@@ -25,5 +27,10 @@ func _ready():
 	$result_board/sticker_star.visible = win
 	$result_board/no_star.visible = !win
 
+	if win:
+		Global.save_up_award_count_config()
+	print(":!!!")
+
 func _on_gomain_button_pressed():
+	$gomain_button.disabled = true
 	SceneTransition.change_scene(Global.MAIN_SCENE_PATH)
