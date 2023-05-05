@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://dwbla4tirrdjl"]
+[gd_scene load_steps=14 format=3 uid="uid://dwbla4tirrdjl"]
 
 [ext_resource type="Script" path="res://scripts/main_page.gd" id="1_8bnpv"]
 [ext_resource type="Texture2D" uid="uid://c16s0rce15uep" path="res://assets/images/back_1280.png" id="2_8satt"]
@@ -9,6 +9,8 @@
 [ext_resource type="Theme" uid="uid://w2l72my6ex8s" path="res://button_font.tres" id="6_u50eo"]
 [ext_resource type="Texture2D" uid="uid://cqi6lo6xdetop" path="res://assets/images/star_layout.png" id="7_3pior"]
 [ext_resource type="Texture2D" uid="uid://v5jsvsq6phs5" path="res://assets/images/star.png" id="8_1kqdl"]
+[ext_resource type="Texture2D" uid="uid://bgqqtlayy4wfw" path="res://assets/images/normal_button.png" id="10_rpytp"]
+[ext_resource type="Texture2D" uid="uid://dptqr0x2v23ew" path="res://assets/images/aqua_button.png" id="11_b0her"]
 [ext_resource type="PackedScene" uid="uid://hmi7nnp641na" path="res://scenes/button.tscn" id="13_xdpxl"]
 [ext_resource type="Texture2D" uid="uid://bnkpf3ukfniff" path="res://assets/images/aqua_big_button.png" id="14_bqc7t"]
 
@@ -206,14 +208,20 @@ offset_left = 915.0
 offset_top = 620.0
 offset_right = 1069.0
 offset_bottom = 695.0
+texture_normal = ExtResource("10_rpytp")
+texture_pressed = ExtResource("11_b0her")
 text = "설 정"
+button_type = 0
 
 [node name="exit_button" parent="BottomMenu" instance=ExtResource("13_xdpxl")]
 offset_left = 1091.0
 offset_top = 619.0
 offset_right = 1245.0
 offset_bottom = 694.0
+texture_normal = ExtResource("10_rpytp")
+texture_pressed = ExtResource("11_b0her")
 text = "끝내기"
+button_type = 0
 
 [node name="start_button" type="TextureButton" parent="."]
 offset_left = 485.0

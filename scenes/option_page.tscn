@@ -1,0 +1,183 @@
+[gd_scene load_steps=9 format=3 uid="uid://hygatb24e2ta"]
+
+[ext_resource type="Script" path="res://scripts/option.gd" id="1_2gtq0"]
+[ext_resource type="Texture2D" uid="uid://c16s0rce15uep" path="res://assets/images/back_1280.png" id="2_ycjuo"]
+[ext_resource type="Texture2D" uid="uid://co0mdsmm7d4hx" path="res://assets/images/option_board.png" id="3_m475y"]
+[ext_resource type="Theme" uid="uid://w2l72my6ex8s" path="res://button_font.tres" id="4_toq5k"]
+[ext_resource type="PackedScene" uid="uid://hmi7nnp641na" path="res://scenes/button.tscn" id="5_g2tg6"]
+[ext_resource type="Texture2D" uid="uid://bgqqtlayy4wfw" path="res://assets/images/normal_button.png" id="6_mscu7"]
+[ext_resource type="Texture2D" uid="uid://dptqr0x2v23ew" path="res://assets/images/aqua_button.png" id="7_kaw6r"]
+[ext_resource type="PackedScene" uid="uid://cqnp84c26bx00" path="res://scenes/toggle_button.tscn" id="8_yxf8h"]
+
+[node name="option_page" type="Node2D"]
+script = ExtResource("1_2gtq0")
+
+[node name="backgound" type="TextureRect" parent="."]
+texture = ExtResource("2_ycjuo")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = 39.0
+offset_top = 74.0
+offset_right = 1237.0
+offset_bottom = 624.0
+texture = ExtResource("3_m475y")
+
+[node name="Title" type="Label" parent="."]
+offset_left = 584.0
+offset_top = 90.0
+offset_right = 692.0
+offset_bottom = 153.0
+theme = ExtResource("4_toq5k")
+theme_override_font_sizes/font_size = 60
+text = "옵 션"
+
+[node name="Info1" type="Label" parent="."]
+offset_left = 104.0
+offset_top = 209.0
+offset_right = 891.0
+offset_bottom = 272.0
+theme = ExtResource("4_toq5k")
+theme_override_font_sizes/font_size = 45
+text = "퀴즈의 종류와 난이도를 선택하세요.
+"
+
+[node name="Info2" type="Label" parent="."]
+offset_left = 104.0
+offset_top = 265.0
+offset_right = 1156.0
+offset_bottom = 328.0
+theme = ExtResource("4_toq5k")
+theme_override_font_sizes/font_size = 30
+text = "AI가 선택된 종류와 난이도에 맞게 문제를 만들어 줍니다."
+
+[node name="quiztype_buttons" type="HBoxContainer" parent="."]
+offset_left = 104.0
+offset_top = 314.0
+offset_right = 890.0
+offset_bottom = 389.0
+
+[node name="button1" parent="quiztype_buttons" instance=ExtResource("5_g2tg6")]
+layout_mode = 2
+toggle_mode = true
+texture_normal = ExtResource("6_mscu7")
+texture_pressed = ExtResource("7_kaw6r")
+text = "랜덤"
+button_type = 0
+
+[node name="button2" parent="quiztype_buttons" instance=ExtResource("5_g2tg6")]
+layout_mode = 2
+toggle_mode = true
+texture_normal = ExtResource("6_mscu7")
+texture_pressed = ExtResource("7_kaw6r")
+text = "숫자"
+button_type = 0
+
+[node name="button3" parent="quiztype_buttons" instance=ExtResource("5_g2tg6")]
+layout_mode = 2
+toggle_mode = true
+texture_normal = ExtResource("6_mscu7")
+texture_pressed = ExtResource("7_kaw6r")
+text = "동물"
+button_type = 0
+
+[node name="button4" parent="quiztype_buttons" instance=ExtResource("5_g2tg6")]
+layout_mode = 2
+toggle_mode = true
+texture_normal = ExtResource("6_mscu7")
+texture_pressed = ExtResource("7_kaw6r")
+text = "과학"
+button_type = 0
+
+[node name="button5" parent="quiztype_buttons" instance=ExtResource("5_g2tg6")]
+layout_mode = 2
+toggle_mode = true
+texture_normal = ExtResource("6_mscu7")
+texture_pressed = ExtResource("7_kaw6r")
+text = "색깔"
+button_type = 0
+
+[node name="age_buttons" type="HBoxContainer" parent="."]
+offset_left = 104.0
+offset_top = 405.0
+offset_right = 890.0
+offset_bottom = 480.0
+
+[node name="button1" parent="age_buttons" instance=ExtResource("5_g2tg6")]
+layout_mode = 2
+toggle_mode = true
+texture_normal = ExtResource("6_mscu7")
+texture_pressed = ExtResource("7_kaw6r")
+text = "1~3세"
+button_type = 0
+
+[node name="button2" parent="age_buttons" instance=ExtResource("5_g2tg6")]
+layout_mode = 2
+toggle_mode = true
+texture_normal = ExtResource("6_mscu7")
+texture_pressed = ExtResource("7_kaw6r")
+text = "3~5세"
+button_type = 0
+
+[node name="button3" parent="age_buttons" instance=ExtResource("5_g2tg6")]
+layout_mode = 2
+toggle_mode = true
+texture_normal = ExtResource("6_mscu7")
+texture_pressed = ExtResource("7_kaw6r")
+text = "5~7세"
+button_type = 0
+
+[node name="button4" parent="age_buttons" instance=ExtResource("5_g2tg6")]
+layout_mode = 2
+toggle_mode = true
+texture_normal = ExtResource("6_mscu7")
+texture_pressed = ExtResource("7_kaw6r")
+text = "7~10세"
+button_type = 0
+
+[node name="button5" parent="age_buttons" instance=ExtResource("5_g2tg6")]
+layout_mode = 2
+toggle_mode = true
+texture_normal = ExtResource("6_mscu7")
+texture_pressed = ExtResource("7_kaw6r")
+text = "10~13세"
+button_type = 0
+
+[node name="toggle_button" parent="." instance=ExtResource("8_yxf8h")]
+offset_left = 104.0
+offset_top = 509.0
+offset_right = 243.0
+offset_bottom = 583.0
+
+[node name="close_button" parent="." instance=ExtResource("5_g2tg6")]
+offset_left = 1078.0
+offset_top = 631.0
+offset_right = 1232.0
+offset_bottom = 706.0
+texture_normal = ExtResource("6_mscu7")
+texture_pressed = ExtResource("7_kaw6r")
+text = "닫 기"
+button_type = 0
+
+[node name="reset_info_label" type="Label" parent="."]
+offset_left = 767.0
+offset_top = 551.0
+offset_right = 1034.0
+offset_bottom = 584.0
+theme = ExtResource("4_toq5k")
+theme_override_font_sizes/font_size = 30
+text = "스티커를 초기화 합니다."
+horizontal_alignment = 2
+
+[node name="reset_button" parent="." instance=ExtResource("5_g2tg6")]
+offset_left = 1043.0
+offset_top = 518.0
+offset_right = 1197.0
+offset_bottom = 593.0
+texture_normal = ExtResource("6_mscu7")
+texture_pressed = ExtResource("7_kaw6r")
+text = "리셋"
+button_type = 0
+
+[connection signal="toggled" from="age_buttons/button1" to="." method="_on_button_1_toggled"]
+[connection signal="pressed" from="close_button" to="." method="_on_close_button_pressed"]
+[connection signal="pressed" from="reset_button" to="." method="_on_reset_button_pressed"]

@@ -9,6 +9,8 @@ var quiztype_value: String
 var binded_config: bool # Config 값 설정시에는 change_option이 안되도록
 
 func _ready():
+	$reset_info_label.text = "스티커를 초기화 합니다."
+
 	for b in $quiztype_buttons.get_children():
 		b.connect("pressed", quiztype_callable.bindv([b.text]))
 
@@ -42,3 +44,12 @@ func _on_close_button_pressed():
 func change_option():
 	if binded_config:
 		Global.save_config(quiztype_value, age_value)
+
+func _on_reset_button_pressed():
+	if $reset_button.text == "네!":
+		Global.save_reset_award_config()
+		$reset_info_label.text = "스티커를 초기화 합니다."
+		$reset_button.text = "리셋"
+		return
+	$reset_info_label.text = "정말 초기화 할까요?"
+	$reset_button.text = "네!"

@@ -7,6 +7,9 @@ var time_count = 0
 
 func _ready():
 	$game_menu.visible = false
+	$game_board/question_box.visible = false
+	$game_board/answer1.visible = false
+	$game_board/answer2.visible = false
 	$AnimationPlayer.play("show_leaf")
 
 	$game_board/answer1.connect("pressed", answer_option_callable.bindv([1]))
@@ -52,6 +55,10 @@ func next_question():
 		game_done()
 		return
 
+	var info_index = "문제 "+str(Global.current_quiz_index)
+	var info_category = current_quiz["category"]
+
+	$game_board/question_box/question_info.text = info_index + " - 유형:" + info_category
 	$game_board/question_box/question_text.text = current_quiz["question"]
 	$game_board/answer1/Label.text = current_quiz["options"][0]
 	$game_board/answer2/Label.text = current_quiz["options"][1]

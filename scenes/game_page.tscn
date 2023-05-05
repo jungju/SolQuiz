@@ -1,22 +1,22 @@
 [gd_scene load_steps=22 format=3 uid="uid://dcay8q3dh721c"]
 
-[ext_resource type="Script" path="res://scripts/game.gd" id="1_vykq1"]
-[ext_resource type="Texture2D" uid="uid://c16s0rce15uep" path="res://assets/images/back_1280.png" id="2_65r2c"]
-[ext_resource type="Texture2D" uid="uid://d4a80ght3gmx2" path="res://assets/images/game_board.png" id="4_dmbia"]
-[ext_resource type="Theme" uid="uid://baxuivd3vvul2" path="res://Button.tres" id="9_jqmi8"]
-[ext_resource type="Texture2D" uid="uid://dta2od3glcwrm" path="res://assets/images/time_board.png" id="9_mgco7"]
-[ext_resource type="Texture2D" uid="uid://c0oah6lr506lw" path="res://assets/images/leaf_big.png" id="10_nrtax"]
-[ext_resource type="Theme" uid="uid://w2l72my6ex8s" path="res://button_font.tres" id="11_5553x"]
-[ext_resource type="FontFile" uid="uid://d13mj32783b7j" path="res://assets/fonts/GamjaFlower-Regular.ttf" id="12_cjhoo"]
-[ext_resource type="Texture2D" uid="uid://ol4p00dqaupd" path="res://assets/images/leaf_mini.png" id="12_ji43l"]
-[ext_resource type="Texture2D" uid="uid://cvuelyjihmaaa" path="res://assets/images/normal_mini_button.png" id="13_6akol"]
-[ext_resource type="Texture2D" uid="uid://bytucn47g24e0" path="res://assets/images/game_answer_board.png" id="13_v1abm"]
-[ext_resource type="Texture2D" uid="uid://rbgx5hr52or4" path="res://assets/images/game_answer_board3.png" id="14_ee1b5"]
-[ext_resource type="Texture2D" uid="uid://uqjwjbd5h7s8" path="res://assets/images/pause.png" id="14_lyrtc"]
-[ext_resource type="Texture2D" uid="uid://dphknv2045kd2" path="res://assets/images/game_menu.png" id="15_a50bh"]
-[ext_resource type="Texture2D" uid="uid://d384g7dlkmqen" path="res://assets/images/game_answer_board2.png" id="15_usbvq"]
-[ext_resource type="Texture2D" uid="uid://7vncd2ru8wtb" path="res://assets/images/normal_middle_button.png" id="16_coh21"]
-[ext_resource type="PackedScene" uid="uid://cqnp84c26bx00" path="res://scenes/toggle_button.tscn" id="17_bvewl"]
+[ext_resource type="Script" path="res://scripts/game.gd" id="1_k2pnd"]
+[ext_resource type="Texture2D" uid="uid://c16s0rce15uep" path="res://assets/images/back_1280.png" id="2_4bch7"]
+[ext_resource type="Texture2D" uid="uid://d4a80ght3gmx2" path="res://assets/images/game_board.png" id="3_l80yk"]
+[ext_resource type="Theme" uid="uid://w2l72my6ex8s" path="res://button_font.tres" id="4_87rtf"]
+[ext_resource type="FontFile" uid="uid://d13mj32783b7j" path="res://assets/fonts/GamjaFlower-Regular.ttf" id="5_08na7"]
+[ext_resource type="Theme" uid="uid://baxuivd3vvul2" path="res://Button.tres" id="6_kf0b1"]
+[ext_resource type="Texture2D" uid="uid://bytucn47g24e0" path="res://assets/images/game_answer_board.png" id="7_arxts"]
+[ext_resource type="Texture2D" uid="uid://rbgx5hr52or4" path="res://assets/images/game_answer_board3.png" id="8_l46hd"]
+[ext_resource type="Texture2D" uid="uid://d384g7dlkmqen" path="res://assets/images/game_answer_board2.png" id="9_3ac8r"]
+[ext_resource type="Texture2D" uid="uid://dta2od3glcwrm" path="res://assets/images/time_board.png" id="10_4tjis"]
+[ext_resource type="Texture2D" uid="uid://c0oah6lr506lw" path="res://assets/images/leaf_big.png" id="11_35l6l"]
+[ext_resource type="Texture2D" uid="uid://ol4p00dqaupd" path="res://assets/images/leaf_mini.png" id="12_w6jfg"]
+[ext_resource type="PackedScene" uid="uid://hmi7nnp641na" path="res://scenes/button.tscn" id="13_2khp1"]
+[ext_resource type="Texture2D" uid="uid://cvuelyjihmaaa" path="res://assets/images/normal_mini_button.png" id="14_hvykd"]
+[ext_resource type="Texture2D" uid="uid://caqut1257p0w0" path="res://assets/images/aqua_mini_button.png" id="15_eq5fn"]
+[ext_resource type="Texture2D" uid="uid://dphknv2045kd2" path="res://assets/images/game_menu.png" id="16_4s8tx"]
+[ext_resource type="PackedScene" uid="uid://cqnp84c26bx00" path="res://scenes/toggle_button.tscn" id="17_soalv"]
 
 [sub_resource type="Animation" id="Animation_xbbdd"]
 length = 0.001
@@ -133,10 +133,10 @@ _data = {
 }
 
 [node name="game_page" type="Node2D"]
-script = ExtResource("1_vykq1")
+script = ExtResource("1_k2pnd")
 
 [node name="backgound" type="TextureRect" parent="."]
-texture = ExtResource("2_65r2c")
+texture = ExtResource("2_4bch7")
 
 [node name="game_board" type="Node2D" parent="."]
 position = Vector2(0, -17)
@@ -146,29 +146,29 @@ offset_left = 141.0
 offset_top = 87.0
 offset_right = 141.0
 offset_bottom = 87.0
-texture = ExtResource("4_dmbia")
+texture = ExtResource("3_l80yk")
 
 [node name="question_box" type="Node2D" parent="game_board"]
-visible = false
 
-[node name="Label" type="Label" parent="game_board/question_box"]
-offset_left = 285.0
-offset_top = 101.0
-offset_right = 358.0
-offset_bottom = 140.0
+[node name="question_info" type="Label" parent="game_board/question_box"]
+offset_left = 269.0
+offset_top = 102.0
+offset_right = 342.0
+offset_bottom = 141.0
+theme = ExtResource("4_87rtf")
 theme_override_colors/font_outline_color = Color(0.0470588, 0.611765, 0.0392157, 1)
 theme_override_constants/outline_size = 3
 theme_override_constants/shadow_outline_size = 2
-theme_override_fonts/font = ExtResource("12_cjhoo")
+theme_override_fonts/font = ExtResource("5_08na7")
 theme_override_font_sizes/font_size = 35
 text = "문제 1"
 
 [node name="question_text" type="Label" parent="game_board/question_box"]
 offset_left = 307.0
-offset_top = 139.0
+offset_top = 148.0
 offset_right = 992.0
-offset_bottom = 293.0
-theme = ExtResource("9_jqmi8")
+offset_bottom = 302.0
+theme = ExtResource("6_kf0b1")
 theme_override_font_sizes/font_size = 50
 text = "너의 이름은 무엇인가요?"
 autowrap_mode = 3
@@ -179,9 +179,9 @@ offset_left = 246.0
 offset_top = 353.0
 offset_right = 609.0
 offset_bottom = 583.0
-texture_normal = ExtResource("13_v1abm")
-texture_pressed = ExtResource("14_ee1b5")
-texture_hover = ExtResource("15_usbvq")
+texture_normal = ExtResource("7_arxts")
+texture_pressed = ExtResource("8_l46hd")
+texture_hover = ExtResource("9_3ac8r")
 
 [node name="Label" type="Label" parent="game_board/answer1"]
 layout_mode = 0
@@ -189,7 +189,7 @@ offset_left = 33.0
 offset_top = 8.0
 offset_right = 324.0
 offset_bottom = 223.0
-theme = ExtResource("9_jqmi8")
+theme = ExtResource("6_kf0b1")
 theme_override_font_sizes/font_size = 38
 text = "1번
 이정주"
@@ -203,9 +203,9 @@ offset_left = 686.0
 offset_top = 353.0
 offset_right = 1049.0
 offset_bottom = 583.0
-texture_normal = ExtResource("13_v1abm")
-texture_pressed = ExtResource("14_ee1b5")
-texture_hover = ExtResource("15_usbvq")
+texture_normal = ExtResource("7_arxts")
+texture_pressed = ExtResource("8_l46hd")
+texture_hover = ExtResource("9_3ac8r")
 
 [node name="Label" type="Label" parent="game_board/answer2"]
 layout_mode = 0
@@ -214,7 +214,7 @@ offset_top = 8.0
 offset_right = 324.0
 offset_bottom = 223.0
 mouse_filter = 1
-theme = ExtResource("9_jqmi8")
+theme = ExtResource("6_kf0b1")
 theme_override_font_sizes/font_size = 38
 text = "2번
 이수근"
@@ -236,21 +236,21 @@ offset_left = 175.0
 offset_top = 597.0
 offset_right = 1135.0
 offset_bottom = 701.0
-texture = ExtResource("9_mgco7")
+texture = ExtResource("10_4tjis")
 
 [node name="TextureRect" type="TextureRect" parent="time_board"]
 offset_left = 114.0
 offset_top = 566.0
 offset_right = 210.0
 offset_bottom = 681.0
-texture = ExtResource("10_nrtax")
+texture = ExtResource("11_35l6l")
 
 [node name="start_message" type="Label" parent="time_board"]
 offset_left = 218.0
 offset_top = 631.0
 offset_right = 892.0
 offset_bottom = 674.0
-theme = ExtResource("11_5553x")
+theme = ExtResource("4_87rtf")
 theme_override_colors/font_color = Color(0.956863, 0.964706, 0.976471, 1)
 text = "나뭇잎이 없어지기 전에 모든 퀴즈를 풀으세요.
 "
@@ -263,74 +263,69 @@ offset_bottom = 686.0
 
 [node name="TextureRect1" type="TextureRect" parent="time_board/leaf_box"]
 layout_mode = 2
-texture = ExtResource("12_ji43l")
+texture = ExtResource("12_w6jfg")
 
 [node name="TextureRect2" type="TextureRect" parent="time_board/leaf_box"]
 layout_mode = 2
-texture = ExtResource("12_ji43l")
+texture = ExtResource("12_w6jfg")
 
 [node name="TextureRect3" type="TextureRect" parent="time_board/leaf_box"]
 layout_mode = 2
-texture = ExtResource("12_ji43l")
+texture = ExtResource("12_w6jfg")
 
 [node name="TextureRect4" type="TextureRect" parent="time_board/leaf_box"]
 layout_mode = 2
-texture = ExtResource("12_ji43l")
+texture = ExtResource("12_w6jfg")
 
 [node name="TextureRect5" type="TextureRect" parent="time_board/leaf_box"]
 layout_mode = 2
-texture = ExtResource("12_ji43l")
+texture = ExtResource("12_w6jfg")
 
 [node name="TextureRect6" type="TextureRect" parent="time_board/leaf_box"]
 layout_mode = 2
-texture = ExtResource("12_ji43l")
+texture = ExtResource("12_w6jfg")
 
 [node name="TextureRect7" type="TextureRect" parent="time_board/leaf_box"]
 layout_mode = 2
-texture = ExtResource("12_ji43l")
+texture = ExtResource("12_w6jfg")
 
 [node name="TextureRect8" type="TextureRect" parent="time_board/leaf_box"]
 layout_mode = 2
-texture = ExtResource("12_ji43l")
+texture = ExtResource("12_w6jfg")
 
 [node name="TextureRect9" type="TextureRect" parent="time_board/leaf_box"]
 layout_mode = 2
-texture = ExtResource("12_ji43l")
+texture = ExtResource("12_w6jfg")
 
 [node name="TextureRect10" type="TextureRect" parent="time_board/leaf_box"]
 layout_mode = 2
-texture = ExtResource("12_ji43l")
+texture = ExtResource("12_w6jfg")
 
 [node name="TextureRect11" type="TextureRect" parent="time_board/leaf_box"]
 layout_mode = 2
-texture = ExtResource("12_ji43l")
+texture = ExtResource("12_w6jfg")
 
 [node name="TextureRect12" type="TextureRect" parent="time_board/leaf_box"]
 layout_mode = 2
-texture = ExtResource("12_ji43l")
+texture = ExtResource("12_w6jfg")
 
 [node name="TextureRect13" type="TextureRect" parent="time_board/leaf_box"]
 layout_mode = 2
-texture = ExtResource("12_ji43l")
+texture = ExtResource("12_w6jfg")
 
 [node name="TextureRect14" type="TextureRect" parent="time_board/leaf_box"]
 layout_mode = 2
-texture = ExtResource("12_ji43l")
+texture = ExtResource("12_w6jfg")
 
-[node name="pause_button" type="TextureButton" parent="."]
+[node name="pause_button" parent="." instance=ExtResource("13_2khp1")]
 offset_left = 1167.0
 offset_top = 614.0
 offset_right = 1253.0
 offset_bottom = 697.0
-texture_normal = ExtResource("13_6akol")
-
-[node name="TextureRect" type="TextureRect" parent="pause_button"]
-layout_mode = 0
-offset_left = 23.0
-offset_top = 14.0
-offset_right = 64.0
-offset_bottom = 59.0
-texture = ExtResource("14_lyrtc")
+texture_normal = ExtResource("14_hvykd")
+texture_pressed = ExtResource("15_eq5fn")
+text = "||"
+button_type = 2
 
 [node name="game_menu" type="Node2D" parent="."]
 
@@ -344,48 +339,26 @@ offset_left = 441.0
 offset_top = 154.0
 offset_right = 867.0
 offset_bottom = 588.0
-texture = ExtResource("15_a50bh")
+texture = ExtResource("16_4s8tx")
 
-[node name="game_resume_button" type="TextureButton" parent="game_menu"]
-offset_left = 514.0
-offset_top = 254.0
-offset_right = 800.0
-offset_bottom = 337.0
-texture_normal = ExtResource("16_coh21")
-
-[node name="Label" type="Label" parent="game_menu/game_resume_button"]
-layout_mode = 0
-offset_top = 1.0
-offset_right = 276.0
-offset_bottom = 69.0
-theme = ExtResource("11_5553x")
-theme_override_font_sizes/font_size = 50
+[node name="game_resume_button" parent="game_menu" instance=ExtResource("13_2khp1")]
+offset_left = 559.0
+offset_top = 261.0
+offset_right = 746.0
+offset_bottom = 335.0
 text = "계속하기"
-horizontal_alignment = 1
-vertical_alignment = 1
 
-[node name="game_gomain_button" type="TextureButton" parent="game_menu"]
-offset_left = 514.0
-offset_top = 474.0
-offset_right = 800.0
-offset_bottom = 557.0
-texture_normal = ExtResource("16_coh21")
-
-[node name="Label" type="Label" parent="game_menu/game_gomain_button"]
-layout_mode = 0
-offset_top = 4.0
-offset_right = 280.0
-offset_bottom = 69.0
-theme = ExtResource("11_5553x")
-theme_override_font_sizes/font_size = 50
+[node name="game_gomain_button" parent="game_menu" instance=ExtResource("13_2khp1")]
+offset_left = 559.0
+offset_top = 475.0
+offset_right = 746.0
+offset_bottom = 549.0
 text = "메인으로"
-horizontal_alignment = 1
-vertical_alignment = 1
 
-[node name="toggle_button" parent="game_menu" instance=ExtResource("17_bvewl")]
-offset_left = 514.0
+[node name="toggle_button" parent="game_menu" instance=ExtResource("17_soalv")]
+offset_left = 586.0
 offset_top = 374.0
-offset_right = 653.0
+offset_right = 725.0
 offset_bottom = 448.0
 
 [node name="Label" type="Label" parent="game_menu"]
@@ -393,7 +366,7 @@ offset_left = 507.0
 offset_top = 159.0
 offset_right = 787.0
 offset_bottom = 214.0
-theme = ExtResource("11_5553x")
+theme = ExtResource("4_87rtf")
 theme_override_font_sizes/font_size = 40
 text = "잠깐 정지"
 horizontal_alignment = 1

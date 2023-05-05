@@ -1,9 +1,9 @@
 extends Node
 
 const MAIN_SCENE_PATH = "res://scenes/main_page.tscn"
-const GAME_SCENE_PATH = "res://scenes/game.tscn"
-const OPTION_SCENE_PATH = "res://scenes/option.tscn"
-const RESULT_SCENE_PATH = "res://scenes/result.tscn"
+const GAME_SCENE_PATH = "res://scenes/game_page.tscn"
+const OPTION_SCENE_PATH = "res://scenes/option_page.tscn"
+const RESULT_SCENE_PATH = "res://scenes/result_page.tscn"
 
 const CONFIG_FILE_PATH = "user://config.cfg"
 const RESULTS_FILE_PATH = "user://game_results.log"
@@ -26,14 +26,10 @@ var mute_audio: bool
 # signal next_quetion 필요 없을 수도
 signal check_quetion(is_correct: bool) #정답 결과 시그널. 
 
-func _game_started() -> bool: return start_time > 0 && end_time == 0
-
 func init_app():
 	Global.load_config()
 
 func choice_answer(answer_number: int) -> bool:
-	if !_game_started(): return false
-		
 	var chioce_answer_text = quizs_data[current_quiz_index-1]["options"][answer_number-1]
 	var answer = quizs_data[current_quiz_index-1]["answer"]
 	if chioce_answer_text == answer:
@@ -44,8 +40,8 @@ func choice_answer(answer_number: int) -> bool:
 		return false
 
 func get_next_quiz() -> Dictionary:
-	if current_quiz_index == 0: start_time = Time.get_ticks_msec() # 게임 시작	
-	elif !_game_started(): return {} # 게임 이미 종료 됨
+	if current_quiz_index == 0: 
+		start_time = Time.get_ticks_msec() # 게임 시작	
 
 	if current_quiz_index >= quizs_data.size():
 		end_time = Time.get_ticks_msec() # 게임 종료
@@ -89,11 +85,13 @@ func save_config(change_quiztype: String, change_age: String):
 	config.set_value("game", "age", change_age)
 	config.save(CONFIG_FILE_PATH)
 
-# TODO
 func save_up_award_count_config():
 	var award_count = Global.config.get_value("game", "award", 0)
-	print(award_count)
 	config.set_value("game", "award", award_count+1)
+	config.save(CONFIG_FILE_PATH)
+
+func save_reset_award_config():
+	config.set_value("game", "award", 0)
 	config.save(CONFIG_FILE_PATH)
 
 func exit_game():
