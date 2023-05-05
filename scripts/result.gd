@@ -29,7 +29,6 @@ func _ready():
 
 	if win:
 		Global.save_up_award_count_config()
-	print(":!!!")
 
 func _on_gomain_button_pressed():
 	$gomain_button.disabled = true
