@@ -8,9 +8,6 @@ const RESULT_SCENE_PATH = "res://scenes/result_page.tscn"
 const CONFIG_FILE_PATH = "user://config.cfg"
 const RESULTS_FILE_PATH = "user://game_results.log"
 
-var answer_board_incorrect_answer = load("res://assets/images/game_answer_board4.png")
-var answer_board_correct_answer = load("res://assets/images/game_answer_board5.png")
-
 # Game
 var game_count_correct: int # 퀴즈 맞은 수 
 var game_count_incorrect: int # 퀴즈 틀린 수

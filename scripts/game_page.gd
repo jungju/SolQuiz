@@ -1,5 +1,8 @@
 extends Node2D
 
+var answer_board_incorrect_answer = load("res://assets/images/game_answer_board4.png")
+var answer_board_correct_answer = load("res://assets/images/game_answer_board5.png")
+
 var is_processing_answer: bool = false
 var initial_loading_complete: bool = false
 var answer_option_callable = Callable(self, "_on_answer_pressed")

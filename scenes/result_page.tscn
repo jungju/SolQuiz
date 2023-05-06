@@ -1,6 +1,6 @@
 [gd_scene load_steps=14 format=3 uid="uid://dwedhoeiyblyi"]
 
-[ext_resource type="Script" path="res://scripts/result.gd" id="1_8oskv"]
+[ext_resource type="Script" path="res://scripts/result_page.gd" id="1_np6qj"]
 [ext_resource type="Texture2D" uid="uid://c16s0rce15uep" path="res://assets/images/back_1280.png" id="2_spj8a"]
 [ext_resource type="Texture2D" uid="uid://wxvjjmo5obpx" path="res://assets/images/result_board.png" id="3_5qcxa"]
 [ext_resource type="Texture2D" uid="uid://dmauf67bfan54" path="res://assets/images/result_text_board1.png" id="4_2inl5"]
@@ -15,7 +15,7 @@
 [ext_resource type="PackedScene" uid="uid://hmi7nnp641na" path="res://scenes/button.tscn" id="13_w5vhf"]
 
 [node name="result_page" type="Node2D"]
-script = ExtResource("1_8oskv")
+script = ExtResource("1_np6qj")
 
 [node name="background" type="TextureRect" parent="."]
 offset_right = 40.0
