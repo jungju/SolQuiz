@@ -1,0 +1,26 @@
+[gd_scene load_steps=7 format=3 uid="uid://boflun6mp6ico"]
+
+[ext_resource type="Script" path="res://scripts/global_music_manager.gd" id="1_gf004"]
+[ext_resource type="AudioStream" uid="uid://cyi762o7fcxoj" path="res://assets/musics/Farm Frolics.ogg" id="1_j5388"]
+[ext_resource type="AudioStream" uid="uid://frxbpb2bgo8j" path="res://assets/sounds/select_005.ogg" id="3_w3cxt"]
+[ext_resource type="AudioStream" uid="uid://cnguun3lasl6u" path="res://assets/sounds/maximize_006.ogg" id="4_g70ma"]
+[ext_resource type="AudioStream" uid="uid://csjtvaxg30yr" path="res://assets/sounds/confirmation_002.ogg" id="5_2pfuw"]
+[ext_resource type="AudioStream" uid="uid://6bptk2xmqp4o" path="res://assets/sounds/minimize_008.ogg" id="6_0thvk"]
+
+[node name="global_music_manager" type="Node2D"]
+script = ExtResource("1_gf004")
+
+[node name="background_music" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("1_j5388")
+
+[node name="select_sound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_w3cxt")
+
+[node name="question_sound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_g70ma")
+
+[node name="correct_sound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_2pfuw")
+
+[node name="incorrect_sound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_0thvk")

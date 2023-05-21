@@ -11,9 +11,12 @@ func _ready():
 	for star_node in $WinnerBox/starts_box.get_children():
 		star_node.get_child(0).visible = award_count > index
 		index += 1
+	
+	GlobalMusicManager.play_music()
 
 
 func _on_start_button_pressed():
+	GlobalMusicManager.play_select_sound()
 	$start_button.disabled = true
 	SceneTransition.change_scene(Global.GAME_SCENE_PATH)
 

@@ -1,12 +1,10 @@
-[gd_scene load_steps=9 format=3 uid="uid://hygatb24e2ta"]
+[gd_scene load_steps=7 format=3 uid="uid://hygatb24e2ta"]
 
 [ext_resource type="Script" path="res://scripts/option_page.gd" id="1_s1370"]
 [ext_resource type="Texture2D" uid="uid://c16s0rce15uep" path="res://assets/images/back_1280.png" id="2_ycjuo"]
 [ext_resource type="Texture2D" uid="uid://co0mdsmm7d4hx" path="res://assets/images/option_board.png" id="3_m475y"]
 [ext_resource type="Theme" uid="uid://w2l72my6ex8s" path="res://button_font.tres" id="4_toq5k"]
 [ext_resource type="PackedScene" uid="uid://hmi7nnp641na" path="res://scenes/button.tscn" id="5_g2tg6"]
-[ext_resource type="Texture2D" uid="uid://bgqqtlayy4wfw" path="res://assets/images/normal_button.png" id="6_mscu7"]
-[ext_resource type="Texture2D" uid="uid://dptqr0x2v23ew" path="res://assets/images/aqua_button.png" id="7_kaw6r"]
 [ext_resource type="PackedScene" uid="uid://cqnp84c26bx00" path="res://scenes/toggle_button.tscn" id="8_yxf8h"]
 
 [node name="option_page" type="Node2D"]
@@ -59,42 +57,27 @@ offset_bottom = 389.0
 [node name="button1" parent="quiztype_buttons" instance=ExtResource("5_g2tg6")]
 layout_mode = 2
 toggle_mode = true
-texture_normal = ExtResource("6_mscu7")
-texture_pressed = ExtResource("7_kaw6r")
 text = "랜덤"
-button_type = 0
 
 [node name="button2" parent="quiztype_buttons" instance=ExtResource("5_g2tg6")]
 layout_mode = 2
 toggle_mode = true
-texture_normal = ExtResource("6_mscu7")
-texture_pressed = ExtResource("7_kaw6r")
 text = "숫자"
-button_type = 0
 
 [node name="button3" parent="quiztype_buttons" instance=ExtResource("5_g2tg6")]
 layout_mode = 2
 toggle_mode = true
-texture_normal = ExtResource("6_mscu7")
-texture_pressed = ExtResource("7_kaw6r")
 text = "동물"
-button_type = 0
 
 [node name="button4" parent="quiztype_buttons" instance=ExtResource("5_g2tg6")]
 layout_mode = 2
 toggle_mode = true
-texture_normal = ExtResource("6_mscu7")
-texture_pressed = ExtResource("7_kaw6r")
 text = "과학"
-button_type = 0
 
 [node name="button5" parent="quiztype_buttons" instance=ExtResource("5_g2tg6")]
 layout_mode = 2
 toggle_mode = true
-texture_normal = ExtResource("6_mscu7")
-texture_pressed = ExtResource("7_kaw6r")
 text = "색깔"
-button_type = 0
 
 [node name="age_buttons" type="HBoxContainer" parent="."]
 offset_left = 104.0
@@ -105,42 +88,27 @@ offset_bottom = 480.0
 [node name="button1" parent="age_buttons" instance=ExtResource("5_g2tg6")]
 layout_mode = 2
 toggle_mode = true
-texture_normal = ExtResource("6_mscu7")
-texture_pressed = ExtResource("7_kaw6r")
 text = "1~3세"
-button_type = 0
 
 [node name="button2" parent="age_buttons" instance=ExtResource("5_g2tg6")]
 layout_mode = 2
 toggle_mode = true
-texture_normal = ExtResource("6_mscu7")
-texture_pressed = ExtResource("7_kaw6r")
 text = "3~5세"
-button_type = 0
 
 [node name="button3" parent="age_buttons" instance=ExtResource("5_g2tg6")]
 layout_mode = 2
 toggle_mode = true
-texture_normal = ExtResource("6_mscu7")
-texture_pressed = ExtResource("7_kaw6r")
 text = "5~7세"
-button_type = 0
 
 [node name="button4" parent="age_buttons" instance=ExtResource("5_g2tg6")]
 layout_mode = 2
 toggle_mode = true
-texture_normal = ExtResource("6_mscu7")
-texture_pressed = ExtResource("7_kaw6r")
 text = "7~10세"
-button_type = 0
 
 [node name="button5" parent="age_buttons" instance=ExtResource("5_g2tg6")]
 layout_mode = 2
 toggle_mode = true
-texture_normal = ExtResource("6_mscu7")
-texture_pressed = ExtResource("7_kaw6r")
 text = "10~13세"
-button_type = 0
 
 [node name="toggle_button" parent="." instance=ExtResource("8_yxf8h")]
 offset_left = 104.0
@@ -153,10 +121,7 @@ offset_left = 1078.0
 offset_top = 631.0
 offset_right = 1232.0
 offset_bottom = 706.0
-texture_normal = ExtResource("6_mscu7")
-texture_pressed = ExtResource("7_kaw6r")
 text = "닫 기"
-button_type = 0
 
 [node name="reset_info_label" type="Label" parent="."]
 offset_left = 767.0
@@ -173,10 +138,7 @@ offset_left = 1043.0
 offset_top = 518.0
 offset_right = 1197.0
 offset_bottom = 593.0
-texture_normal = ExtResource("6_mscu7")
-texture_pressed = ExtResource("7_kaw6r")
 text = "리셋"
-button_type = 0
 
 [connection signal="toggled" from="age_buttons/button1" to="." method="_on_button_1_toggled"]
 [connection signal="pressed" from="close_button" to="." method="_on_close_button_pressed"]

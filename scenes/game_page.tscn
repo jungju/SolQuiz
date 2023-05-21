@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=3 uid="uid://dcay8q3dh721c"]
+[gd_scene load_steps=21 format=3 uid="uid://dcay8q3dh721c"]
 
 [ext_resource type="Script" path="res://scripts/game_page.gd" id="1_xu44p"]
 [ext_resource type="Texture2D" uid="uid://c16s0rce15uep" path="res://assets/images/back_1280.png" id="2_4bch7"]
@@ -8,7 +8,6 @@
 [ext_resource type="Theme" uid="uid://baxuivd3vvul2" path="res://Button.tres" id="6_kf0b1"]
 [ext_resource type="Texture2D" uid="uid://bytucn47g24e0" path="res://assets/images/game_answer_board.png" id="7_arxts"]
 [ext_resource type="Texture2D" uid="uid://rbgx5hr52or4" path="res://assets/images/game_answer_board3.png" id="8_l46hd"]
-[ext_resource type="Texture2D" uid="uid://d384g7dlkmqen" path="res://assets/images/game_answer_board2.png" id="9_3ac8r"]
 [ext_resource type="Texture2D" uid="uid://dta2od3glcwrm" path="res://assets/images/time_board.png" id="10_4tjis"]
 [ext_resource type="Texture2D" uid="uid://c0oah6lr506lw" path="res://assets/images/leaf_big.png" id="11_35l6l"]
 [ext_resource type="Texture2D" uid="uid://ol4p00dqaupd" path="res://assets/images/leaf_mini.png" id="12_w6jfg"]
@@ -181,21 +180,20 @@ offset_right = 609.0
 offset_bottom = 583.0
 texture_normal = ExtResource("7_arxts")
 texture_pressed = ExtResource("8_l46hd")
-texture_hover = ExtResource("9_3ac8r")
 
 [node name="Label" type="Label" parent="game_board/answer1"]
 layout_mode = 0
-offset_left = 33.0
+offset_left = 32.0
 offset_top = 8.0
-offset_right = 324.0
+offset_right = 323.0
 offset_bottom = 223.0
 theme = ExtResource("6_kf0b1")
 theme_override_font_sizes/font_size = 38
-text = "1번
+text = "2번
 이정주"
 horizontal_alignment = 1
 vertical_alignment = 1
-clip_text = true
+autowrap_mode = 3
 
 [node name="answer2" type="TextureButton" parent="game_board"]
 visible = false
@@ -205,7 +203,6 @@ offset_right = 1049.0
 offset_bottom = 583.0
 texture_normal = ExtResource("7_arxts")
 texture_pressed = ExtResource("8_l46hd")
-texture_hover = ExtResource("9_3ac8r")
 
 [node name="Label" type="Label" parent="game_board/answer2"]
 layout_mode = 0
@@ -220,7 +217,28 @@ text = "2번
 이수근"
 horizontal_alignment = 1
 vertical_alignment = 1
-clip_text = true
+autowrap_mode = 3
+
+[node name="game_start_info" type="Label" parent="game_board"]
+offset_left = 288.0
+offset_top = 148.0
+offset_right = 1001.0
+offset_bottom = 241.0
+theme = ExtResource("4_87rtf")
+theme_override_font_sizes/font_size = 80
+text = "퀴즈가 곧 시작됩니다."
+horizontal_alignment = 1
+
+[node name="game_start_info2" type="Label" parent="game_board"]
+offset_left = 182.0
+offset_top = 361.0
+offset_right = 1114.0
+offset_bottom = 520.0
+theme = ExtResource("4_87rtf")
+theme_override_font_sizes/font_size = 70
+text = "준비하세요."
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
@@ -317,6 +335,16 @@ texture = ExtResource("12_w6jfg")
 layout_mode = 2
 texture = ExtResource("12_w6jfg")
 
+[node name="remaining_seconds" type="Label" parent="time_board"]
+offset_left = 111.0
+offset_top = 608.0
+offset_right = 191.0
+offset_bottom = 653.0
+theme = ExtResource("4_87rtf")
+theme_override_font_sizes/font_size = 30
+text = "45초"
+horizontal_alignment = 2
+
 [node name="pause_button" parent="." instance=ExtResource("13_2khp1")]
 offset_left = 1167.0
 offset_top = 614.0
@@ -328,6 +356,7 @@ text = "||"
 button_type = 2
 
 [node name="game_menu" type="Node2D" parent="."]
+visible = false
 
 [node name="ColorRect" type="ColorRect" parent="game_menu"]
 offset_right = 1280.0

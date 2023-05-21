@@ -8,17 +8,25 @@ const RESULT_SCENE_PATH = "res://scenes/result_page.tscn"
 const CONFIG_FILE_PATH = "user://config.cfg"
 const RESULTS_FILE_PATH = "user://game_results.log"
 
-# Game
-var game_count_correct: int # 퀴즈 맞은 수 
-var game_count_incorrect: int # 퀴즈 틀린 수
-var current_quiz_index: int # 현재 문제 Index
-var quizs_data: Array # 퀴즈 데이터
-var start_time: int
-var end_time: int
-
+# 설정
 # Option
 var config = ConfigFile.new()
-var mute_audio: bool
+var config_mute_audio: bool
+var config_time_per_quiz: int = 4 # 퀴즈당 시간
+var config_total_game_count: int = 10 # 게임당 퀴즈
+var config_time_limit = 55
+var config_incorrect_limit = 5
+var config_required_correct_answers = 10
+var config_wrong_time = 10
+
+# Game
+var current_count_correct: int # 퀴즈 맞은 수 
+var current_count_incorrect: int # 퀴즈 틀린 수
+var current_quiz_index: int # 현재 문제 Index
+var current_quizs_data: Array # 퀴즈 데이터
+var current_start_time: int
+var current_end_time: int
+var current_total_quiz_time: int # 총 퀴즈 시간
 
 # signal next_quetion 필요 없을 수도
 signal check_quetion(is_correct: bool) #정답 결과 시그널. 
@@ -27,26 +35,26 @@ func init_app():
 	Global.load_config()
 
 func choice_answer(answer_number: int) -> bool:
-	var chioce_answer_text = quizs_data[current_quiz_index-1]["options"][answer_number-1]
-	var answer = quizs_data[current_quiz_index-1]["answer"]
+	var chioce_answer_text = current_quizs_data[current_quiz_index-1]["options"][answer_number-1]
+	var answer = current_quizs_data[current_quiz_index-1]["answer"]
 	if chioce_answer_text == answer:
-		game_count_correct = game_count_correct + 1
+		current_count_correct = current_count_correct + 1
 		return true
 	else:
-		game_count_incorrect = game_count_incorrect + 1
+		current_count_incorrect = current_count_incorrect + 1
 		return false
 
 func get_next_quiz() -> Dictionary:
 	if current_quiz_index == 0: 
-		start_time = Time.get_ticks_msec() # 게임 시작	
+		current_start_time = Time.get_ticks_msec() # 게임 시작	
 
-	if current_quiz_index >= quizs_data.size():
-		end_time = Time.get_ticks_msec() # 게임 종료
-		save_game_result(str(start_time)+","+str(end_time)+","+str(game_count_correct)+","+str(game_count_incorrect))
+	if current_quiz_index >= current_quizs_data.size():
+		current_end_time = Time.get_ticks_msec() # 게임 종료
+		save_game_result(str(current_start_time)+","+str(current_end_time)+","+str(current_count_correct)+","+str(current_count_incorrect))
 		return {}
 
 	current_quiz_index = current_quiz_index + 1
-	return quizs_data[current_quiz_index-1]
+	return current_quizs_data[current_quiz_index-1]
 
 func load_data(filePath: String): 
 	if FileAccess.file_exists(filePath):
@@ -63,14 +71,16 @@ func load_data(filePath: String):
 func init_game():
 	var all_quizs = load_data("res://quiz_data.json")
 	
-	# TODO: 20개 문제 랜덤으로 가져오기
-	quizs_data = get_random_dictionaries(all_quizs["datas"], 20)
+	# 문제 랜덤으로 가져오기
+	current_quizs_data = get_random_dictionaries(all_quizs["datas"], config_total_game_count)
+	# quizs_data = all_quizs["datas"]
 
-	start_time = 0
-	end_time = 0
-	game_count_correct = 0
-	game_count_incorrect = 0
+	current_start_time = 0
+	current_end_time = 0
+	current_count_correct = 0
+	current_count_incorrect = 0
 	current_quiz_index = 0
+	current_total_quiz_time = current_quizs_data.size() * config_time_per_quiz
 
 func load_config():
 	var err = config.load(CONFIG_FILE_PATH)
@@ -92,16 +102,16 @@ func save_reset_award_config():
 	config.save(CONFIG_FILE_PATH)
 
 func exit_game():
-	print("game_count_correct", game_count_correct)
-	print("game_count_incorrect", game_count_incorrect)
+	print("current_count_correct", current_count_correct)
+	print("current_count_incorrect", current_count_incorrect)
 	get_tree().quit()
 
 func set_mute_audio(is_muted: bool):
-	mute_audio = is_muted
+	config_mute_audio = is_muted
 	for i in range(AudioServer.get_bus_count()):
-		AudioServer.set_bus_mute(i, mute_audio)
+		AudioServer.set_bus_mute(i, config_mute_audio)
 
-	config.set_value("system", "mute", mute_audio)
+	config.set_value("system", "mute", config_mute_audio)
 	config.save(CONFIG_FILE_PATH)
 
 func get_random_dictionaries(dict_array: Array, count: int) -> Array:

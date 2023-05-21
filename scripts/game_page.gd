@@ -14,6 +14,9 @@ func _ready():
 	$game_board/answer1.visible = false
 	$game_board/answer2.visible = false
 	$AnimationPlayer.play("show_leaf")
+	$game_board/game_start_info.visible = true
+	$game_board/game_start_info2.visible = true
+	$time_board/remaining_seconds.visible = false
 
 	$game_board/answer1.connect("pressed", answer_option_callable.bindv([1]))
 	$game_board/answer2.connect("pressed", answer_option_callable.bindv([2]))
@@ -22,7 +25,7 @@ func _ready():
 
 func _on_answer_pressed(value):
 	# 게임 로딩중 또는 게임 문제 확인중
-	if !initial_loading_complete || is_processing_answer:
+	if !initial_loading_complete || is_processing_answer || time_count >= Global.current_total_quiz_time:
 		return
 
 	is_processing_answer=true
@@ -33,20 +36,38 @@ func _on_answer_pressed(value):
 		incorrect_answer()
 
 func correct_answer():
+	GlobalMusicManager.play_correct_sound()
 	# 정답 처리
 	next_question()
 
 func incorrect_answer():
+	GlobalMusicManager.play_incorrect_sound()
 	# 오답 처리
 	next_question()
 
-func _on_timer_tick():
-	time_count = time_count + 1
-	var target_leaf = $time_board/leaf_box.get_child(time_count-1)
+func display_updated_quiz_timer():
+	$time_board/remaining_seconds.text = str(Global.current_total_quiz_time-time_count) + '초'
+
+func display_updated_leaf():
+	# 시작하자마나 잎이 없지는 것을 방지
+	# if time_count < 3:
+	# 	return
+
+	var leaf_size = $time_board/leaf_box.get_child_count() - 1
+	var leaf_unit_time= Global.current_total_quiz_time/float(leaf_size)
+	var target_leaf_index = floor(time_count / leaf_unit_time)
+	var target_leaf = $time_board/leaf_box.get_child(target_leaf_index-1)
 	if target_leaf != null:
 		target_leaf.visible = false
-	else:
+
+func _on_timer_tick():
+	time_count = time_count + 1
+
+	if time_count >= Global.current_total_quiz_time:
 		game_time_over()
+
+	display_updated_quiz_timer()
+	display_updated_leaf()
 	
 func game_time_over():
 	game_done()
@@ -70,11 +91,16 @@ func next_question():
 
 func game_start():
 	initial_loading_complete = true
+	$game_board/game_start_info.visible = false
+	$game_board/game_start_info2.visible = false
 	$game_board/question_box.visible = true
 	$game_board/answer1.visible = true
 	$game_board/answer2.visible = true
+	$time_board/remaining_seconds.visible = true
+	display_updated_quiz_timer()
+	
 	# 타이머 가동
-	$Timer.start(3.0)
+	$Timer.start(1.0)
 	$Timer.timeout.connect(_on_timer_tick)
 	next_question()
 

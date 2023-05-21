@@ -17,24 +17,26 @@ func _ready():
 	for b in $age_buttons.get_children():
 		b.connect("pressed", age_callable.bindv([b.text]))
 	
-	_on_quiztype_button_pressed(Global.config.get_value("game", "quiztype", "랜덤"))
-	_on_age_button_pressed(Global.config.get_value("game", "age", "3~5세"))
+	change_quiztype_age_option(Global.config.get_value("game", "quiztype", "랜덤"), "quiztype")
+	change_quiztype_age_option(Global.config.get_value("game", "age", "3~5세"), "age")
 	$toggle_button.state = Global.config.get_value("system", "mute", false)
 	binded_config = true
 
 func _on_quiztype_button_pressed(value: String):
-	# 변경
-	quiztype_value = value
-	for b in $quiztype_buttons.get_children():
-		b.button_pressed = b.text == value
-		
-	change_option()
+	change_quiztype_age_option(value,"quiztype")
 
 func _on_age_button_pressed(value: String):
-	# 변경
-	age_value = value
-	for b in $age_buttons.get_children():
-		b.button_pressed = b.text == value
+	change_quiztype_age_option(value,"age")
+
+func change_quiztype_age_option(value: String, option_type: String):
+	if option_type == "quiztype":
+		quiztype_value = value
+		for b in $quiztype_buttons.get_children():
+			b.button_pressed = b.text == value
+	elif option_type == "age":
+		age_value = value
+		for b in $age_buttons.get_children():
+			b.button_pressed = b.text == value
 
 	change_option()
 
