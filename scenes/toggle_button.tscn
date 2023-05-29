@@ -8,11 +8,10 @@
 [node name="toggle_button" type="TextureButton"]
 toggle_mode = true
 texture_normal = ExtResource("1_d1u4b")
-flip_h = true
 script = ExtResource("2_assop")
-state = true
 
 [node name="off_icon" type="TextureRect" parent="."]
+visible = false
 layout_mode = 0
 offset_left = 15.0
 offset_top = 9.0
@@ -21,7 +20,6 @@ offset_bottom = 59.0
 texture = ExtResource("2_lr27t")
 
 [node name="on_icon" type="TextureRect" parent="."]
-visible = false
 layout_mode = 0
 offset_left = 79.0
 offset_top = 9.0
@@ -30,3 +28,4 @@ offset_bottom = 59.0
 texture = ExtResource("3_u3yqc")
 
 [connection signal="pressed" from="." to="." method="_on_pressed"]
+[connection signal="toggled" from="." to="." method="_on_toggled"]

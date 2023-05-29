@@ -15,6 +15,7 @@ var resource_texture_aqua_mini_normal = load("res://assets/images/aqua_mini_butt
 
 func _process(_delta):
 	$Label.text = text
+	$Label.size = Vector2(size.x,size.y-10)
 	if button_type == ButtonType.Normal:
 		texture_normal = resource_texture_normal
 		texture_pressed = resource_texture_aqua_normal

@@ -2843,17 +2843,6 @@
             "category": "예절"
           },
           {
-            "id": 1,
-            "question": "길을 건널 때는 어디를 먼저 봐야 하나요?",
-            "options": [
-              "좌측",
-              "우측"
-            ],
-            "answer": "좌측",
-            "age_range": "3-5",
-            "category": "교통"
-          },
-          {
             "id": 2,
             "question": "버스가 왔을 때 어떻게 해야 하나요?",
             "options": [

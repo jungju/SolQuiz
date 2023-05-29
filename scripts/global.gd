@@ -73,8 +73,6 @@ func init_game():
 	
 	# 문제 랜덤으로 가져오기
 	current_quizs_data = get_random_dictionaries(all_quizs["datas"], config_total_game_count)
-	# quizs_data = all_quizs["datas"]
-
 	current_start_time = 0
 	current_end_time = 0
 	current_count_correct = 0
@@ -87,9 +85,10 @@ func load_config():
 	if err != OK:
 		return
 	
-func save_config(change_quiztype: String, change_age: String):
-	config.set_value("game","quiztype", change_quiztype)
-	config.set_value("game", "age", change_age)
+func save_config(quiztype: String, age: String, lang: String):
+	config.set_value("game","quiztype", quiztype)
+	config.set_value("game", "age", age)
+	config.set_value("game", "lang", lang)
 	config.save(CONFIG_FILE_PATH)
 
 func save_up_award_count_config():
@@ -102,8 +101,6 @@ func save_reset_award_config():
 	config.save(CONFIG_FILE_PATH)
 
 func exit_game():
-	print("current_count_correct", current_count_correct)
-	print("current_count_incorrect", current_count_incorrect)
 	get_tree().quit()
 
 func set_mute_audio(is_muted: bool):
