@@ -44,6 +44,6 @@ func _ready():
 	if win:
 		Global.save_up_award_count_config()
 
-func _on_gomain_button_pressed():
+func _on_gomain_button_pressed(_pressed_arg = null) -> void:
 	$gomain_button.disabled = true
 	SceneTransition.change_scene(Global.MAIN_SCENE_PATH)

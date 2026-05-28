@@ -75,7 +75,7 @@ func change_option():
 
 	Global.save_config(input_quiztype_value, input_age_value, input_lang_value)
 
-func _on_reset_button_pressed():
+func _on_reset_button_pressed(_pressed_arg = null) -> void:
 	if $sticker_option/reset_button.text == "네!":
 		Global.save_reset_award_config()
 		$sticker_option/Label.text = "스티커 초기화"
@@ -84,5 +84,5 @@ func _on_reset_button_pressed():
 	$sticker_option/Label.text = "초기화 할까요?"
 	$sticker_option/reset_button.text = "네!"
 
-func _on_close_button_pressed():
+func _on_close_button_pressed(_pressed_arg = null) -> void:
 	SceneTransition.change_scene(Global.MAIN_SCENE_PATH)

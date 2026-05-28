@@ -26,5 +26,5 @@ func _process(_delta):
 		texture_normal = resource_texture_mini_normal
 		texture_pressed = resource_texture_aqua_mini_normal
 
-func _on_pressed():
+func _on_pressed(_pressed_arg = null) -> void:
 	GlobalMusicManager.play_select_sound()

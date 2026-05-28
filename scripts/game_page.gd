@@ -111,17 +111,17 @@ func _on_animation_player_animation_finished(anim_name: StringName, _bound_arg =
 	if anim_name == "show_leaf":
 		game_start()
 
-func _on_pause_button_pressed():
+func _on_pause_button_pressed(_pressed_arg = null) -> void:
 	$game_menu.visible = true
 	if !initial_loading_complete:
 		$AnimationPlayer.pause()
 	else:
 		$Timer.stop()
 
-func _on_game_gomain_button_pressed():
+func _on_game_gomain_button_pressed(_pressed_arg = null) -> void:
 	SceneTransition.change_scene(Global.MAIN_SCENE_PATH)
 
-func _on_game_resume_button_pressed():
+func _on_game_resume_button_pressed(_pressed_arg = null) -> void:
 	$game_menu.visible = false
 	if !initial_loading_complete:
 		$AnimationPlayer.play("show_leaf")

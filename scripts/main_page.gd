@@ -23,13 +23,13 @@ func _ready():
 	GlobalMusicManager.play_music()
 
 
-func _on_start_button_pressed():
+func _on_start_button_pressed(_pressed_arg = null) -> void:
 	GlobalMusicManager.play_select_sound()
 	$start_button.disabled = true
 	SceneTransition.change_scene(Global.GAME_SCENE_PATH)
 
-func _on_exit_button_pressed():
+func _on_exit_button_pressed(_pressed_arg = null) -> void:
 	Global.exit_game()
 
-func _on_option_button_pressed():
+func _on_option_button_pressed(_pressed_arg = null) -> void:
 	SceneTransition.change_scene(Global.OPTION_SCENE_PATH)
