@@ -107,7 +107,7 @@ func game_start():
 func game_done():
 	SceneTransition.change_scene(Global.RESULT_SCENE_PATH)
 
-func _on_animation_player_animation_finished(anim_name):
+func _on_animation_player_animation_finished(anim_name: StringName, _bound_arg = null) -> void:
 	if anim_name == "show_leaf":
 		game_start()
 
